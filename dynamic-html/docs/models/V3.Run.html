@@ -1,0 +1,67 @@
+
+<h2>V3.Run</h2>
+<ul class="parameter">
+  <li class="param-required-false">run_id : Integer
+    <br/>Numeric trip/service run identifier. Defaults to -1 when run identifier is Alphanumeric
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">run_ref : String
+    <br/>Alphanumeric trip/service run identifier
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">route_id : Integer
+    <br/>Route identifier
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">route_type : Integer
+    <br/>Transport mode identifier
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">final_stop_id : Integer
+    <br/>stop_id of final stop of run
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">destination_name : String
+    <br/>Name of destination of run
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">status : String
+    <br/>Status of metropolitan train run; returns \&quot;scheduled\&quot; for other modes
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">direction_id : Integer
+    <br/>Direction of travel identifier
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">run_sequence : Integer
+    <br/>Chronological sequence of the trip/service run on the route in direction. Order ascendingly by this field to get chronological order (earliest first) of runs with the same route_id and direction_id.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">express_stop_count : Integer
+    <br/>The number of remaining skipped/express stations for the run/service from a stop
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">vehicle_position : V3.VehiclePosition
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">vehicle_descriptor : V3.VehicleDescriptor
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">geopath : List
+    <br/>Geopath of the route
+  </li>
+</ul>

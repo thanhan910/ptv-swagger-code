@@ -1,0 +1,41 @@
+{
+  "name": "ptv_timetable_api___version_3",
+  "version": "v3",
+  "description": "The_PTV_Timetable_API_provides_direct_access_to_Public_Transport_Victorias_public_transport_timetable_data_The_API_returns_scheduled_timetable_route_and_stop_data_for_all_metropolitan_and_regional_train_tram_and_bus_services_in_Victoria_including_Night_Network_Night_Train_and_Night_Tram_data_are_included_in_metropolitan_train_and_tram_services_data_respectively_whereas_Night_Bus_is_a_separate_route_type_The_API_also_returns_real_time_data_for_metropolitan_train_tram_and_bus_services__where_this_data_is_made_available_to_PTV_as_well_as_disruption_information_stop_facility_information_and_access_to_myki_ticket_outlet_data_This_Swagger_is_for_Version_3_of_the_PTV_Timetable_API__By_using_this_documentation_you_agree_to_comply_with_the_licence_and_terms_of_service_Train_timetable_data_is_updated_daily_while_the_remaining_data_is_updated_weekly_taking_into_account_any_planned_timetable_changes__for_example_due_to_holidays_or_planned_disruptions__The_PTV_timetable_API_is_the_same_API_used_by_PTV_for_its_apps__To_access_the_most_up_to_date_data_PTV_has__including_real_time_data_you_must_use_the_API_dynamically_You_can_access_the_PTV_Timetable_API_through_a_HTTP_or_HTTPS_interface_as_follows____base_URL__version_number__API_name__query_stringThe_base_URL_is_either____httptimetableapi_ptv_vic_gov_auor____httpstimetableapi_ptv_vic_gov_auThe_Swagger_JSON_file_is_available_at_httptimetableapi_ptv_vic_gov_auswaggerdocsv3Frequently_asked_questions_are_available_on_the_PTV_website_at_httpptv_vic_gov_auapifaqLinks_to_the_following_information_are_also_provided_on_the_PTV_website_at_httpptv_vic_gov_auptv_timetable_api_How_to_register_for_an_API_key_and_calculate_a_signature_PTV_Timetable_API_V2_to_V3_Migration_Guide_PTV_Timetable_API_Data_Quality_StatementAll_information_about_how_to_use_the_API_is_in_this_documentation__PTV_cannot_provide_technical_support_for_the_API_",
+  "license": "Creative Commons Attribution 4.0 International",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --require @babel/register --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "@babel/cli": "^7.0.0",
+    "superagent": "^5.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-do-expressions": "^7.0.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-bind": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-logical-assignment-operators": "^7.0.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^8.0.1",
+    "sinon": "^7.2.0"
+  }
+}

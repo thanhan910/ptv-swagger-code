@@ -1,0 +1,37 @@
+# SwaggerClient::V3StopStaffing
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**fri_am_from** | **String** | Stop staffing hours | [optional] 
+**fri_am_to** | **String** | Stop staffing hours | [optional] 
+**fri_pm_from** | **String** | Stop staffing hours | [optional] 
+**fri_pm_to** | **String** | Stop staffing hours | [optional] 
+**mon_am_from** | **String** | Stop staffing hours | [optional] 
+**mon_am_to** | **String** | Stop staffing hours | [optional] 
+**mon_pm_from** | **String** | Stop staffing hours | [optional] 
+**mon_pm_to** | **String** | Stop staffing hours | [optional] 
+**ph_additional_text** | **String** | Stop staffing hours | [optional] 
+**ph_from** | **String** | Stop staffing hours | [optional] 
+**ph_to** | **String** | Stop staffing hours | [optional] 
+**sat_am_from** | **String** | Stop staffing hours | [optional] 
+**sat_am_to** | **String** | Stop staffing hours | [optional] 
+**sat_pm_from** | **String** | Stop staffing hours | [optional] 
+**sat_pm_to** | **String** | Stop staffing hours | [optional] 
+**sun_am_from** | **String** | Stop staffing hours | [optional] 
+**sun_am_to** | **String** | Stop staffing hours | [optional] 
+**sun_pm_from** | **String** | Stop staffing hours | [optional] 
+**sun_pm_to** | **String** | Stop staffing hours | [optional] 
+**thu_am_from** | **String** | Stop staffing hours | [optional] 
+**thu_am_to** | **String** | Stop staffing hours | [optional] 
+**thu_pm_from** | **String** | Stop staffing hours | [optional] 
+**thu_pm_to** | **String** | Stop staffing hours | [optional] 
+**tue_am_from** | **String** | Stop staffing hours | [optional] 
+**tue_am_to** | **String** | Stop staffing hours | [optional] 
+**tue_pm_from** | **String** | Stop staffing hours | [optional] 
+**tue_pm_to** | **String** | Stop staffing hours | [optional] 
+**wed_am_from** | **String** | Stop staffing hours | [optional] 
+**wed_am_to** | **String** | Stop staffing hours | [optional] 
+**wed_pm_from** | **String** | Stop staffing hours | [optional] 
+**wed_pm_to** | **String** | Stop staffing hours | [optional] 
+

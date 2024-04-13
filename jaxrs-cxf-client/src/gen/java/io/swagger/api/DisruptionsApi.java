@@ -1,0 +1,116 @@
+package io.swagger.api;
+
+import io.swagger.model.V3DisruptionModesResponse;
+import io.swagger.model.V3DisruptionResponse;
+import io.swagger.model.V3DisruptionsResponse;
+import io.swagger.model.V3ErrorResponse;
+
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.List;
+import java.util.Map;
+import javax.ws.rs.*;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.MediaType;
+import org.apache.cxf.jaxrs.ext.multipart.*;
+
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.media.ArraySchema;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+
+/**
+ * PTV Timetable API - Version 3
+ *
+ * <p>The PTV Timetable API provides direct access to Public Transport Victoria's public transport timetable data.    The API returns scheduled timetable, route and stop data for all metropolitan and regional train, tram and bus services in Victoria, including Night Network(Night Train and Night Tram data are included in metropolitan train and tram services data, respectively, whereas Night Bus is a separate route type).    The API also returns real-time data for metropolitan train, tram and bus services (where this data is made available to PTV), as well as disruption information, stop facility information, and access to myki ticket outlet data.    This Swagger is for Version 3 of the PTV Timetable API. By using this documentation you agree to comply with the licence and terms of service.    Train timetable data is updated daily, while the remaining data is updated weekly, taking into account any planned timetable changes (for example, due to holidays or planned disruptions). The PTV timetable API is the same API used by PTV for its apps. To access the most up to date data PTV has (including real-time data) you must use the API dynamically.    You can access the PTV Timetable API through a HTTP or HTTPS interface, as follows:        base URL / version number / API name / query string  The base URL is either:    *  http://timetableapi.ptv.vic.gov.au  or    *  https://timetableapi.ptv.vic.gov.au    The Swagger JSON file is available at http://timetableapi.ptv.vic.gov.au/swagger/docs/v3    Frequently asked questions are available on the PTV website at http://ptv.vic.gov.au/apifaq    Links to the following information are also provided on the PTV website at http://ptv.vic.gov.au/ptv-timetable-api/  * How to register for an API key and calculate a signature  * PTV Timetable API V2 to V3 Migration Guide  * PTV Timetable API Data Quality Statement    All information about how to use the API is in this documentation. PTV cannot provide technical support for the API.  
+ *
+ */
+@Path("/")
+public interface DisruptionsApi  {
+
+    /**
+     * View all disruptions for all route types
+     *
+     */
+    @GET
+    @Path("/v3/disruptions")
+    @Produces({ "application/json", "text/json", "text/html" })
+    @Operation(summary = "View all disruptions for all route types", tags={  })
+    @ApiResponses(value = { 
+        @ApiResponse(responseCode = "200", description = "All disruption information for all route types.", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3DisruptionsResponse.class))),
+        @ApiResponse(responseCode = "400", description = "Invalid Request", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3ErrorResponse.class))),
+        @ApiResponse(responseCode = "403", description = "Access Denied", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3ErrorResponse.class))) })
+    public V3DisruptionsResponse disruptionsGetAllDisruptions(@QueryParam("route_types")List<Integer> routeTypes, @QueryParam("disruption_modes")List<Integer> disruptionModes, @QueryParam("disruption_status")String disruptionStatus, @QueryParam("token")String token, @QueryParam("devid")String devid, @QueryParam("signature")String signature);
+
+    /**
+     * View a specific disruption
+     *
+     */
+    @GET
+    @Path("/v3/disruptions/{disruption_id}")
+    @Produces({ "application/json", "text/json", "text/html" })
+    @Operation(summary = "View a specific disruption", tags={  })
+    @ApiResponses(value = { 
+        @ApiResponse(responseCode = "200", description = "Disruption information for the specified disruption ID.", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3DisruptionResponse.class))),
+        @ApiResponse(responseCode = "400", description = "Invalid Request", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3ErrorResponse.class))),
+        @ApiResponse(responseCode = "403", description = "Access Denied", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3ErrorResponse.class))) })
+    public V3DisruptionResponse disruptionsGetDisruptionById(@PathParam("disruption_id") Long disruptionId, @QueryParam("token")String token, @QueryParam("devid")String devid, @QueryParam("signature")String signature);
+
+    /**
+     * Get all disruption modes
+     *
+     */
+    @GET
+    @Path("/v3/disruptions/modes")
+    @Produces({ "application/json", "text/json", "text/html" })
+    @Operation(summary = "Get all disruption modes", tags={  })
+    @ApiResponses(value = { 
+        @ApiResponse(responseCode = "200", description = "Disruption specific modes", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3DisruptionModesResponse.class))),
+        @ApiResponse(responseCode = "400", description = "Invalid Request", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3ErrorResponse.class))),
+        @ApiResponse(responseCode = "403", description = "Access Denied", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3ErrorResponse.class))) })
+    public V3DisruptionModesResponse disruptionsGetDisruptionModes(@QueryParam("token")String token, @QueryParam("devid")String devid, @QueryParam("signature")String signature);
+
+    /**
+     * View all disruptions for a particular route
+     *
+     */
+    @GET
+    @Path("/v3/disruptions/route/{route_id}")
+    @Produces({ "application/json", "text/json", "text/html" })
+    @Operation(summary = "View all disruptions for a particular route", tags={  })
+    @ApiResponses(value = { 
+        @ApiResponse(responseCode = "200", description = "All disruption information (if any exists) for the specified route.", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3DisruptionsResponse.class))),
+        @ApiResponse(responseCode = "400", description = "Invalid Request", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3ErrorResponse.class))),
+        @ApiResponse(responseCode = "403", description = "Access Denied", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3ErrorResponse.class))) })
+    public V3DisruptionsResponse disruptionsGetDisruptionsByRoute(@PathParam("route_id") Integer routeId, @QueryParam("disruption_status")String disruptionStatus, @QueryParam("token")String token, @QueryParam("devid")String devid, @QueryParam("signature")String signature);
+
+    /**
+     * View all disruptions for a particular route and stop
+     *
+     */
+    @GET
+    @Path("/v3/disruptions/route/{route_id}/stop/{stop_id}")
+    @Produces({ "application/json", "text/json", "text/html" })
+    @Operation(summary = "View all disruptions for a particular route and stop", tags={  })
+    @ApiResponses(value = { 
+        @ApiResponse(responseCode = "200", description = "All disruption information (if any exists) for the specified route and stop.", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3DisruptionsResponse.class))),
+        @ApiResponse(responseCode = "400", description = "Invalid Request", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3ErrorResponse.class))),
+        @ApiResponse(responseCode = "403", description = "Access Denied", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3ErrorResponse.class))) })
+    public V3DisruptionsResponse disruptionsGetDisruptionsByRouteAndStop(@PathParam("route_id") Integer routeId, @PathParam("stop_id") Integer stopId, @QueryParam("disruption_status")String disruptionStatus, @QueryParam("token")String token, @QueryParam("devid")String devid, @QueryParam("signature")String signature);
+
+    /**
+     * View all disruptions for a particular stop
+     *
+     */
+    @GET
+    @Path("/v3/disruptions/stop/{stop_id}")
+    @Produces({ "application/json", "text/json", "text/html" })
+    @Operation(summary = "View all disruptions for a particular stop", tags={  })
+    @ApiResponses(value = { 
+        @ApiResponse(responseCode = "200", description = "All disruption information (if any exists) for the specified stop.", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3DisruptionsResponse.class))),
+        @ApiResponse(responseCode = "400", description = "Invalid Request", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3ErrorResponse.class))),
+        @ApiResponse(responseCode = "403", description = "Access Denied", content = @Content(mediaType = "application/json", schema = @Schema(implementation = V3ErrorResponse.class))) })
+    public V3DisruptionsResponse disruptionsGetDisruptionsByStop(@PathParam("stop_id") Integer stopId, @QueryParam("disruption_status")String disruptionStatus, @QueryParam("token")String token, @QueryParam("devid")String devid, @QueryParam("signature")String signature);
+}

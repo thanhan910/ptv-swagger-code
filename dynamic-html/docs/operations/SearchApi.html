@@ -1,0 +1,161 @@
+<div class="main-content">
+  <h2><a name=""></a></h2>
+  <p>This is the  API</p>
+
+  <h2><a name="searchSearch"></a>searchSearch</h2>
+  <hr>
+  <p></p>
+  
+  <h3 class="section">URL</h3>
+  <code>https://timetableapi.ptv.vic.gov.au//v3/search/{search_term}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="V3.SearchResult"><a href="">V3.SearchResult</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">search_term</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Search text (note: if search text is numeric and/or less than 3 characters, the API will only return routes)</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">route_types</span>
+      <span class="param-type">List(Integer)</span>
+      
+      <p class="param-description">Filter by route_type; values returned via RouteTypes API (note: stops and routes are ordered by route_types specified)</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">latitude</span>
+      <span class="param-type">Float</span>
+      
+      <p class="param-description">Filter by geographic coordinate of latitude</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">longitude</span>
+      <span class="param-type">Float</span>
+      
+      <p class="param-description">Filter by geographic coordinate of longitude</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">max_distance</span>
+      <span class="param-type">Float</span>
+      
+      <p class="param-description">Filter by maximum distance (in metres) from location specified via latitude and longitude parameters</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">include_addresses</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Placeholder for future development; currently unavailable</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">include_outlets</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Indicates if outlets will be returned in response (default &#x3D; true)</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">match_stop_by_suburb</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Indicates whether to find stops by suburbs in the search term (default &#x3D; true)</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">match_route_by_suburb</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Indicates whether to find routes by suburbs in the search term (default &#x3D; true)</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">match_stop_by_gtfs_stop_id</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Indicates whether to search for stops according to a metlink stop ID (default &#x3D; false)</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">token</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Please ignore</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">devid</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Your developer id</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">signature</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Authentication signature for request</p>
+	  </li>
+  </ul>
+</div>

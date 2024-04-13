@@ -1,0 +1,117 @@
+<div class="main-content">
+  <h2><a name=""></a></h2>
+  <p>This is the  API</p>
+
+  <h2><a name="fareEstimateGetFareEstimateByZone"></a>fareEstimateGetFareEstimateByZone</h2>
+  <hr>
+  <p></p>
+  
+  <h3 class="section">URL</h3>
+  <code>https://timetableapi.ptv.vic.gov.au//v3/fare_estimate/min_zone/{minZone}/max_zone/{maxZone}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="V3.FareEstimateResponse"><a href="">V3.FareEstimateResponse</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">minZone</span>
+      <span class="param-type">Integer</span>
+      
+      <p class="param-description">Minimum Zone travelled through ie. 1</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">maxZone</span>
+      <span class="param-type">Integer</span>
+      
+      <p class="param-description">Maximum Zone travelled through id. 6</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">journey_touch_on_utc</span>
+      <span class="param-type">Date</span>
+      
+      <p class="param-description">JourneyTouchOnUtc in format yyyy-M-d h:m (e.g 2016-5-31 16:53).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">journey_touch_off_utc</span>
+      <span class="param-type">Date</span>
+      
+      <p class="param-description">JourneyTouchOffUtc in format yyyy-M-d h:m (e.g 2016-5-31 16:53).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">is_journey_in_free_tram_zone</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description"></p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">travelled_route_types</span>
+      <span class="param-type">List(Integer)</span>
+      
+      <p class="param-description"></p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">token</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Please ignore</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">devid</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Your developer id</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">signature</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Authentication signature for request</p>
+	  </li>
+  </ul>
+</div>
