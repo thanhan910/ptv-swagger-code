@@ -1,5 +1,7 @@
-# ptv-swagger-codegen
-Wrapper Libraries for using PTV Timetable API. Generated from swagger-codegen.
+# ptv-swagger-code
+Wrapper Libraries for using PTV Timetable API. 
+
+Generated from swagger-codegen, openapi-generator, and more.
 
 Related repositories:
 - https://github.com/thanhan910/PTV
@@ -7,6 +9,7 @@ Related repositories:
 
 See also:
 - swagger-codegen: https://github.com/swagger-api/swagger-codegen
+- openapi-generator: https://github.com/OpenAPITools/openapi-generator
 - pyptv: https://github.com/jessexoc/pyptv
 
 ## Source and License
