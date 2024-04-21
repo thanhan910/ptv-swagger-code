@@ -76,6 +76,3 @@ if __name__ == "__main__":
         output_file = os.path.join(output_dir, language)
         subprocess.run(["java", "-jar", jar_file, "generate", "-i", swagger_file, "-l", language, "-o", output_file], check=True)
 
-    # Remove the generated files
-    os.remove(swagger_file)
-    os.remove(jar_file)
