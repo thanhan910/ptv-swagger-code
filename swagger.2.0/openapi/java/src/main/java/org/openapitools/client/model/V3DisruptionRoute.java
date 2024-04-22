@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * V3DisruptionRoute
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:23:48.737568700+10:00[Australia/Sydney]", comments = "Generator version: 7.5.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-22T22:16:10.196593200+10:00[Australia/Sydney]", comments = "Generator version: 7.5.0")
 public class V3DisruptionRoute {
   public static final String SERIALIZED_NAME_ROUTE_TYPE = "route_type";
   @SerializedName(SERIALIZED_NAME_ROUTE_TYPE)

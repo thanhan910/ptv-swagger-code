@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * V3DisruptionRoute
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:22:49.642+10:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T22:15:30.079+10:00")
 public class V3DisruptionRoute {
   @SerializedName("route_type")
   private Integer routeType = null;

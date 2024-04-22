@@ -25,7 +25,7 @@ import java.io.IOException;
  * V3StopPoint
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T21:59:36.979641400+10:00[Australia/Sydney]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T22:16:54.146562100+10:00[Australia/Sydney]")
 
 public class V3StopPoint {
   @SerializedName("stop_id")

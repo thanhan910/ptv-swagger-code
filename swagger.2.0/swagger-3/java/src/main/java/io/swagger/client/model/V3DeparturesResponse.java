@@ -35,7 +35,7 @@ import java.util.Map;
  * V3DeparturesResponse
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:23:07.167982900+10:00[Australia/Sydney]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T22:15:44.342351900+10:00[Australia/Sydney]")
 
 public class V3DeparturesResponse {
   @SerializedName("departures")

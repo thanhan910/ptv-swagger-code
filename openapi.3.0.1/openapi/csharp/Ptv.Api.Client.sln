@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ptv.Api.Client", "src\Ptv.Api.Client\Ptv.Api.Client.csproj", "{978BA19E-735D-4FA2-BCEC-32F7EF111B40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ptv.Api.Client", "src\Ptv.Api.Client\Ptv.Api.Client.csproj", "{B84486B6-B722-4431-9F94-E8199DAA8E5E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ptv.Api.Client.Test", "src\Ptv.Api.Client.Test\Ptv.Api.Client.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
@@ -12,10 +12,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{978BA19E-735D-4FA2-BCEC-32F7EF111B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{978BA19E-735D-4FA2-BCEC-32F7EF111B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{978BA19E-735D-4FA2-BCEC-32F7EF111B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{978BA19E-735D-4FA2-BCEC-32F7EF111B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84486B6-B722-4431-9F94-E8199DAA8E5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84486B6-B722-4431-9F94-E8199DAA8E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84486B6-B722-4431-9F94-E8199DAA8E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84486B6-B722-4431-9F94-E8199DAA8E5E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU

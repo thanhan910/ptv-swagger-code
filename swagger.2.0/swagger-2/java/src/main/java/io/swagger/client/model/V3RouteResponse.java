@@ -29,7 +29,7 @@ import java.io.IOException;
 /**
  * V3RouteResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:22:49.642+10:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T22:15:30.079+10:00")
 public class V3RouteResponse {
   @SerializedName("route")
   private V3RouteWithStatus route = null;

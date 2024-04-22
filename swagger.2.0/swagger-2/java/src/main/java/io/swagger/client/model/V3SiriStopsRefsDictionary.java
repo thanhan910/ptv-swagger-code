@@ -31,7 +31,7 @@ import java.util.Map;
 /**
  * V3SiriStopsRefsDictionary
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:22:49.642+10:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T22:15:30.079+10:00")
 public class V3SiriStopsRefsDictionary {
   @SerializedName("stop_point_refs")
   private Map<String, V3SiriReferenceDataDetail> stopPointRefs = null;

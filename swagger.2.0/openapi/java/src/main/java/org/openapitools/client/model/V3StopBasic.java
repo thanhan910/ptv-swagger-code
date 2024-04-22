@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * V3StopBasic
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:23:48.737568700+10:00[Australia/Sydney]", comments = "Generator version: 7.5.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-22T22:16:10.196593200+10:00[Australia/Sydney]", comments = "Generator version: 7.5.0")
 public class V3StopBasic {
   public static final String SERIALIZED_NAME_STOP_ID = "stop_id";
   @SerializedName(SERIALIZED_NAME_STOP_ID)

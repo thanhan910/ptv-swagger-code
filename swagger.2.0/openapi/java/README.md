@@ -2,7 +2,7 @@
 
 PTV Timetable API - Version 3
 - API version: v3
-  - Build date: 2024-04-22T17:23:48.737568700+10:00[Australia/Sydney]
+  - Build date: 2024-04-22T22:16:10.196593200+10:00[Australia/Sydney]
   - Generator version: 7.5.0
 
 The PTV Timetable API provides direct access to Public Transport Victoria's public transport timetable data.

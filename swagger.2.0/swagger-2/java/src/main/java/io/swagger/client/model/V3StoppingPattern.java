@@ -37,7 +37,7 @@ import java.util.Map;
 /**
  * V3StoppingPattern
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:22:49.642+10:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T22:15:30.079+10:00")
 public class V3StoppingPattern {
   @SerializedName("disruptions")
   private List<V3Disruption> disruptions = null;

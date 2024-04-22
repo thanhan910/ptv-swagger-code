@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * V3DisruptionMode
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-22T22:00:03.206044600+10:00[Australia/Sydney]", comments = "Generator version: 7.5.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-22T22:17:14.003555400+10:00[Australia/Sydney]", comments = "Generator version: 7.5.0")
 public class V3DisruptionMode {
   public static final String SERIALIZED_NAME_DISRUPTION_MODE_NAME = "disruption_mode_name";
   @SerializedName(SERIALIZED_NAME_DISRUPTION_MODE_NAME)
