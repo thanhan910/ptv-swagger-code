@@ -1,12 +1,11 @@
 # DeparturesApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**departuresGetForStop**](DeparturesApi.md#departuresGetForStop) | **GET** /v3/departures/route_type/{route_type}/stop/{stop_id} | View departures for all routes from a stop
 [**departuresGetForStopAndRoute**](DeparturesApi.md#departuresGetForStopAndRoute) | **GET** /v3/departures/route_type/{route_type}/stop/{stop_id}/route/{route_id} | View departures for a specific route from a stop
-
 
 <a name="departuresGetForStop"></a>
 # **departuresGetForStop**
@@ -27,7 +26,7 @@ Integer stopId = 56; // Integer | Identifier of stop; values returned by Stops A
 List<Integer> platformNumbers = Arrays.asList(56); // List<Integer> | Filter by platform number at stop
 Integer directionId = 56; // Integer | Filter by identifier of direction of travel; values returned by Directions API - /v3/directions/route/{route_id}
 Boolean gtfs = true; // Boolean | Indicates that stop_id parameter will accept \"GTFS stop_id\" data
-OffsetDateTime dateUtc = OffsetDateTime.now(); // OffsetDateTime | Filter by the date and time of the request (ISO 8601 UTC format) (default = current date and time)
+OffsetDateTime dateUtc = new OffsetDateTime(); // OffsetDateTime | Filter by the date and time of the request (ISO 8601 UTC format) (default = current date and time)
 Integer maxResults = 56; // Integer | Maximum number of results returned
 Boolean includeCancelled = true; // Boolean | Indicates if cancelled services (if they exist) are returned (default = false) - metropolitan train only
 Boolean lookBackwards = true; // Boolean | Indicates if filtering runs (and their departures) to those that arrive at destination before date_utc (default = false). Requires max_results &gt; 0.
@@ -96,7 +95,7 @@ Integer stopId = 56; // Integer | Identifier of stop; values returned by Stops A
 String routeId = "routeId_example"; // String | Identifier of route; values returned by Routes API - v3/routes
 Integer directionId = 56; // Integer | Filter by identifier of direction of travel; values returned by Directions API - /v3/directions/route/{route_id}
 Boolean gtfs = true; // Boolean | Indicates that stop_id parameter will accept \"GTFS stop_id\" data
-OffsetDateTime dateUtc = OffsetDateTime.now(); // OffsetDateTime | Filter by the date and time of the request (ISO 8601 UTC format) (default = current date and time)
+OffsetDateTime dateUtc = new OffsetDateTime(); // OffsetDateTime | Filter by the date and time of the request (ISO 8601 UTC format) (default = current date and time)
 Integer maxResults = 56; // Integer | Maximum number of results returned
 Boolean includeCancelled = true; // Boolean | Indicates if cancelled services (if they exist) are returned (default = false) - metropolitan train only
 Boolean lookBackwards = true; // Boolean | Indicates if filtering runs (and their departures) to those that arrive at destination before date_utc (default = false). Requires max_results &gt; 0.

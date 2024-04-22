@@ -1,12 +1,11 @@
 # swagger_client.DeparturesApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**departures_get_for_stop**](DeparturesApi.md#departures_get_for_stop) | **GET** /v3/departures/route_type/{route_type}/stop/{stop_id} | View departures for all routes from a stop
 [**departures_get_for_stop_and_route**](DeparturesApi.md#departures_get_for_stop_and_route) | **GET** /v3/departures/route_type/{route_type}/stop/{stop_id}/route/{route_id} | View departures for a specific route from a stop
-
 
 # **departures_get_for_stop**
 > V3DeparturesResponse departures_get_for_stop(route_type, stop_id, platform_numbers=platform_numbers, direction_id=direction_id, gtfs=gtfs, date_utc=date_utc, max_results=max_results, include_cancelled=include_cancelled, look_backwards=look_backwards, expand=expand, include_geopath=include_geopath, token=token, devid=devid, signature=signature)

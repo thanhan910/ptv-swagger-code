@@ -1,12 +1,11 @@
 # OutletsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**outletsGetAllOutlets**](OutletsApi.md#outletsGetAllOutlets) | **GET** /v3/outlets | List all ticket outlets
 [**outletsGetOutletsByGeolocation**](OutletsApi.md#outletsGetOutletsByGeolocation) | **GET** /v3/outlets/location/{latitude},{longitude} | List ticket outlets near a specific location
-
 
 <a name="outletsGetAllOutlets"></a>
 # **outletsGetAllOutlets**

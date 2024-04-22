@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,15 +19,15 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3StopAccessibilityWheelchair;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3StopAccessibility
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3StopAccessibility {
   @SerializedName("lighting")
   private Boolean lighting = null;
@@ -72,7 +71,7 @@ public class V3StopAccessibility {
    * Indicates if there is lighting at the stop
    * @return lighting
   **/
-  @ApiModelProperty(value = "Indicates if there is lighting at the stop")
+  @Schema(description = "Indicates if there is lighting at the stop")
   public Boolean isLighting() {
     return lighting;
   }
@@ -90,7 +89,7 @@ public class V3StopAccessibility {
    * Indicates the platform number for xivic information (Platform 0 indicates general stop facilities)
    * @return platformNumber
   **/
-  @ApiModelProperty(value = "Indicates the platform number for xivic information (Platform 0 indicates general stop facilities)")
+  @Schema(description = "Indicates the platform number for xivic information (Platform 0 indicates general stop facilities)")
   public Integer getPlatformNumber() {
     return platformNumber;
   }
@@ -108,7 +107,7 @@ public class V3StopAccessibility {
    * Indicates if there is at least one audio customer information at the stop/platform
    * @return audioCustomerInformation
   **/
-  @ApiModelProperty(value = "Indicates if there is at least one audio customer information at the stop/platform")
+  @Schema(description = "Indicates if there is at least one audio customer information at the stop/platform")
   public Boolean isAudioCustomerInformation() {
     return audioCustomerInformation;
   }
@@ -126,7 +125,7 @@ public class V3StopAccessibility {
    * Indicates if there is at least one accessible escalator at the stop/platform that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)
    * @return escalator
   **/
-  @ApiModelProperty(value = "Indicates if there is at least one accessible escalator at the stop/platform that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)")
+  @Schema(description = "Indicates if there is at least one accessible escalator at the stop/platform that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)")
   public Boolean isEscalator() {
     return escalator;
   }
@@ -144,7 +143,7 @@ public class V3StopAccessibility {
    * Indicates if there is a hearing loop facility at the stop/platform
    * @return hearingLoop
   **/
-  @ApiModelProperty(value = "Indicates if there is a hearing loop facility at the stop/platform")
+  @Schema(description = "Indicates if there is a hearing loop facility at the stop/platform")
   public Boolean isHearingLoop() {
     return hearingLoop;
   }
@@ -162,7 +161,7 @@ public class V3StopAccessibility {
    * Indicates if there is an elevator at the stop/platform
    * @return lift
   **/
-  @ApiModelProperty(value = "Indicates if there is an elevator at the stop/platform")
+  @Schema(description = "Indicates if there is an elevator at the stop/platform")
   public Boolean isLift() {
     return lift;
   }
@@ -180,7 +179,7 @@ public class V3StopAccessibility {
    * Indicates if there are stairs available in the stop
    * @return stairs
   **/
-  @ApiModelProperty(value = "Indicates if there are stairs available in the stop")
+  @Schema(description = "Indicates if there are stairs available in the stop")
   public Boolean isStairs() {
     return stairs;
   }
@@ -198,7 +197,7 @@ public class V3StopAccessibility {
    * Indicates if the stop is accessible
    * @return stopAccessible
   **/
-  @ApiModelProperty(value = "Indicates if the stop is accessible")
+  @Schema(description = "Indicates if the stop is accessible")
   public Boolean isStopAccessible() {
     return stopAccessible;
   }
@@ -216,7 +215,7 @@ public class V3StopAccessibility {
    * Indicates if there are tactile tiles (also known as tactile ground surface indicators, or TGSIs) at the stop
    * @return tactileGroundSurfaceIndicator
   **/
-  @ApiModelProperty(value = "Indicates if there are tactile tiles (also known as tactile ground surface indicators, or TGSIs) at the stop")
+  @Schema(description = "Indicates if there are tactile tiles (also known as tactile ground surface indicators, or TGSIs) at the stop")
   public Boolean isTactileGroundSurfaceIndicator() {
     return tactileGroundSurfaceIndicator;
   }
@@ -234,7 +233,7 @@ public class V3StopAccessibility {
    * Indicates if there is a general waiting area at the stop
    * @return waitingRoom
   **/
-  @ApiModelProperty(value = "Indicates if there is a general waiting area at the stop")
+  @Schema(description = "Indicates if there is a general waiting area at the stop")
   public Boolean isWaitingRoom() {
     return waitingRoom;
   }
@@ -249,10 +248,10 @@ public class V3StopAccessibility {
   }
 
    /**
-   * Facilities relating to the accessibility of the stop by wheelchair
+   * Get wheelchair
    * @return wheelchair
   **/
-  @ApiModelProperty(value = "Facilities relating to the accessibility of the stop by wheelchair")
+  @Schema(description = "")
   public V3StopAccessibilityWheelchair getWheelchair() {
     return wheelchair;
   }
@@ -322,4 +321,3 @@ public class V3StopAccessibility {
   }
 
 }
-

@@ -1,6 +1,6 @@
 # RunsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,6 @@ Method | HTTP request | Description
 [**runsForRouteAndRouteType**](RunsApi.md#runsForRouteAndRouteType) | **GET** /v3/runs/route/{route_id}/route_type/{route_type} | View all trip/service runs for a specific route ID and route type
 [**runsForRun**](RunsApi.md#runsForRun) | **GET** /v3/runs/{run_ref} | View all trip/service runs for a specific run_ref
 [**runsForRunAndRouteType**](RunsApi.md#runsForRunAndRouteType) | **GET** /v3/runs/{run_ref}/route_type/{route_type} | View the trip/service run for a specific run_ref and route type
-
 
 <a name="runsForRoute"></a>
 # **runsForRoute**
@@ -26,7 +25,7 @@ View all trip/service runs for a specific route ID
 RunsApi apiInstance = new RunsApi();
 Integer routeId = 56; // Integer | Identifier of route; values returned by Routes API - v3/routes.
 List<String> expand = Arrays.asList("expand_example"); // List<String> | List of objects to be returned in full (i.e. expanded) - options include: All, VehiclePosition, VehicleDescriptor, or None. Default is None.
-OffsetDateTime dateUtc = OffsetDateTime.now(); // OffsetDateTime | Date of the request. (optional - defaults to now)
+OffsetDateTime dateUtc = new OffsetDateTime(); // OffsetDateTime | Date of the request. (optional - defaults to now)
 String token = "token_example"; // String | Please ignore
 String devid = "devid_example"; // String | Your developer id
 String signature = "signature_example"; // String | Authentication signature for request
@@ -80,7 +79,7 @@ RunsApi apiInstance = new RunsApi();
 Integer routeId = 56; // Integer | Identifier of route; values returned by Routes API - v3/routes.
 Integer routeType = 56; // Integer | Number identifying transport mode; values returned via RouteTypes API
 List<String> expand = Arrays.asList("expand_example"); // List<String> | List of objects to be returned in full (i.e. expanded) - options include: All, VehiclePosition, VehicleDescriptor, or None. Default is All.
-OffsetDateTime dateUtc = OffsetDateTime.now(); // OffsetDateTime | Date of the request. (optional - defaults to now)
+OffsetDateTime dateUtc = new OffsetDateTime(); // OffsetDateTime | Date of the request. (optional - defaults to now)
 String token = "token_example"; // String | Please ignore
 String devid = "devid_example"; // String | Your developer id
 String signature = "signature_example"; // String | Authentication signature for request
@@ -134,7 +133,7 @@ View all trip/service runs for a specific run_ref
 RunsApi apiInstance = new RunsApi();
 String runRef = "runRef_example"; // String | The run_ref is the identifier of a run as returned by the departures/_* and runs/_* endpoints. WARNING, run_id is deprecated. Use run_ref instead.
 List<String> expand = Arrays.asList("expand_example"); // List<String> | List of objects to be returned in full (i.e. expanded) - options include: All, VehiclePosition, VehicleDescriptor, or None. Default is None.
-OffsetDateTime dateUtc = OffsetDateTime.now(); // OffsetDateTime | Date of the request. (optional - defaults to now)
+OffsetDateTime dateUtc = new OffsetDateTime(); // OffsetDateTime | Date of the request. (optional - defaults to now)
 Boolean includeGeopath = true; // Boolean | Indicates if geopath data will be returned (default = false)
 String token = "token_example"; // String | Please ignore
 String devid = "devid_example"; // String | Your developer id
@@ -190,7 +189,7 @@ RunsApi apiInstance = new RunsApi();
 String runRef = "runRef_example"; // String | The run_ref is the identifier of a run as returned by the departures/_* and runs/_* endpoints. WARNING, run_id is deprecated. Use run_ref instead.
 Integer routeType = 56; // Integer | Number identifying transport mode; values returned via RouteTypes API
 List<String> expand = Arrays.asList("expand_example"); // List<String> | List of objects to be returned in full (i.e. expanded) - options include: All, VehiclePosition, VehicleDescriptor, or None. Default is None.
-OffsetDateTime dateUtc = OffsetDateTime.now(); // OffsetDateTime | Date of the request. (optional - defaults to now)
+OffsetDateTime dateUtc = new OffsetDateTime(); // OffsetDateTime | Date of the request. (optional - defaults to now)
 Boolean includeGeopath = true; // Boolean | Indicates if geopath data will be returned (default = false)
 String token = "token_example"; // String | Please ignore
 String devid = "devid_example"; // String | Your developer id

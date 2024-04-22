@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3StopAccessibilityWheelchair
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3StopAccessibilityWheelchair {
   @SerializedName("accessible_ramp")
   private Boolean accessibleRamp = null;
@@ -71,7 +70,7 @@ public class V3StopAccessibilityWheelchair {
    * Get accessibleRamp
    * @return accessibleRamp
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public Boolean isAccessibleRamp() {
     return accessibleRamp;
   }
@@ -89,7 +88,7 @@ public class V3StopAccessibilityWheelchair {
    * Indicates if there is at least one accessible parking spot at the stop that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)
    * @return parking
   **/
-  @ApiModelProperty(value = "Indicates if there is at least one accessible parking spot at the stop that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)")
+  @Schema(description = "Indicates if there is at least one accessible parking spot at the stop that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)")
   public Boolean isParking() {
     return parking;
   }
@@ -107,7 +106,7 @@ public class V3StopAccessibilityWheelchair {
    * Indicates if there is at least one accessible telephone at the stop/platform that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)
    * @return telephone
   **/
-  @ApiModelProperty(value = "Indicates if there is at least one accessible telephone at the stop/platform that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)")
+  @Schema(description = "Indicates if there is at least one accessible telephone at the stop/platform that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)")
   public Boolean isTelephone() {
     return telephone;
   }
@@ -125,7 +124,7 @@ public class V3StopAccessibilityWheelchair {
    * Indicates if there is at least one accessible toilet at the stop/platform that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)
    * @return toilet
   **/
-  @ApiModelProperty(value = "Indicates if there is at least one accessible toilet at the stop/platform that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)")
+  @Schema(description = "Indicates if there is at least one accessible toilet at the stop/platform that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)")
   public Boolean isToilet() {
     return toilet;
   }
@@ -143,7 +142,7 @@ public class V3StopAccessibilityWheelchair {
    * Indicates if there is at least one low ticket counter at the stop that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)
    * @return lowTicketCounter
   **/
-  @ApiModelProperty(value = "Indicates if there is at least one low ticket counter at the stop that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)")
+  @Schema(description = "Indicates if there is at least one low ticket counter at the stop that complies with the Disability Standards for Accessible Public Transport under the Disability Discrimination Act (1992)")
   public Boolean isLowTicketCounter() {
     return lowTicketCounter;
   }
@@ -161,7 +160,7 @@ public class V3StopAccessibilityWheelchair {
    * Indicates if there is a space for mobility device to board on or off a transport mode
    * @return manouvering
   **/
-  @ApiModelProperty(value = "Indicates if there is a space for mobility device to board on or off a transport mode")
+  @Schema(description = "Indicates if there is a space for mobility device to board on or off a transport mode")
   public Boolean isManouvering() {
     return manouvering;
   }
@@ -179,7 +178,7 @@ public class V3StopAccessibilityWheelchair {
    * Indicates if there is a raised platform to board a train
    * @return raisedPlatform
   **/
-  @ApiModelProperty(value = "Indicates if there is a raised platform to board a train")
+  @Schema(description = "Indicates if there is a raised platform to board a train")
   public Boolean isRaisedPlatform() {
     return raisedPlatform;
   }
@@ -197,7 +196,7 @@ public class V3StopAccessibilityWheelchair {
    * Indicates if there are ramps (&amp;lt;1:14) at the stop/platform
    * @return ramp
   **/
-  @ApiModelProperty(value = "Indicates if there are ramps (&lt;1:14) at the stop/platform")
+  @Schema(description = "Indicates if there are ramps (&lt;1:14) at the stop/platform")
   public Boolean isRamp() {
     return ramp;
   }
@@ -215,7 +214,7 @@ public class V3StopAccessibilityWheelchair {
    * Indicates if there is a path beyond the stop which is accessible
    * @return secondaryPath
   **/
-  @ApiModelProperty(value = "Indicates if there is a path beyond the stop which is accessible")
+  @Schema(description = "Indicates if there is a path beyond the stop which is accessible")
   public Boolean isSecondaryPath() {
     return secondaryPath;
   }
@@ -233,7 +232,7 @@ public class V3StopAccessibilityWheelchair {
    * Indicates if there is shelter near the raised platform
    * @return raisedPlatformShelther
   **/
-  @ApiModelProperty(value = "Indicates if there is shelter near the raised platform")
+  @Schema(description = "Indicates if there is shelter near the raised platform")
   public Boolean isRaisedPlatformShelther() {
     return raisedPlatformShelther;
   }
@@ -251,7 +250,7 @@ public class V3StopAccessibilityWheelchair {
    * Indicates if there are ramps (&amp;gt;1:14) at the stop/platform
    * @return steepRamp
   **/
-  @ApiModelProperty(value = "Indicates if there are ramps (&gt;1:14) at the stop/platform")
+  @Schema(description = "Indicates if there are ramps (&gt;1:14) at the stop/platform")
   public Boolean isSteepRamp() {
     return steepRamp;
   }
@@ -321,4 +320,3 @@ public class V3StopAccessibilityWheelchair {
   }
 
 }
-

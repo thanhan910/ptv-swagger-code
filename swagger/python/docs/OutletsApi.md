@@ -1,12 +1,11 @@
 # swagger_client.OutletsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**outlets_get_all_outlets**](OutletsApi.md#outlets_get_all_outlets) | **GET** /v3/outlets | List all ticket outlets
 [**outlets_get_outlets_by_geolocation**](OutletsApi.md#outlets_get_outlets_by_geolocation) | **GET** /v3/outlets/location/{latitude},{longitude} | List ticket outlets near a specific location
-
 
 # **outlets_get_all_outlets**
 > V3OutletResponse outlets_get_all_outlets(max_results=max_results, token=token, devid=devid, signature=signature)

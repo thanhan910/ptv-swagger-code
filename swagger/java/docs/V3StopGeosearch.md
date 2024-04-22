@@ -1,4 +1,3 @@
-
 # V3StopGeosearch
 
 ## Properties
@@ -15,6 +14,3 @@ Name | Type | Description | Notes
 **stopLongitude** | **Float** | Geographic coordinate of longitude at stop |  [optional]
 **stopLandmark** | **String** | Landmark in proximity of stop |  [optional]
 **stopSequence** | **Integer** | Sequence of the stop on the route/run; return 0 when route_id or run_id not specified. Order ascendingly by this field (when non zero) to get physical order (earliest first) of stops on the route_id/run_id. |  [optional]
-
-
-

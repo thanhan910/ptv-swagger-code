@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,24 +19,24 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3Direction;
 import io.swagger.client.model.V3Disruption;
 import io.swagger.client.model.V3PatternDeparture;
 import io.swagger.client.model.V3Run;
 import io.swagger.client.model.V3Status;
 import io.swagger.client.model.V3StoppingPatternStop;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 /**
  * V3StoppingPattern
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3StoppingPattern {
   @SerializedName("disruptions")
   private List<V3Disruption> disruptions = null;
@@ -77,7 +76,7 @@ public class V3StoppingPattern {
    * Disruption information applicable to relevant routes or stops
    * @return disruptions
   **/
-  @ApiModelProperty(value = "Disruption information applicable to relevant routes or stops")
+  @Schema(description = "Disruption information applicable to relevant routes or stops")
   public List<V3Disruption> getDisruptions() {
     return disruptions;
   }
@@ -103,7 +102,7 @@ public class V3StoppingPattern {
    * Timetabled and real-time service departures
    * @return departures
   **/
-  @ApiModelProperty(value = "Timetabled and real-time service departures")
+  @Schema(description = "Timetabled and real-time service departures")
   public List<V3PatternDeparture> getDepartures() {
     return departures;
   }
@@ -129,7 +128,7 @@ public class V3StoppingPattern {
    * A train station, tram stop, bus stop, regional coach stop or Night Bus stop
    * @return stops
   **/
-  @ApiModelProperty(value = "A train station, tram stop, bus stop, regional coach stop or Night Bus stop")
+  @Schema(description = "A train station, tram stop, bus stop, regional coach stop or Night Bus stop")
   public Map<String, V3StoppingPatternStop> getStops() {
     return stops;
   }
@@ -155,7 +154,7 @@ public class V3StoppingPattern {
    * Train lines, tram routes, bus routes, regional coach routes, Night Bus routes
    * @return routes
   **/
-  @ApiModelProperty(value = "Train lines, tram routes, bus routes, regional coach routes, Night Bus routes")
+  @Schema(description = "Train lines, tram routes, bus routes, regional coach routes, Night Bus routes")
   public Map<String, Object> getRoutes() {
     return routes;
   }
@@ -181,7 +180,7 @@ public class V3StoppingPattern {
    * Individual trips/services of a route
    * @return runs
   **/
-  @ApiModelProperty(value = "Individual trips/services of a route")
+  @Schema(description = "Individual trips/services of a route")
   public Map<String, V3Run> getRuns() {
     return runs;
   }
@@ -207,7 +206,7 @@ public class V3StoppingPattern {
    * Directions of travel of route
    * @return directions
   **/
-  @ApiModelProperty(value = "Directions of travel of route")
+  @Schema(description = "Directions of travel of route")
   public Map<String, V3Direction> getDirections() {
     return directions;
   }
@@ -222,10 +221,10 @@ public class V3StoppingPattern {
   }
 
    /**
-   * API Status / Metadata
+   * Get status
    * @return status
   **/
-  @ApiModelProperty(value = "API Status / Metadata")
+  @Schema(description = "")
   public V3Status getStatus() {
     return status;
   }
@@ -287,4 +286,3 @@ public class V3StoppingPattern {
   }
 
 }
-

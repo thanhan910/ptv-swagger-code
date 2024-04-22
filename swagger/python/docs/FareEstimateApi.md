@@ -1,11 +1,10 @@
 # swagger_client.FareEstimateApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**fare_estimate_get_fare_estimate_by_zone**](FareEstimateApi.md#fare_estimate_get_fare_estimate_by_zone) | **GET** /v3/fare_estimate/min_zone/{minZone}/max_zone/{maxZone} | Estimate a fare by zone
-
 
 # **fare_estimate_get_fare_estimate_by_zone**
 > V3FareEstimateResponse fare_estimate_get_fare_estimate_by_zone(min_zone, max_zone, journey_touch_on_utc=journey_touch_on_utc, journey_touch_off_utc=journey_touch_off_utc, is_journey_in_free_tram_zone=is_journey_in_free_tram_zone, travelled_route_types=travelled_route_types, token=token, devid=devid, signature=signature)

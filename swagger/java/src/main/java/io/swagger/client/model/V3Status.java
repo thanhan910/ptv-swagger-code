@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3Status
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3Status {
   @SerializedName("version")
   private String version = null;
@@ -37,8 +36,9 @@ public class V3Status {
    */
   @JsonAdapter(HealthEnum.Adapter.class)
   public enum HealthEnum {
+    @SerializedName("0")
     NUMBER_0(0),
-    
+    @SerializedName("1")
     NUMBER_1(1);
 
     private Integer value;
@@ -46,7 +46,6 @@ public class V3Status {
     HealthEnum(Integer value) {
       this.value = value;
     }
-
     public Integer getValue() {
       return value;
     }
@@ -55,31 +54,27 @@ public class V3Status {
     public String toString() {
       return String.valueOf(value);
     }
-
-    public static HealthEnum fromValue(String text) {
+    public static HealthEnum fromValue(Integer input) {
       for (HealthEnum b : HealthEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
       return null;
     }
-
     public static class Adapter extends TypeAdapter<HealthEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final HealthEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public HealthEnum read(final JsonReader jsonReader) throws IOException {
-        int value = jsonReader.nextInt();
-        return HealthEnum.fromValue(String.valueOf(value));
+        Object value = jsonReader.nextInt();
+        return HealthEnum.fromValue((Integer)(value));
       }
     }
-  }
-
-  @SerializedName("health")
+  }  @SerializedName("health")
   private HealthEnum health = null;
 
   public V3Status version(String version) {
@@ -91,7 +86,7 @@ public class V3Status {
    * API Version number
    * @return version
   **/
-  @ApiModelProperty(value = "API Version number")
+  @Schema(description = "API Version number")
   public String getVersion() {
     return version;
   }
@@ -109,7 +104,7 @@ public class V3Status {
    * API system health status (0&#x3D;offline, 1&#x3D;online)
    * @return health
   **/
-  @ApiModelProperty(value = "API system health status (0=offline, 1=online)")
+  @Schema(description = "API system health status (0=offline, 1=online)")
   public HealthEnum getHealth() {
     return health;
   }
@@ -161,4 +156,3 @@ public class V3Status {
   }
 
 }
-

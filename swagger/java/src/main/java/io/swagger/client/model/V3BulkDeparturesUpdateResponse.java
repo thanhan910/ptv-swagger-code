@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,18 +19,18 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3BulkDeparturesRouteDirectionResponse;
 import io.swagger.client.model.V3Departure;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * V3BulkDeparturesUpdateResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3BulkDeparturesUpdateResponse {
   @SerializedName("departures")
   private List<V3Departure> departures = null;
@@ -50,8 +49,9 @@ public class V3BulkDeparturesUpdateResponse {
    */
   @JsonAdapter(RouteDirectionStatusEnum.Adapter.class)
   public enum RouteDirectionStatusEnum {
+    @SerializedName("0")
     NUMBER_0(0),
-    
+    @SerializedName("1")
     NUMBER_1(1);
 
     private Integer value;
@@ -59,7 +59,6 @@ public class V3BulkDeparturesUpdateResponse {
     RouteDirectionStatusEnum(Integer value) {
       this.value = value;
     }
-
     public Integer getValue() {
       return value;
     }
@@ -68,31 +67,27 @@ public class V3BulkDeparturesUpdateResponse {
     public String toString() {
       return String.valueOf(value);
     }
-
-    public static RouteDirectionStatusEnum fromValue(String text) {
+    public static RouteDirectionStatusEnum fromValue(Integer input) {
       for (RouteDirectionStatusEnum b : RouteDirectionStatusEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
       return null;
     }
-
     public static class Adapter extends TypeAdapter<RouteDirectionStatusEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final RouteDirectionStatusEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public RouteDirectionStatusEnum read(final JsonReader jsonReader) throws IOException {
-        int value = jsonReader.nextInt();
-        return RouteDirectionStatusEnum.fromValue(String.valueOf(value));
+        Object value = jsonReader.nextInt();
+        return RouteDirectionStatusEnum.fromValue((Integer)(value));
       }
     }
-  }
-
-  @SerializedName("route_direction_status")
+  }  @SerializedName("route_direction_status")
   private RouteDirectionStatusEnum routeDirectionStatus = null;
 
   @SerializedName("route_direction")
@@ -115,7 +110,7 @@ public class V3BulkDeparturesUpdateResponse {
    * Timetabled and real-time service departures
    * @return departures
   **/
-  @ApiModelProperty(value = "Timetabled and real-time service departures")
+  @Schema(description = "Timetabled and real-time service departures")
   public List<V3Departure> getDepartures() {
     return departures;
   }
@@ -133,7 +128,7 @@ public class V3BulkDeparturesUpdateResponse {
    * Transport mode identifier
    * @return routeType
   **/
-  @ApiModelProperty(value = "Transport mode identifier")
+  @Schema(description = "Transport mode identifier")
   public Integer getRouteType() {
     return routeType;
   }
@@ -151,7 +146,7 @@ public class V3BulkDeparturesUpdateResponse {
    * Stop identifier
    * @return stopId
   **/
-  @ApiModelProperty(value = "Stop identifier")
+  @Schema(description = "Stop identifier")
   public Integer getStopId() {
     return stopId;
   }
@@ -166,10 +161,10 @@ public class V3BulkDeparturesUpdateResponse {
   }
 
    /**
-   * The route direction that these departures are for. Will be one of the requested route directions
+   * Get requestedRouteDirection
    * @return requestedRouteDirection
   **/
-  @ApiModelProperty(value = "The route direction that these departures are for. Will be one of the requested route directions")
+  @Schema(description = "")
   public V3BulkDeparturesRouteDirectionResponse getRequestedRouteDirection() {
     return requestedRouteDirection;
   }
@@ -187,7 +182,7 @@ public class V3BulkDeparturesUpdateResponse {
    * The status of the route direction (changed | unchanged).  If changed, requests should change the requested_route_direction for the route_direction supplied.
    * @return routeDirectionStatus
   **/
-  @ApiModelProperty(value = "The status of the route direction (changed | unchanged).  If changed, requests should change the requested_route_direction for the route_direction supplied.")
+  @Schema(description = "The status of the route direction (changed | unchanged).  If changed, requests should change the requested_route_direction for the route_direction supplied.")
   public RouteDirectionStatusEnum getRouteDirectionStatus() {
     return routeDirectionStatus;
   }
@@ -202,10 +197,10 @@ public class V3BulkDeparturesUpdateResponse {
   }
 
    /**
-   * The route direction found matching the requested_route_direction
+   * Get routeDirection
    * @return routeDirection
   **/
-  @ApiModelProperty(value = "The route direction found matching the requested_route_direction")
+  @Schema(description = "")
   public V3BulkDeparturesRouteDirectionResponse getRouteDirection() {
     return routeDirection;
   }
@@ -265,4 +260,3 @@ public class V3BulkDeparturesUpdateResponse {
   }
 
 }
-

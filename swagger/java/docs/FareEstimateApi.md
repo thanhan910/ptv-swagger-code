@@ -1,11 +1,10 @@
 # FareEstimateApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**fareEstimateGetFareEstimateByZone**](FareEstimateApi.md#fareEstimateGetFareEstimateByZone) | **GET** /v3/fare_estimate/min_zone/{minZone}/max_zone/{maxZone} | Estimate a fare by zone
-
 
 <a name="fareEstimateGetFareEstimateByZone"></a>
 # **fareEstimateGetFareEstimateByZone**
@@ -23,8 +22,8 @@ Estimate a fare by zone
 FareEstimateApi apiInstance = new FareEstimateApi();
 Integer minZone = 56; // Integer | Minimum Zone travelled through ie. 1
 Integer maxZone = 56; // Integer | Maximum Zone travelled through id. 6
-OffsetDateTime journeyTouchOnUtc = OffsetDateTime.now(); // OffsetDateTime | JourneyTouchOnUtc in format yyyy-M-d h:m (e.g 2016-5-31 16:53).
-OffsetDateTime journeyTouchOffUtc = OffsetDateTime.now(); // OffsetDateTime | JourneyTouchOffUtc in format yyyy-M-d h:m (e.g 2016-5-31 16:53).
+OffsetDateTime journeyTouchOnUtc = new OffsetDateTime(); // OffsetDateTime | JourneyTouchOnUtc in format yyyy-M-d h:m (e.g 2016-5-31 16:53).
+OffsetDateTime journeyTouchOffUtc = new OffsetDateTime(); // OffsetDateTime | JourneyTouchOffUtc in format yyyy-M-d h:m (e.g 2016-5-31 16:53).
 Boolean isJourneyInFreeTramZone = true; // Boolean | 
 List<Integer> travelledRouteTypes = Arrays.asList(56); // List<Integer> | 
 String token = "token_example"; // String | Please ignore

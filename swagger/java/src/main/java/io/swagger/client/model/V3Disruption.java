@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,19 +19,19 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3DisruptionRoute;
 import io.swagger.client.model.V3DisruptionStop;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import org.threeten.bp.OffsetDateTime;
-
 /**
  * V3Disruption
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3Disruption {
   @SerializedName("disruption_id")
   private Long disruptionId = null;
@@ -88,7 +87,7 @@ public class V3Disruption {
    * Disruption information identifier
    * @return disruptionId
   **/
-  @ApiModelProperty(value = "Disruption information identifier")
+  @Schema(description = "Disruption information identifier")
   public Long getDisruptionId() {
     return disruptionId;
   }
@@ -106,7 +105,7 @@ public class V3Disruption {
    * Headline title summarising disruption information
    * @return title
   **/
-  @ApiModelProperty(value = "Headline title summarising disruption information")
+  @Schema(description = "Headline title summarising disruption information")
   public String getTitle() {
     return title;
   }
@@ -124,7 +123,7 @@ public class V3Disruption {
    * URL of relevant article on PTV website
    * @return url
   **/
-  @ApiModelProperty(value = "URL of relevant article on PTV website")
+  @Schema(description = "URL of relevant article on PTV website")
   public String getUrl() {
     return url;
   }
@@ -142,7 +141,7 @@ public class V3Disruption {
    * Description of the disruption
    * @return description
   **/
-  @ApiModelProperty(value = "Description of the disruption")
+  @Schema(description = "Description of the disruption")
   public String getDescription() {
     return description;
   }
@@ -160,7 +159,7 @@ public class V3Disruption {
    * Status of the disruption (e.g. \&quot;Planned\&quot;, \&quot;Current\&quot;)
    * @return disruptionStatus
   **/
-  @ApiModelProperty(value = "Status of the disruption (e.g. \"Planned\", \"Current\")")
+  @Schema(description = "Status of the disruption (e.g. \"Planned\", \"Current\")")
   public String getDisruptionStatus() {
     return disruptionStatus;
   }
@@ -178,7 +177,7 @@ public class V3Disruption {
    * Type of disruption
    * @return disruptionType
   **/
-  @ApiModelProperty(value = "Type of disruption")
+  @Schema(description = "Type of disruption")
   public String getDisruptionType() {
     return disruptionType;
   }
@@ -196,7 +195,7 @@ public class V3Disruption {
    * Date and time disruption information is published on PTV website, in ISO 8601 UTC format
    * @return publishedOn
   **/
-  @ApiModelProperty(value = "Date and time disruption information is published on PTV website, in ISO 8601 UTC format")
+  @Schema(description = "Date and time disruption information is published on PTV website, in ISO 8601 UTC format")
   public OffsetDateTime getPublishedOn() {
     return publishedOn;
   }
@@ -214,7 +213,7 @@ public class V3Disruption {
    * Date and time disruption information was last updated by PTV, in ISO 8601 UTC format
    * @return lastUpdated
   **/
-  @ApiModelProperty(value = "Date and time disruption information was last updated by PTV, in ISO 8601 UTC format")
+  @Schema(description = "Date and time disruption information was last updated by PTV, in ISO 8601 UTC format")
   public OffsetDateTime getLastUpdated() {
     return lastUpdated;
   }
@@ -232,7 +231,7 @@ public class V3Disruption {
    * Date and time at which disruption begins, in ISO 8601 UTC format
    * @return fromDate
   **/
-  @ApiModelProperty(value = "Date and time at which disruption begins, in ISO 8601 UTC format")
+  @Schema(description = "Date and time at which disruption begins, in ISO 8601 UTC format")
   public OffsetDateTime getFromDate() {
     return fromDate;
   }
@@ -250,7 +249,7 @@ public class V3Disruption {
    * Date and time at which disruption ends, in ISO 8601 UTC format (returns null if unknown)
    * @return toDate
   **/
-  @ApiModelProperty(value = "Date and time at which disruption ends, in ISO 8601 UTC format (returns null if unknown)")
+  @Schema(description = "Date and time at which disruption ends, in ISO 8601 UTC format (returns null if unknown)")
   public OffsetDateTime getToDate() {
     return toDate;
   }
@@ -276,7 +275,7 @@ public class V3Disruption {
    * Route relevant to a disruption (if applicable)
    * @return routes
   **/
-  @ApiModelProperty(value = "Route relevant to a disruption (if applicable)")
+  @Schema(description = "Route relevant to a disruption (if applicable)")
   public List<V3DisruptionRoute> getRoutes() {
     return routes;
   }
@@ -302,7 +301,7 @@ public class V3Disruption {
    * Stop relevant to a disruption (if applicable)
    * @return stops
   **/
-  @ApiModelProperty(value = "Stop relevant to a disruption (if applicable)")
+  @Schema(description = "Stop relevant to a disruption (if applicable)")
   public List<V3DisruptionStop> getStops() {
     return stops;
   }
@@ -320,7 +319,7 @@ public class V3Disruption {
    * Get colour
    * @return colour
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public String getColour() {
     return colour;
   }
@@ -338,7 +337,7 @@ public class V3Disruption {
    * Get displayOnBoard
    * @return displayOnBoard
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public Boolean isDisplayOnBoard() {
     return displayOnBoard;
   }
@@ -356,7 +355,7 @@ public class V3Disruption {
    * Get displayStatus
    * @return displayStatus
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public Boolean isDisplayStatus() {
     return displayStatus;
   }
@@ -434,4 +433,3 @@ public class V3Disruption {
   }
 
 }
-

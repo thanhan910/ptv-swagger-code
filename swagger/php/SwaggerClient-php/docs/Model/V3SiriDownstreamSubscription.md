@@ -15,6 +15,5 @@ Name | Type | Description | Notes
 **preview_interval** | **string** |  | [optional] 
 **topics** | [**\Swagger\Client\Model\V3SiriDownstreamSubscriptionTopic[]**](V3SiriDownstreamSubscriptionTopic.md) |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

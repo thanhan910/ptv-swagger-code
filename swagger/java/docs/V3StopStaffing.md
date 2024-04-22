@@ -1,4 +1,3 @@
-
 # V3StopStaffing
 
 ## Properties
@@ -35,6 +34,3 @@ Name | Type | Description | Notes
 **wedAmTo** | **String** | Stop staffing hours |  [optional]
 **wedPmFrom** | **String** | Stop staffing hours |  [optional]
 **wedPmTo** | **String** | Stop staffing hours |  [optional]
-
-
-

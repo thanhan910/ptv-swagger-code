@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,15 +19,15 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3DisruptionDirection;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3DisruptionRoute
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3DisruptionRoute {
   @SerializedName("route_type")
   private Integer routeType = null;
@@ -57,7 +56,7 @@ public class V3DisruptionRoute {
    * Transport mode identifier
    * @return routeType
   **/
-  @ApiModelProperty(value = "Transport mode identifier")
+  @Schema(description = "Transport mode identifier")
   public Integer getRouteType() {
     return routeType;
   }
@@ -75,7 +74,7 @@ public class V3DisruptionRoute {
    * Route identifier
    * @return routeId
   **/
-  @ApiModelProperty(value = "Route identifier")
+  @Schema(description = "Route identifier")
   public Integer getRouteId() {
     return routeId;
   }
@@ -93,7 +92,7 @@ public class V3DisruptionRoute {
    * Name of route
    * @return routeName
   **/
-  @ApiModelProperty(value = "Name of route")
+  @Schema(description = "Name of route")
   public String getRouteName() {
     return routeName;
   }
@@ -111,7 +110,7 @@ public class V3DisruptionRoute {
    * Route number presented to public (i.e. not route_id)
    * @return routeNumber
   **/
-  @ApiModelProperty(value = "Route number presented to public (i.e. not route_id)")
+  @Schema(description = "Route number presented to public (i.e. not route_id)")
   public String getRouteNumber() {
     return routeNumber;
   }
@@ -129,7 +128,7 @@ public class V3DisruptionRoute {
    * GTFS Identifer of the route
    * @return routeGtfsId
   **/
-  @ApiModelProperty(value = "GTFS Identifer of the route")
+  @Schema(description = "GTFS Identifer of the route")
   public String getRouteGtfsId() {
     return routeGtfsId;
   }
@@ -144,10 +143,10 @@ public class V3DisruptionRoute {
   }
 
    /**
-   * Direction of travel relevant to a disruption (if applicable)
+   * Get direction
    * @return direction
   **/
-  @ApiModelProperty(value = "Direction of travel relevant to a disruption (if applicable)")
+  @Schema(description = "")
   public V3DisruptionDirection getDirection() {
     return direction;
   }
@@ -207,4 +206,3 @@ public class V3DisruptionRoute {
   }
 
 }
-

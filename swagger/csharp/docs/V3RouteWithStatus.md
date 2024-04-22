@@ -3,7 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**RouteServiceStatus** | [**V3RouteServiceStatus**](V3RouteServiceStatus.md) | Service status for the route (indicates disruptions) | [optional] 
+**RouteServiceStatus** | [**V3RouteServiceStatus**](V3RouteServiceStatus.md) |  | [optional] 
 **RouteType** | **int?** | Transport mode identifier | [optional] 
 **RouteId** | **int?** | Route identifier | [optional] 
 **RouteName** | **string** | Name of route | [optional] 

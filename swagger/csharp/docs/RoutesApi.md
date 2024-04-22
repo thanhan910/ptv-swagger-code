@@ -1,12 +1,11 @@
 # IO.Swagger.Api.RoutesApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**RoutesOneOrMoreRoutes**](RoutesApi.md#routesoneormoreroutes) | **GET** /v3/routes | View route names and numbers for all routes
 [**RoutesRouteFromId**](RoutesApi.md#routesroutefromid) | **GET** /v3/routes/{route_id} | View route name and number for specific route ID
-
 
 <a name="routesoneormoreroutes"></a>
 # **RoutesOneOrMoreRoutes**
@@ -29,7 +28,7 @@ namespace Example
         public void main()
         {
             var apiInstance = new RoutesApi();
-            var routeTypes = 56;  // List<int?> | Filter by route_type; values returned via RouteTypes API (optional) 
+            var routeTypes = new List<int?>(); // List<int?> | Filter by route_type; values returned via RouteTypes API (optional) 
             var routeName = routeName_example;  // string | Filter by name  of route (accepts partial route name matches) (optional) 
             var token = token_example;  // string | Please ignore (optional) 
             var devid = devid_example;  // string | Your developer id (optional) 
@@ -54,7 +53,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **routeTypes** | **List&lt;int?&gt;**| Filter by route_type; values returned via RouteTypes API | [optional] 
+ **routeTypes** | [**List&lt;int?&gt;**](int?.md)| Filter by route_type; values returned via RouteTypes API | [optional] 
  **routeName** | **string**| Filter by name  of route (accepts partial route name matches) | [optional] 
  **token** | **string**| Please ignore | [optional] 
  **devid** | **string**| Your developer id | [optional] 
@@ -74,7 +73,6 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="routesroutefromid"></a>
 # **RoutesRouteFromId**
 > V3RouteResponse RoutesRouteFromId (int? routeId, bool? includeGeopath = null, DateTime? geopathUtc = null, string token = null, string devid = null, string signature = null)
@@ -143,4 +141,3 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

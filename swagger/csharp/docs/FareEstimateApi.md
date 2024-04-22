@@ -1,11 +1,10 @@
 # IO.Swagger.Api.FareEstimateApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**FareEstimateGetFareEstimateByZone**](FareEstimateApi.md#fareestimategetfareestimatebyzone) | **GET** /v3/fare_estimate/min_zone/{minZone}/max_zone/{maxZone} | Estimate a fare by zone
-
 
 <a name="fareestimategetfareestimatebyzone"></a>
 # **FareEstimateGetFareEstimateByZone**
@@ -33,7 +32,7 @@ namespace Example
             var journeyTouchOnUtc = 2013-10-20T19:20:30+01:00;  // DateTime? | JourneyTouchOnUtc in format yyyy-M-d h:m (e.g 2016-5-31 16:53). (optional) 
             var journeyTouchOffUtc = 2013-10-20T19:20:30+01:00;  // DateTime? | JourneyTouchOffUtc in format yyyy-M-d h:m (e.g 2016-5-31 16:53). (optional) 
             var isJourneyInFreeTramZone = true;  // bool? |  (optional) 
-            var travelledRouteTypes = 56;  // List<int?> |  (optional) 
+            var travelledRouteTypes = new List<int?>(); // List<int?> |  (optional) 
             var token = token_example;  // string | Please ignore (optional) 
             var devid = devid_example;  // string | Your developer id (optional) 
             var signature = signature_example;  // string | Authentication signature for request (optional) 
@@ -62,7 +61,7 @@ Name | Type | Description  | Notes
  **journeyTouchOnUtc** | **DateTime?**| JourneyTouchOnUtc in format yyyy-M-d h:m (e.g 2016-5-31 16:53). | [optional] 
  **journeyTouchOffUtc** | **DateTime?**| JourneyTouchOffUtc in format yyyy-M-d h:m (e.g 2016-5-31 16:53). | [optional] 
  **isJourneyInFreeTramZone** | **bool?**|  | [optional] 
- **travelledRouteTypes** | **List&lt;int?&gt;**|  | [optional] 
+ **travelledRouteTypes** | [**List&lt;int?&gt;**](int?.md)|  | [optional] 
  **token** | **string**| Please ignore | [optional] 
  **devid** | **string**| Your developer id | [optional] 
  **signature** | **string**| Authentication signature for request | [optional] 
@@ -81,4 +80,3 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

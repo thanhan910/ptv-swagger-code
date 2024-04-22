@@ -1,4 +1,3 @@
-
 # V3ResultStop
 
 ## Properties
@@ -14,6 +13,3 @@ Name | Type | Description | Notes
 **stopId** | **Integer** | Stop identifier |  [optional]
 **stopName** | **String** | Name of stop |  [optional]
 **stopLandmark** | **String** | Landmark in proximity of stop |  [optional]
-
-
-

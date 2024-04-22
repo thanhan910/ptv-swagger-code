@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3SiriReferenceDataDetail
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3SiriReferenceDataDetail {
   @SerializedName("route_id")
   private Integer routeId = null;
@@ -53,7 +52,7 @@ public class V3SiriReferenceDataDetail {
    * Get routeId
    * @return routeId
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public Integer getRouteId() {
     return routeId;
   }
@@ -71,7 +70,7 @@ public class V3SiriReferenceDataDetail {
    * Route number
    * @return routeNumberShort
   **/
-  @ApiModelProperty(value = "Route number")
+  @Schema(description = "Route number")
   public String getRouteNumberShort() {
     return routeNumberShort;
   }
@@ -89,7 +88,7 @@ public class V3SiriReferenceDataDetail {
    * Get directionId
    * @return directionId
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public Integer getDirectionId() {
     return directionId;
   }
@@ -107,7 +106,7 @@ public class V3SiriReferenceDataDetail {
    * Authority (Upstream SIRI provider) of a route and direction
    * @return trackingSupplierId
   **/
-  @ApiModelProperty(value = "Authority (Upstream SIRI provider) of a route and direction")
+  @Schema(description = "Authority (Upstream SIRI provider) of a route and direction")
   public Integer getTrackingSupplierId() {
     return trackingSupplierId;
   }
@@ -125,7 +124,7 @@ public class V3SiriReferenceDataDetail {
    * Get routeType
    * @return routeType
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public Integer getRouteType() {
     return routeType;
   }
@@ -183,4 +182,3 @@ public class V3SiriReferenceDataDetail {
   }
 
 }
-

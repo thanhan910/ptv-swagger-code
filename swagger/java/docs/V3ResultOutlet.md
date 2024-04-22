@@ -1,4 +1,3 @@
-
 # V3ResultOutlet
 
 ## Properties
@@ -19,7 +18,4 @@ Name | Type | Description | Notes
 **outletBusinessHourFri** | **String** | The business hours on Friday |  [optional]
 **outletBusinessHourSat** | **String** | The business hours on Saturday |  [optional]
 **outletBusinessHourSun** | **String** | The business hours on Sunday |  [optional]
-**outletNotes** | **String** | Any additional notes for the outlet such as &#39;Buy pre-loaded myki cards only&#39;. May be null/empty. |  [optional]
-
-
-
+**outletNotes** | **String** | Any additional notes for the outlet such as &#x27;Buy pre-loaded myki cards only&#x27;. May be null/empty. |  [optional]

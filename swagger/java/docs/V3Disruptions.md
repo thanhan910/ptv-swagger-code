@@ -1,4 +1,3 @@
-
 # V3Disruptions
 
 ## Properties
@@ -18,6 +17,3 @@ Name | Type | Description | Notes
 **interstateTrain** | [**List&lt;V3Disruption&gt;**](V3Disruption.md) | Subset of disruption information applicable to interstate train |  [optional]
 **skybus** | [**List&lt;V3Disruption&gt;**](V3Disruption.md) | Subset of disruption information applicable to skybus |  [optional]
 **taxi** | [**List&lt;V3Disruption&gt;**](V3Disruption.md) | Subset of disruption information applicable to taxi |  [optional]
-
-
-

@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,18 +19,18 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3StopModel;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import org.threeten.bp.OffsetDateTime;
-
 /**
  * V3PatternDeparture
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3PatternDeparture {
   @SerializedName("skipped_stops")
   private List<V3StopModel> skippedStops = null;
@@ -89,7 +88,7 @@ public class V3PatternDeparture {
    * The stops to be skipped following the current departure in order.
    * @return skippedStops
   **/
-  @ApiModelProperty(value = "The stops to be skipped following the current departure in order.")
+  @Schema(description = "The stops to be skipped following the current departure in order.")
   public List<V3StopModel> getSkippedStops() {
     return skippedStops;
   }
@@ -107,7 +106,7 @@ public class V3PatternDeparture {
    * Stop identifier
    * @return stopId
   **/
-  @ApiModelProperty(value = "Stop identifier")
+  @Schema(description = "Stop identifier")
   public Integer getStopId() {
     return stopId;
   }
@@ -125,7 +124,7 @@ public class V3PatternDeparture {
    * Route identifier
    * @return routeId
   **/
-  @ApiModelProperty(value = "Route identifier")
+  @Schema(description = "Route identifier")
   public Integer getRouteId() {
     return routeId;
   }
@@ -138,7 +137,7 @@ public class V3PatternDeparture {
    * Numeric trip/service run identifier. Defaults to -1 when run identifier is Alphanumeric
    * @return runId
   **/
-  @ApiModelProperty(value = "Numeric trip/service run identifier. Defaults to -1 when run identifier is Alphanumeric")
+  @Schema(description = "Numeric trip/service run identifier. Defaults to -1 when run identifier is Alphanumeric")
   public Integer getRunId() {
     return runId;
   }
@@ -152,7 +151,7 @@ public class V3PatternDeparture {
    * Alphanumeric trip/service run identifier
    * @return runRef
   **/
-  @ApiModelProperty(value = "Alphanumeric trip/service run identifier")
+  @Schema(description = "Alphanumeric trip/service run identifier")
   public String getRunRef() {
     return runRef;
   }
@@ -170,7 +169,7 @@ public class V3PatternDeparture {
    * Direction of travel identifier
    * @return directionId
   **/
-  @ApiModelProperty(value = "Direction of travel identifier")
+  @Schema(description = "Direction of travel identifier")
   public Integer getDirectionId() {
     return directionId;
   }
@@ -196,7 +195,7 @@ public class V3PatternDeparture {
    * Disruption information identifier(s)
    * @return disruptionIds
   **/
-  @ApiModelProperty(value = "Disruption information identifier(s)")
+  @Schema(description = "Disruption information identifier(s)")
   public List<Long> getDisruptionIds() {
     return disruptionIds;
   }
@@ -214,7 +213,7 @@ public class V3PatternDeparture {
    * Scheduled (i.e. timetabled) departure time and date in ISO 8601 UTC format
    * @return scheduledDepartureUtc
   **/
-  @ApiModelProperty(value = "Scheduled (i.e. timetabled) departure time and date in ISO 8601 UTC format")
+  @Schema(description = "Scheduled (i.e. timetabled) departure time and date in ISO 8601 UTC format")
   public OffsetDateTime getScheduledDepartureUtc() {
     return scheduledDepartureUtc;
   }
@@ -232,7 +231,7 @@ public class V3PatternDeparture {
    * Real-time estimate of departure time and date in ISO 8601 UTC format
    * @return estimatedDepartureUtc
   **/
-  @ApiModelProperty(value = "Real-time estimate of departure time and date in ISO 8601 UTC format")
+  @Schema(description = "Real-time estimate of departure time and date in ISO 8601 UTC format")
   public OffsetDateTime getEstimatedDepartureUtc() {
     return estimatedDepartureUtc;
   }
@@ -250,7 +249,7 @@ public class V3PatternDeparture {
    * Indicates if the metropolitan train service is at the platform at the time of query; returns false for other modes
    * @return atPlatform
   **/
-  @ApiModelProperty(value = "Indicates if the metropolitan train service is at the platform at the time of query; returns false for other modes")
+  @Schema(description = "Indicates if the metropolitan train service is at the platform at the time of query; returns false for other modes")
   public Boolean isAtPlatform() {
     return atPlatform;
   }
@@ -268,7 +267,7 @@ public class V3PatternDeparture {
    * Platform number at stop (metropolitan train only; returns null for other modes)
    * @return platformNumber
   **/
-  @ApiModelProperty(value = "Platform number at stop (metropolitan train only; returns null for other modes)")
+  @Schema(description = "Platform number at stop (metropolitan train only; returns null for other modes)")
   public String getPlatformNumber() {
     return platformNumber;
   }
@@ -286,7 +285,7 @@ public class V3PatternDeparture {
    * Flag indicating special condition for run (e.g. RR Reservations Required, GC Guaranteed Connection, DOO Drop Off Only, PUO Pick Up Only, MO Mondays only, TU Tuesdays only, WE Wednesdays only, TH Thursdays only, FR Fridays only, SS School days only; ignore E flag)
    * @return flags
   **/
-  @ApiModelProperty(value = "Flag indicating special condition for run (e.g. RR Reservations Required, GC Guaranteed Connection, DOO Drop Off Only, PUO Pick Up Only, MO Mondays only, TU Tuesdays only, WE Wednesdays only, TH Thursdays only, FR Fridays only, SS School days only; ignore E flag)")
+  @Schema(description = "Flag indicating special condition for run (e.g. RR Reservations Required, GC Guaranteed Connection, DOO Drop Off Only, PUO Pick Up Only, MO Mondays only, TU Tuesdays only, WE Wednesdays only, TH Thursdays only, FR Fridays only, SS School days only; ignore E flag)")
   public String getFlags() {
     return flags;
   }
@@ -304,7 +303,7 @@ public class V3PatternDeparture {
    * Chronological sequence for the departures in a run. Order ascendingly by this field to get chronological order (earliest first) of departures with the same run_ref. NOTE, this field is not always N+1 or N-1 of the previous or following departure. e.g 100, 200, 250, 300 instead of 1, 2, 3, 4
    * @return departureSequence
   **/
-  @ApiModelProperty(value = "Chronological sequence for the departures in a run. Order ascendingly by this field to get chronological order (earliest first) of departures with the same run_ref. NOTE, this field is not always N+1 or N-1 of the previous or following departure. e.g 100, 200, 250, 300 instead of 1, 2, 3, 4")
+  @Schema(description = "Chronological sequence for the departures in a run. Order ascendingly by this field to get chronological order (earliest first) of departures with the same run_ref. NOTE, this field is not always N+1 or N-1 of the previous or following departure. e.g 100, 200, 250, 300 instead of 1, 2, 3, 4")
   public Integer getDepartureSequence() {
     return departureSequence;
   }
@@ -378,4 +377,3 @@ public class V3PatternDeparture {
   }
 
 }
-

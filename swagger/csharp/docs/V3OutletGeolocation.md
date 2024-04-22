@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **OutletBusinessHourFri** | **string** | The business hours on Friday | [optional] 
 **OutletBusinessHourSat** | **string** | The business hours on Saturday | [optional] 
 **OutletBusinessHourSun** | **string** | The business hours on Sunday | [optional] 
-**OutletNotes** | **string** | Any additional notes for the outlet such as &#39;Buy pre-loaded myki cards only&#39;. May be null/empty. | [optional] 
+**OutletNotes** | **string** | Any additional notes for the outlet such as &#x27;Buy pre-loaded myki cards only&#x27;. May be null/empty. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

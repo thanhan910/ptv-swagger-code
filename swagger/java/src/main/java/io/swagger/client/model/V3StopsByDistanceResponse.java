@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,21 +19,21 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3Disruption;
 import io.swagger.client.model.V3Status;
 import io.swagger.client.model.V3StopGeosearch;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 /**
  * V3StopsByDistanceResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3StopsByDistanceResponse {
   @SerializedName("stops")
   private List<V3StopGeosearch> stops = null;
@@ -62,7 +61,7 @@ public class V3StopsByDistanceResponse {
    * Train stations, tram stops, bus stops, regional coach stops or Night Bus stops
    * @return stops
   **/
-  @ApiModelProperty(value = "Train stations, tram stops, bus stops, regional coach stops or Night Bus stops")
+  @Schema(description = "Train stations, tram stops, bus stops, regional coach stops or Night Bus stops")
   public List<V3StopGeosearch> getStops() {
     return stops;
   }
@@ -88,7 +87,7 @@ public class V3StopsByDistanceResponse {
    * Disruption information applicable to relevant routes or stops
    * @return disruptions
   **/
-  @ApiModelProperty(value = "Disruption information applicable to relevant routes or stops")
+  @Schema(description = "Disruption information applicable to relevant routes or stops")
   public Map<String, V3Disruption> getDisruptions() {
     return disruptions;
   }
@@ -103,10 +102,10 @@ public class V3StopsByDistanceResponse {
   }
 
    /**
-   * API Status / Metadata
+   * Get status
    * @return status
   **/
-  @ApiModelProperty(value = "API Status / Metadata")
+  @Schema(description = "")
   public V3Status getStatus() {
     return status;
   }
@@ -160,4 +159,3 @@ public class V3StopsByDistanceResponse {
   }
 
 }
-

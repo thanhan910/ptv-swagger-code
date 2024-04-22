@@ -1,12 +1,11 @@
 # IO.Swagger.Api.OutletsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**OutletsGetAllOutlets**](OutletsApi.md#outletsgetalloutlets) | **GET** /v3/outlets | List all ticket outlets
 [**OutletsGetOutletsByGeolocation**](OutletsApi.md#outletsgetoutletsbygeolocation) | **GET** /v3/outlets/location/{latitude},{longitude} | List ticket outlets near a specific location
-
 
 <a name="outletsgetalloutlets"></a>
 # **OutletsGetAllOutlets**
@@ -72,7 +71,6 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="outletsgetoutletsbygeolocation"></a>
 # **OutletsGetOutletsByGeolocation**
 > V3OutletGeolocationResponse OutletsGetOutletsByGeolocation (float? latitude, float? longitude, double? maxDistance = null, int? maxResults = null, string token = null, string devid = null, string signature = null)
@@ -143,4 +141,3 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

@@ -1,4 +1,3 @@
-
 # V3VehiclePosition
 
 ## Properties
@@ -13,6 +12,3 @@ Name | Type | Description | Notes
 **supplier** | **String** | Supplier of vehicle position data. |  [optional]
 **datetimeUtc** | [**OffsetDateTime**](OffsetDateTime.md) | Date and time that the vehicle position data was supplied. |  [optional]
 **expiryTime** | [**OffsetDateTime**](OffsetDateTime.md) | CIS - Metro Train Vehicle Location data expiry time |  [optional]
-
-
-

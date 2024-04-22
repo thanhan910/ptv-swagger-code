@@ -1,4 +1,3 @@
-
 # V3VehicleDescriptor
 
 ## Properties
@@ -11,6 +10,3 @@ Name | Type | Description | Notes
 **description** | **String** | Vehicle description such as \&quot;6 Car Comeng\&quot;, \&quot;6 Car Xtrapolis\&quot;, \&quot;3 Car Comeng\&quot;, \&quot;6 Car Siemens\&quot;, \&quot;3 Car Siemens\&quot;. May be null/empty.  Only available for some metropolitan train runs. |  [optional]
 **supplier** | **String** | Supplier of vehicle descriptor data. |  [optional]
 **length** | **String** | The length of the vehicle. Applies to CIS - Metro Trains |  [optional]
-
-
-

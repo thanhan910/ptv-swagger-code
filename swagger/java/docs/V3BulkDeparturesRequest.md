@@ -1,4 +1,3 @@
-
 # V3BulkDeparturesRequest
 
 ## Properties
@@ -10,7 +9,6 @@ Name | Type | Description | Notes
 **includeCancelled** | **Boolean** | Indicates if cancelled services (if they exist) are returned (default &#x3D; false) - metropolitan train only |  [optional]
 **includeGeopath** | **Boolean** | Indicates if the route geopath should be returned |  [optional]
 **expand** | [**List&lt;ExpandEnum&gt;**](#List&lt;ExpandEnum&gt;) | List objects to be returned in full (i.e. expanded) - options include: all, stop, route, run, direction, disruption, none |  [optional]
-
 
 <a name="List<ExpandEnum>"></a>
 ## Enum: List&lt;ExpandEnum&gt;
@@ -25,6 +23,3 @@ DISRUPTION | &quot;Disruption&quot;
 VEHICLEDESCRIPTOR | &quot;VehicleDescriptor&quot;
 VEHICLEPOSITION | &quot;VehiclePosition&quot;
 NONE | &quot;None&quot;
-
-
-

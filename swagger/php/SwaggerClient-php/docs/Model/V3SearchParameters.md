@@ -13,6 +13,5 @@ Name | Type | Description | Notes
 **match_route_by_suburb** | **bool** | Indicates whether to find routes by suburbs in the search term (default &#x3D; true) | [optional] 
 **match_stop_by_gtfs_stop_id** | **bool** | Indicates whether to search for stops according to a metlink stop ID (default &#x3D; false) | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,17 +19,17 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3Disruption;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * V3Disruptions
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3Disruptions {
   @SerializedName("general")
   private List<V3Disruption> general = null;
@@ -91,7 +90,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to multiple route_types
    * @return general
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to multiple route_types")
+  @Schema(description = "Subset of disruption information applicable to multiple route_types")
   public List<V3Disruption> getGeneral() {
     return general;
   }
@@ -117,7 +116,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to metropolitan train
    * @return metroTrain
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to metropolitan train")
+  @Schema(description = "Subset of disruption information applicable to metropolitan train")
   public List<V3Disruption> getMetroTrain() {
     return metroTrain;
   }
@@ -143,7 +142,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to metropolitan tram
    * @return metroTram
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to metropolitan tram")
+  @Schema(description = "Subset of disruption information applicable to metropolitan tram")
   public List<V3Disruption> getMetroTram() {
     return metroTram;
   }
@@ -169,7 +168,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to metropolitan bus
    * @return metroBus
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to metropolitan bus")
+  @Schema(description = "Subset of disruption information applicable to metropolitan bus")
   public List<V3Disruption> getMetroBus() {
     return metroBus;
   }
@@ -195,7 +194,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to V/Line train
    * @return regionalTrain
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to V/Line train")
+  @Schema(description = "Subset of disruption information applicable to V/Line train")
   public List<V3Disruption> getRegionalTrain() {
     return regionalTrain;
   }
@@ -221,7 +220,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to V/Line coach
    * @return regionalCoach
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to V/Line coach")
+  @Schema(description = "Subset of disruption information applicable to V/Line coach")
   public List<V3Disruption> getRegionalCoach() {
     return regionalCoach;
   }
@@ -247,7 +246,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to regional bus
    * @return regionalBus
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to regional bus")
+  @Schema(description = "Subset of disruption information applicable to regional bus")
   public List<V3Disruption> getRegionalBus() {
     return regionalBus;
   }
@@ -273,7 +272,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to school bus
    * @return schoolBus
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to school bus")
+  @Schema(description = "Subset of disruption information applicable to school bus")
   public List<V3Disruption> getSchoolBus() {
     return schoolBus;
   }
@@ -299,7 +298,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to telebus services
    * @return telebus
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to telebus services")
+  @Schema(description = "Subset of disruption information applicable to telebus services")
   public List<V3Disruption> getTelebus() {
     return telebus;
   }
@@ -325,7 +324,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to night bus
    * @return nightBus
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to night bus")
+  @Schema(description = "Subset of disruption information applicable to night bus")
   public List<V3Disruption> getNightBus() {
     return nightBus;
   }
@@ -351,7 +350,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to ferry
    * @return ferry
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to ferry")
+  @Schema(description = "Subset of disruption information applicable to ferry")
   public List<V3Disruption> getFerry() {
     return ferry;
   }
@@ -377,7 +376,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to interstate train
    * @return interstateTrain
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to interstate train")
+  @Schema(description = "Subset of disruption information applicable to interstate train")
   public List<V3Disruption> getInterstateTrain() {
     return interstateTrain;
   }
@@ -403,7 +402,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to skybus
    * @return skybus
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to skybus")
+  @Schema(description = "Subset of disruption information applicable to skybus")
   public List<V3Disruption> getSkybus() {
     return skybus;
   }
@@ -429,7 +428,7 @@ public class V3Disruptions {
    * Subset of disruption information applicable to taxi
    * @return taxi
   **/
-  @ApiModelProperty(value = "Subset of disruption information applicable to taxi")
+  @Schema(description = "Subset of disruption information applicable to taxi")
   public List<V3Disruption> getTaxi() {
     return taxi;
   }
@@ -505,4 +504,3 @@ public class V3Disruptions {
   }
 
 }
-

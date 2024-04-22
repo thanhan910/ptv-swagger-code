@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.api;
 
 import io.swagger.client.ApiCallback;
@@ -72,7 +71,7 @@ public class RunsApi {
      */
     public com.squareup.okhttp.Call runsForRouteCall(Integer routeId, List<String> expand, OffsetDateTime dateUtc, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/runs/route/{route_id}"
             .replaceAll("\\{" + "route_id" + "\\}", apiClient.escapeString(routeId.toString()));
@@ -121,19 +120,21 @@ public class RunsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call runsForRouteValidateBeforeCall(Integer routeId, List<String> expand, OffsetDateTime dateUtc, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'routeId' is set
         if (routeId == null) {
             throw new ApiException("Missing the required parameter 'routeId' when calling runsForRoute(Async)");
         }
         
-
         com.squareup.okhttp.Call call = runsForRouteCall(routeId, expand, dateUtc, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**
@@ -226,7 +227,7 @@ public class RunsApi {
      */
     public com.squareup.okhttp.Call runsForRouteAndRouteTypeCall(Integer routeId, Integer routeType, List<String> expand, OffsetDateTime dateUtc, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/runs/route/{route_id}/route_type/{route_type}"
             .replaceAll("\\{" + "route_id" + "\\}", apiClient.escapeString(routeId.toString()))
@@ -276,29 +277,29 @@ public class RunsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call runsForRouteAndRouteTypeValidateBeforeCall(Integer routeId, Integer routeType, List<String> expand, OffsetDateTime dateUtc, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'routeId' is set
         if (routeId == null) {
             throw new ApiException("Missing the required parameter 'routeId' when calling runsForRouteAndRouteType(Async)");
         }
-        
         // verify the required parameter 'routeType' is set
         if (routeType == null) {
             throw new ApiException("Missing the required parameter 'routeType' when calling runsForRouteAndRouteType(Async)");
         }
-        
         // verify the required parameter 'expand' is set
         if (expand == null) {
             throw new ApiException("Missing the required parameter 'expand' when calling runsForRouteAndRouteType(Async)");
         }
         
-
         com.squareup.okhttp.Call call = runsForRouteAndRouteTypeCall(routeId, routeType, expand, dateUtc, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**
@@ -394,7 +395,7 @@ public class RunsApi {
      */
     public com.squareup.okhttp.Call runsForRunCall(String runRef, List<String> expand, OffsetDateTime dateUtc, Boolean includeGeopath, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/runs/{run_ref}"
             .replaceAll("\\{" + "run_ref" + "\\}", apiClient.escapeString(runRef.toString()));
@@ -445,24 +446,25 @@ public class RunsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call runsForRunValidateBeforeCall(String runRef, List<String> expand, OffsetDateTime dateUtc, Boolean includeGeopath, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'runRef' is set
         if (runRef == null) {
             throw new ApiException("Missing the required parameter 'runRef' when calling runsForRun(Async)");
         }
-        
         // verify the required parameter 'expand' is set
         if (expand == null) {
             throw new ApiException("Missing the required parameter 'expand' when calling runsForRun(Async)");
         }
         
-
         com.squareup.okhttp.Call call = runsForRunCall(runRef, expand, dateUtc, includeGeopath, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**
@@ -559,7 +561,7 @@ public class RunsApi {
      */
     public com.squareup.okhttp.Call runsForRunAndRouteTypeCall(String runRef, Integer routeType, List<String> expand, OffsetDateTime dateUtc, Boolean includeGeopath, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/runs/{run_ref}/route_type/{route_type}"
             .replaceAll("\\{" + "run_ref" + "\\}", apiClient.escapeString(runRef.toString()))
@@ -611,29 +613,29 @@ public class RunsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call runsForRunAndRouteTypeValidateBeforeCall(String runRef, Integer routeType, List<String> expand, OffsetDateTime dateUtc, Boolean includeGeopath, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'runRef' is set
         if (runRef == null) {
             throw new ApiException("Missing the required parameter 'runRef' when calling runsForRunAndRouteType(Async)");
         }
-        
         // verify the required parameter 'routeType' is set
         if (routeType == null) {
             throw new ApiException("Missing the required parameter 'routeType' when calling runsForRunAndRouteType(Async)");
         }
-        
         // verify the required parameter 'expand' is set
         if (expand == null) {
             throw new ApiException("Missing the required parameter 'expand' when calling runsForRunAndRouteType(Async)");
         }
         
-
         com.squareup.okhttp.Call call = runsForRunAndRouteTypeCall(runRef, routeType, expand, dateUtc, includeGeopath, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**

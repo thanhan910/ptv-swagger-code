@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.api;
 
 import io.swagger.client.ApiCallback;
@@ -74,7 +73,7 @@ public class FareEstimateApi {
      */
     public com.squareup.okhttp.Call fareEstimateGetFareEstimateByZoneCall(Integer minZone, Integer maxZone, OffsetDateTime journeyTouchOnUtc, OffsetDateTime journeyTouchOffUtc, Boolean isJourneyInFreeTramZone, List<Integer> travelledRouteTypes, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/fare_estimate/min_zone/{minZone}/max_zone/{maxZone}"
             .replaceAll("\\{" + "minZone" + "\\}", apiClient.escapeString(minZone.toString()))
@@ -128,24 +127,25 @@ public class FareEstimateApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call fareEstimateGetFareEstimateByZoneValidateBeforeCall(Integer minZone, Integer maxZone, OffsetDateTime journeyTouchOnUtc, OffsetDateTime journeyTouchOffUtc, Boolean isJourneyInFreeTramZone, List<Integer> travelledRouteTypes, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'minZone' is set
         if (minZone == null) {
             throw new ApiException("Missing the required parameter 'minZone' when calling fareEstimateGetFareEstimateByZone(Async)");
         }
-        
         // verify the required parameter 'maxZone' is set
         if (maxZone == null) {
             throw new ApiException("Missing the required parameter 'maxZone' when calling fareEstimateGetFareEstimateByZone(Async)");
         }
         
-
         com.squareup.okhttp.Call call = fareEstimateGetFareEstimateByZoneCall(minZone, maxZone, journeyTouchOnUtc, journeyTouchOffUtc, isJourneyInFreeTramZone, travelledRouteTypes, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**

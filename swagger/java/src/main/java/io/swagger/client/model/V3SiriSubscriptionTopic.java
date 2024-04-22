@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3SiriSubscriptionTopic
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3SiriSubscriptionTopic {
   @SerializedName("line_ref")
   private String lineRef = null;
@@ -37,20 +36,21 @@ public class V3SiriSubscriptionTopic {
    */
   @JsonAdapter(DirectionRefEnum.Adapter.class)
   public enum DirectionRefEnum {
+    @SerializedName("1")
     NUMBER_1(1),
-    
+    @SerializedName("2")
     NUMBER_2(2),
-    
+    @SerializedName("5")
     NUMBER_5(5),
-    
+    @SerializedName("10")
     NUMBER_10(10),
-    
+    @SerializedName("16")
     NUMBER_16(16),
-    
+    @SerializedName("32")
     NUMBER_32(32),
-    
+    @SerializedName("65")
     NUMBER_65(65),
-    
+    @SerializedName("130")
     NUMBER_130(130);
 
     private Integer value;
@@ -58,7 +58,6 @@ public class V3SiriSubscriptionTopic {
     DirectionRefEnum(Integer value) {
       this.value = value;
     }
-
     public Integer getValue() {
       return value;
     }
@@ -67,31 +66,27 @@ public class V3SiriSubscriptionTopic {
     public String toString() {
       return String.valueOf(value);
     }
-
-    public static DirectionRefEnum fromValue(String text) {
+    public static DirectionRefEnum fromValue(Integer input) {
       for (DirectionRefEnum b : DirectionRefEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
       return null;
     }
-
     public static class Adapter extends TypeAdapter<DirectionRefEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final DirectionRefEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public DirectionRefEnum read(final JsonReader jsonReader) throws IOException {
-        int value = jsonReader.nextInt();
-        return DirectionRefEnum.fromValue(String.valueOf(value));
+        Object value = jsonReader.nextInt();
+        return DirectionRefEnum.fromValue((Integer)(value));
       }
     }
-  }
-
-  @SerializedName("direction_ref")
+  }  @SerializedName("direction_ref")
   private DirectionRefEnum directionRef = null;
 
   /**
@@ -99,14 +94,15 @@ public class V3SiriSubscriptionTopic {
    */
   @JsonAdapter(RouteTypeEnum.Adapter.class)
   public enum RouteTypeEnum {
+    @SerializedName("0")
     NUMBER_0(0),
-    
+    @SerializedName("1")
     NUMBER_1(1),
-    
+    @SerializedName("2")
     NUMBER_2(2),
-    
+    @SerializedName("3")
     NUMBER_3(3),
-    
+    @SerializedName("4")
     NUMBER_4(4);
 
     private Integer value;
@@ -114,7 +110,6 @@ public class V3SiriSubscriptionTopic {
     RouteTypeEnum(Integer value) {
       this.value = value;
     }
-
     public Integer getValue() {
       return value;
     }
@@ -123,31 +118,27 @@ public class V3SiriSubscriptionTopic {
     public String toString() {
       return String.valueOf(value);
     }
-
-    public static RouteTypeEnum fromValue(String text) {
+    public static RouteTypeEnum fromValue(Integer input) {
       for (RouteTypeEnum b : RouteTypeEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
       return null;
     }
-
     public static class Adapter extends TypeAdapter<RouteTypeEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final RouteTypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public RouteTypeEnum read(final JsonReader jsonReader) throws IOException {
-        int value = jsonReader.nextInt();
-        return RouteTypeEnum.fromValue(String.valueOf(value));
+        Object value = jsonReader.nextInt();
+        return RouteTypeEnum.fromValue((Integer)(value));
       }
     }
-  }
-
-  @SerializedName("route_type")
+  }  @SerializedName("route_type")
   private RouteTypeEnum routeType = null;
 
   public V3SiriSubscriptionTopic lineRef(String lineRef) {
@@ -159,7 +150,7 @@ public class V3SiriSubscriptionTopic {
    * Siri LineRef
    * @return lineRef
   **/
-  @ApiModelProperty(required = true, value = "Siri LineRef")
+  @Schema(required = true, description = "Siri LineRef")
   public String getLineRef() {
     return lineRef;
   }
@@ -177,7 +168,7 @@ public class V3SiriSubscriptionTopic {
    * Siri DirectionRef  (in, out, up, down, clockwise, counterclockwise, Inbound, Outbound)
    * @return directionRef
   **/
-  @ApiModelProperty(value = "Siri DirectionRef  (in, out, up, down, clockwise, counterclockwise, Inbound, Outbound)")
+  @Schema(description = "Siri DirectionRef  (in, out, up, down, clockwise, counterclockwise, Inbound, Outbound)")
   public DirectionRefEnum getDirectionRef() {
     return directionRef;
   }
@@ -195,7 +186,7 @@ public class V3SiriSubscriptionTopic {
    * Route Type eg. 0 (Train) 1 (Tram) 2 (Bus) 3 (Vline) 4 (NightRider)
    * @return routeType
   **/
-  @ApiModelProperty(required = true, value = "Route Type eg. 0 (Train) 1 (Tram) 2 (Bus) 3 (Vline) 4 (NightRider)")
+  @Schema(required = true, description = "Route Type eg. 0 (Train) 1 (Tram) 2 (Bus) 3 (Vline) 4 (NightRider)")
   public RouteTypeEnum getRouteType() {
     return routeType;
   }
@@ -249,4 +240,3 @@ public class V3SiriSubscriptionTopic {
   }
 
 }
-

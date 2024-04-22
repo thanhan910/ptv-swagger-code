@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,20 +19,20 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3StopAccessibility;
 import io.swagger.client.model.V3StopAmenityDetails;
 import io.swagger.client.model.V3StopLocation;
 import io.swagger.client.model.V3StopStaffing;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * V3StopDetails
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3StopDetails {
   @SerializedName("disruption_ids")
   private List<Long> disruptionIds = null;
@@ -88,7 +87,7 @@ public class V3StopDetails {
    * Disruption information identifier(s)
    * @return disruptionIds
   **/
-  @ApiModelProperty(value = "Disruption information identifier(s)")
+  @Schema(description = "Disruption information identifier(s)")
   public List<Long> getDisruptionIds() {
     return disruptionIds;
   }
@@ -106,7 +105,7 @@ public class V3StopDetails {
    * Type of metropolitan train station (i.e. \&quot;Premium\&quot;, \&quot;Host\&quot; or \&quot;Unstaffed\&quot; station); returns null for V/Line train
    * @return stationType
   **/
-  @ApiModelProperty(value = "Type of metropolitan train station (i.e. \"Premium\", \"Host\" or \"Unstaffed\" station); returns null for V/Line train")
+  @Schema(description = "Type of metropolitan train station (i.e. \"Premium\", \"Host\" or \"Unstaffed\" station); returns null for V/Line train")
   public String getStationType() {
     return stationType;
   }
@@ -124,7 +123,7 @@ public class V3StopDetails {
    * The definition applicable to the station_type; returns null for V/Line train
    * @return stationDescription
   **/
-  @ApiModelProperty(value = "The definition applicable to the station_type; returns null for V/Line train")
+  @Schema(description = "The definition applicable to the station_type; returns null for V/Line train")
   public String getStationDescription() {
     return stationDescription;
   }
@@ -142,7 +141,7 @@ public class V3StopDetails {
    * Transport mode identifier
    * @return routeType
   **/
-  @ApiModelProperty(value = "Transport mode identifier")
+  @Schema(description = "Transport mode identifier")
   public Integer getRouteType() {
     return routeType;
   }
@@ -157,10 +156,10 @@ public class V3StopDetails {
   }
 
    /**
-   * Location details of the stop
+   * Get stopLocation
    * @return stopLocation
   **/
-  @ApiModelProperty(value = "Location details of the stop")
+  @Schema(description = "")
   public V3StopLocation getStopLocation() {
     return stopLocation;
   }
@@ -175,10 +174,10 @@ public class V3StopDetails {
   }
 
    /**
-   * Amenity and facility details at the stop
+   * Get stopAmenities
    * @return stopAmenities
   **/
-  @ApiModelProperty(value = "Amenity and facility details at the stop")
+  @Schema(description = "")
   public V3StopAmenityDetails getStopAmenities() {
     return stopAmenities;
   }
@@ -193,10 +192,10 @@ public class V3StopDetails {
   }
 
    /**
-   * Facilities relating to the accessibility of the stop
+   * Get stopAccessibility
    * @return stopAccessibility
   **/
-  @ApiModelProperty(value = "Facilities relating to the accessibility of the stop")
+  @Schema(description = "")
   public V3StopAccessibility getStopAccessibility() {
     return stopAccessibility;
   }
@@ -211,10 +210,10 @@ public class V3StopDetails {
   }
 
    /**
-   * Staffing details for the stop
+   * Get stopStaffing
    * @return stopStaffing
   **/
-  @ApiModelProperty(value = "Staffing details for the stop")
+  @Schema(description = "")
   public V3StopStaffing getStopStaffing() {
     return stopStaffing;
   }
@@ -240,7 +239,7 @@ public class V3StopDetails {
    * Routes travelling through the stop
    * @return routes
   **/
-  @ApiModelProperty(value = "Routes travelling through the stop")
+  @Schema(description = "Routes travelling through the stop")
   public List<Object> getRoutes() {
     return routes;
   }
@@ -258,7 +257,7 @@ public class V3StopDetails {
    * Stop identifier
    * @return stopId
   **/
-  @ApiModelProperty(value = "Stop identifier")
+  @Schema(description = "Stop identifier")
   public Integer getStopId() {
     return stopId;
   }
@@ -276,7 +275,7 @@ public class V3StopDetails {
    * Name of stop
    * @return stopName
   **/
-  @ApiModelProperty(value = "Name of stop")
+  @Schema(description = "Name of stop")
   public String getStopName() {
     return stopName;
   }
@@ -294,7 +293,7 @@ public class V3StopDetails {
    * Landmark in proximity of stop
    * @return stopLandmark
   **/
-  @ApiModelProperty(value = "Landmark in proximity of stop")
+  @Schema(description = "Landmark in proximity of stop")
   public String getStopLandmark() {
     return stopLandmark;
   }
@@ -366,4 +365,3 @@ public class V3StopDetails {
   }
 
 }
-

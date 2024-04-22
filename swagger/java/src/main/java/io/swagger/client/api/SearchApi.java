@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.api;
 
 import io.swagger.client.ApiCallback;
@@ -77,7 +76,7 @@ public class SearchApi {
      */
     public com.squareup.okhttp.Call searchSearchCall(String searchTerm, List<Integer> routeTypes, Float latitude, Float longitude, Float maxDistance, Boolean includeAddresses, Boolean includeOutlets, Boolean matchStopBySuburb, Boolean matchRouteBySuburb, Boolean matchStopByGtfsStopId, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/search/{search_term}"
             .replaceAll("\\{" + "search_term" + "\\}", apiClient.escapeString(searchTerm.toString()));
@@ -140,19 +139,21 @@ public class SearchApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call searchSearchValidateBeforeCall(String searchTerm, List<Integer> routeTypes, Float latitude, Float longitude, Float maxDistance, Boolean includeAddresses, Boolean includeOutlets, Boolean matchStopBySuburb, Boolean matchRouteBySuburb, Boolean matchStopByGtfsStopId, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'searchTerm' is set
         if (searchTerm == null) {
             throw new ApiException("Missing the required parameter 'searchTerm' when calling searchSearch(Async)");
         }
         
-
         com.squareup.okhttp.Call call = searchSearchCall(searchTerm, routeTypes, latitude, longitude, maxDistance, includeAddresses, includeOutlets, matchStopBySuburb, matchRouteBySuburb, matchStopByGtfsStopId, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**

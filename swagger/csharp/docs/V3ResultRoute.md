@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **RouteType** | **int?** | Transport mode identifier | [optional] 
 **RouteId** | **int?** | Route identifier | [optional] 
 **RouteGtfsId** | **string** | GTFS Identifer of the route | [optional] 
-**RouteServiceStatus** | [**V3RouteServiceStatus**](V3RouteServiceStatus.md) | Service status for the route (indicates disruptions) | [optional] 
+**RouteServiceStatus** | [**V3RouteServiceStatus**](V3RouteServiceStatus.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

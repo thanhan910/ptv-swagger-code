@@ -1,13 +1,12 @@
 # swagger_client.StopsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**stops_stop_details**](StopsApi.md#stops_stop_details) | **GET** /v3/stops/{stop_id}/route_type/{route_type} | View facilities at a specific stop (Metro and V/Line stations only)
 [**stops_stops_by_geolocation**](StopsApi.md#stops_stops_by_geolocation) | **GET** /v3/stops/location/{latitude},{longitude} | View all stops near a specific location
 [**stops_stops_for_route**](StopsApi.md#stops_stops_for_route) | **GET** /v3/stops/route/{route_id}/route_type/{route_type} | View all stops on a specific route
-
 
 # **stops_stop_details**
 > V3StopResponse stops_stop_details(stop_id, route_type, stop_location=stop_location, stop_amenities=stop_amenities, stop_accessibility=stop_accessibility, stop_contact=stop_contact, stop_ticket=stop_ticket, gtfs=gtfs, stop_staffing=stop_staffing, stop_disruptions=stop_disruptions, token=token, devid=devid, signature=signature)

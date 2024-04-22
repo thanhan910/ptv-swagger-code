@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,18 +19,18 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3PassengerFare;
 import io.swagger.client.model.V3ZoneInfo;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * V3FareEstimateResult
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3FareEstimateResult {
   @SerializedName("IsEarlyBird")
   private Boolean isEarlyBird = null;
@@ -57,7 +56,7 @@ public class V3FareEstimateResult {
    * Get isEarlyBird
    * @return isEarlyBird
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public Boolean isIsEarlyBird() {
     return isEarlyBird;
   }
@@ -75,7 +74,7 @@ public class V3FareEstimateResult {
    * Get isJourneyInFreeTramZone
    * @return isJourneyInFreeTramZone
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public Boolean isIsJourneyInFreeTramZone() {
     return isJourneyInFreeTramZone;
   }
@@ -93,7 +92,7 @@ public class V3FareEstimateResult {
    * Get isThisWeekendJourney
    * @return isThisWeekendJourney
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public Boolean isIsThisWeekendJourney() {
     return isThisWeekendJourney;
   }
@@ -111,7 +110,7 @@ public class V3FareEstimateResult {
    * Get zoneInfo
    * @return zoneInfo
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public V3ZoneInfo getZoneInfo() {
     return zoneInfo;
   }
@@ -137,7 +136,7 @@ public class V3FareEstimateResult {
    * Get passengerFares
    * @return passengerFares
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public List<V3PassengerFare> getPassengerFares() {
     return passengerFares;
   }
@@ -195,4 +194,3 @@ public class V3FareEstimateResult {
   }
 
 }
-

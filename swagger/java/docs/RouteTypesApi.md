@@ -1,11 +1,10 @@
 # RouteTypesApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**routeTypesGetRouteTypes**](RouteTypesApi.md#routeTypesGetRouteTypes) | **GET** /v3/route_types | View all route types and their names
-
 
 <a name="routeTypesGetRouteTypes"></a>
 # **routeTypesGetRouteTypes**

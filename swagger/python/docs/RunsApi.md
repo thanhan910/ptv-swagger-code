@@ -1,6 +1,6 @@
 # swagger_client.RunsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,6 @@ Method | HTTP request | Description
 [**runs_for_route_and_route_type**](RunsApi.md#runs_for_route_and_route_type) | **GET** /v3/runs/route/{route_id}/route_type/{route_type} | View all trip/service runs for a specific route ID and route type
 [**runs_for_run**](RunsApi.md#runs_for_run) | **GET** /v3/runs/{run_ref} | View all trip/service runs for a specific run_ref
 [**runs_for_run_and_route_type**](RunsApi.md#runs_for_run_and_route_type) | **GET** /v3/runs/{run_ref}/route_type/{route_type} | View the trip/service run for a specific run_ref and route type
-
 
 # **runs_for_route**
 > V3RunsResponse runs_for_route(route_id, expand=expand, date_utc=date_utc, token=token, devid=devid, signature=signature)

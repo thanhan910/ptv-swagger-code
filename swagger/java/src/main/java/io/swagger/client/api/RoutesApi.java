@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.api;
 
 import io.swagger.client.ApiCallback;
@@ -70,7 +69,7 @@ public class RoutesApi {
      */
     public com.squareup.okhttp.Call routesOneOrMoreRoutesCall(List<Integer> routeTypes, String routeName, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/routes";
 
@@ -118,14 +117,17 @@ public class RoutesApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call routesOneOrMoreRoutesValidateBeforeCall(List<Integer> routeTypes, String routeName, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
-
         com.squareup.okhttp.Call call = routesOneOrMoreRoutesCall(routeTypes, routeName, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**
@@ -214,7 +216,7 @@ public class RoutesApi {
      */
     public com.squareup.okhttp.Call routesRouteFromIdCall(Integer routeId, Boolean includeGeopath, OffsetDateTime geopathUtc, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/routes/{route_id}"
             .replaceAll("\\{" + "route_id" + "\\}", apiClient.escapeString(routeId.toString()));
@@ -263,19 +265,21 @@ public class RoutesApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call routesRouteFromIdValidateBeforeCall(Integer routeId, Boolean includeGeopath, OffsetDateTime geopathUtc, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'routeId' is set
         if (routeId == null) {
             throw new ApiException("Missing the required parameter 'routeId' when calling routesRouteFromId(Async)");
         }
         
-
         com.squareup.okhttp.Call call = routesRouteFromIdCall(routeId, includeGeopath, geopathUtc, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**

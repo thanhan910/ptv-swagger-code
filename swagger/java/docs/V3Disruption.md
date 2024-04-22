@@ -1,4 +1,3 @@
-
 # V3Disruption
 
 ## Properties
@@ -19,6 +18,3 @@ Name | Type | Description | Notes
 **colour** | **String** |  |  [optional]
 **displayOnBoard** | **Boolean** |  |  [optional]
 **displayStatus** | **Boolean** |  |  [optional]
-
-
-

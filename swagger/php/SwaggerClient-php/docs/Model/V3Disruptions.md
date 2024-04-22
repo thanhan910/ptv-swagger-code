@@ -18,6 +18,5 @@ Name | Type | Description | Notes
 **skybus** | [**\Swagger\Client\Model\V3Disruption[]**](V3Disruption.md) | Subset of disruption information applicable to skybus | [optional] 
 **taxi** | [**\Swagger\Client\Model\V3Disruption[]**](V3Disruption.md) | Subset of disruption information applicable to taxi | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

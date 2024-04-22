@@ -11,6 +11,5 @@ Name | Type | Description | Notes
 **supplier** | **string** | Supplier of vehicle descriptor data. | [optional] 
 **length** | **string** | The length of the vehicle. Applies to CIS - Metro Trains | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

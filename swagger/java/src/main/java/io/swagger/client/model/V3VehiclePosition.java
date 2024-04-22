@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,15 +19,15 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import org.threeten.bp.OffsetDateTime;
-
 /**
  * V3VehiclePosition
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3VehiclePosition {
   @SerializedName("latitude")
   private Double latitude = null;
@@ -66,7 +65,7 @@ public class V3VehiclePosition {
    * Geographic coordinate of latitude of the vehicle when known. May be null.  Only available for some bus runs.
    * @return latitude
   **/
-  @ApiModelProperty(value = "Geographic coordinate of latitude of the vehicle when known. May be null.  Only available for some bus runs.")
+  @Schema(description = "Geographic coordinate of latitude of the vehicle when known. May be null.  Only available for some bus runs.")
   public Double getLatitude() {
     return latitude;
   }
@@ -84,7 +83,7 @@ public class V3VehiclePosition {
    * Geographic coordinate of longitude of the vehicle when known.   Only available for some bus runs.
    * @return longitude
   **/
-  @ApiModelProperty(value = "Geographic coordinate of longitude of the vehicle when known.   Only available for some bus runs.")
+  @Schema(description = "Geographic coordinate of longitude of the vehicle when known.   Only available for some bus runs.")
   public Double getLongitude() {
     return longitude;
   }
@@ -102,7 +101,7 @@ public class V3VehiclePosition {
    * CIS - Metro Train Vehicle Location Easting coordinate
    * @return easting
   **/
-  @ApiModelProperty(value = "CIS - Metro Train Vehicle Location Easting coordinate")
+  @Schema(description = "CIS - Metro Train Vehicle Location Easting coordinate")
   public Double getEasting() {
     return easting;
   }
@@ -120,7 +119,7 @@ public class V3VehiclePosition {
    * CIS - Metro Train Vehicle Location Northing coordinate
    * @return northing
   **/
-  @ApiModelProperty(value = "CIS - Metro Train Vehicle Location Northing coordinate")
+  @Schema(description = "CIS - Metro Train Vehicle Location Northing coordinate")
   public Double getNorthing() {
     return northing;
   }
@@ -138,7 +137,7 @@ public class V3VehiclePosition {
    * CIS - Metro Train Vehicle Location Direction
    * @return direction
   **/
-  @ApiModelProperty(value = "CIS - Metro Train Vehicle Location Direction")
+  @Schema(description = "CIS - Metro Train Vehicle Location Direction")
   public String getDirection() {
     return direction;
   }
@@ -156,7 +155,7 @@ public class V3VehiclePosition {
    * Compass bearing of the vehicle when known, clockwise from True North, i.e., 0 is North and 90 is East. May be null.  Only available for some bus runs.
    * @return bearing
   **/
-  @ApiModelProperty(value = "Compass bearing of the vehicle when known, clockwise from True North, i.e., 0 is North and 90 is East. May be null.  Only available for some bus runs.")
+  @Schema(description = "Compass bearing of the vehicle when known, clockwise from True North, i.e., 0 is North and 90 is East. May be null.  Only available for some bus runs.")
   public Double getBearing() {
     return bearing;
   }
@@ -174,7 +173,7 @@ public class V3VehiclePosition {
    * Supplier of vehicle position data.
    * @return supplier
   **/
-  @ApiModelProperty(value = "Supplier of vehicle position data.")
+  @Schema(description = "Supplier of vehicle position data.")
   public String getSupplier() {
     return supplier;
   }
@@ -192,7 +191,7 @@ public class V3VehiclePosition {
    * Date and time that the vehicle position data was supplied.
    * @return datetimeUtc
   **/
-  @ApiModelProperty(value = "Date and time that the vehicle position data was supplied.")
+  @Schema(description = "Date and time that the vehicle position data was supplied.")
   public OffsetDateTime getDatetimeUtc() {
     return datetimeUtc;
   }
@@ -210,7 +209,7 @@ public class V3VehiclePosition {
    * CIS - Metro Train Vehicle Location data expiry time
    * @return expiryTime
   **/
-  @ApiModelProperty(value = "CIS - Metro Train Vehicle Location data expiry time")
+  @Schema(description = "CIS - Metro Train Vehicle Location data expiry time")
   public OffsetDateTime getExpiryTime() {
     return expiryTime;
   }
@@ -276,4 +275,3 @@ public class V3VehiclePosition {
   }
 
 }
-

@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,31 +19,32 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3StopDepartureRequestRouteDirection;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * V3StopDepartureRequest
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3StopDepartureRequest {
   /**
    * Number identifying transport mode; values returned via RouteTypes API
    */
   @JsonAdapter(RouteTypeEnum.Adapter.class)
   public enum RouteTypeEnum {
+    @SerializedName("0")
     NUMBER_0(0),
-    
+    @SerializedName("1")
     NUMBER_1(1),
-    
+    @SerializedName("2")
     NUMBER_2(2),
-    
+    @SerializedName("3")
     NUMBER_3(3),
-    
+    @SerializedName("4")
     NUMBER_4(4);
 
     private Integer value;
@@ -52,7 +52,6 @@ public class V3StopDepartureRequest {
     RouteTypeEnum(Integer value) {
       this.value = value;
     }
-
     public Integer getValue() {
       return value;
     }
@@ -61,31 +60,27 @@ public class V3StopDepartureRequest {
     public String toString() {
       return String.valueOf(value);
     }
-
-    public static RouteTypeEnum fromValue(String text) {
+    public static RouteTypeEnum fromValue(Integer input) {
       for (RouteTypeEnum b : RouteTypeEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
       return null;
     }
-
     public static class Adapter extends TypeAdapter<RouteTypeEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final RouteTypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public RouteTypeEnum read(final JsonReader jsonReader) throws IOException {
-        int value = jsonReader.nextInt();
-        return RouteTypeEnum.fromValue(String.valueOf(value));
+        Object value = jsonReader.nextInt();
+        return RouteTypeEnum.fromValue((Integer)(value));
       }
     }
-  }
-
-  @SerializedName("route_type")
+  }  @SerializedName("route_type")
   private RouteTypeEnum routeType = null;
 
   @SerializedName("stop_id")
@@ -109,7 +104,7 @@ public class V3StopDepartureRequest {
    * Number identifying transport mode; values returned via RouteTypes API
    * @return routeType
   **/
-  @ApiModelProperty(value = "Number identifying transport mode; values returned via RouteTypes API")
+  @Schema(description = "Number identifying transport mode; values returned via RouteTypes API")
   public RouteTypeEnum getRouteType() {
     return routeType;
   }
@@ -129,7 +124,7 @@ public class V3StopDepartureRequest {
    * maximum: 2147483647
    * @return stopId
   **/
-  @ApiModelProperty(value = "Identifier of stop; values returned by Stops API")
+  @Schema(description = "Identifier of stop; values returned by Stops API")
   public Integer getStopId() {
     return stopId;
   }
@@ -149,7 +144,7 @@ public class V3StopDepartureRequest {
    * maximum: 2147483647
    * @return maxResults
   **/
-  @ApiModelProperty(value = "Maximum number of results returned")
+  @Schema(description = "Maximum number of results returned")
   public Integer getMaxResults() {
     return maxResults;
   }
@@ -167,7 +162,7 @@ public class V3StopDepartureRequest {
    * Indicates that stop_id parameter will accept \&quot;GTFS stop_id\&quot; data and route_directions[x].route_id parameters will accept route_gtfs_id data
    * @return gtfs
   **/
-  @ApiModelProperty(value = "Indicates that stop_id parameter will accept \"GTFS stop_id\" data and route_directions[x].route_id parameters will accept route_gtfs_id data")
+  @Schema(description = "Indicates that stop_id parameter will accept \"GTFS stop_id\" data and route_directions[x].route_id parameters will accept route_gtfs_id data")
   public Boolean isGtfs() {
     return gtfs;
   }
@@ -190,7 +185,7 @@ public class V3StopDepartureRequest {
    * The route directions to find departures for at this stop.
    * @return routeDirections
   **/
-  @ApiModelProperty(required = true, value = "The route directions to find departures for at this stop.")
+  @Schema(required = true, description = "The route directions to find departures for at this stop.")
   public List<V3StopDepartureRequestRouteDirection> getRouteDirections() {
     return routeDirections;
   }
@@ -248,4 +243,3 @@ public class V3StopDepartureRequest {
   }
 
 }
-

@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,18 +19,18 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3VehicleDescriptor;
 import io.swagger.client.model.V3VehiclePosition;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * V3Run
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3Run {
   @SerializedName("run_id")
   private Integer runId = null;
@@ -76,7 +75,7 @@ public class V3Run {
    * Numeric trip/service run identifier. Defaults to -1 when run identifier is Alphanumeric
    * @return runId
   **/
-  @ApiModelProperty(value = "Numeric trip/service run identifier. Defaults to -1 when run identifier is Alphanumeric")
+  @Schema(description = "Numeric trip/service run identifier. Defaults to -1 when run identifier is Alphanumeric")
   public Integer getRunId() {
     return runId;
   }
@@ -90,7 +89,7 @@ public class V3Run {
    * Alphanumeric trip/service run identifier
    * @return runRef
   **/
-  @ApiModelProperty(value = "Alphanumeric trip/service run identifier")
+  @Schema(description = "Alphanumeric trip/service run identifier")
   public String getRunRef() {
     return runRef;
   }
@@ -108,7 +107,7 @@ public class V3Run {
    * Route identifier
    * @return routeId
   **/
-  @ApiModelProperty(value = "Route identifier")
+  @Schema(description = "Route identifier")
   public Integer getRouteId() {
     return routeId;
   }
@@ -126,7 +125,7 @@ public class V3Run {
    * Transport mode identifier
    * @return routeType
   **/
-  @ApiModelProperty(value = "Transport mode identifier")
+  @Schema(description = "Transport mode identifier")
   public Integer getRouteType() {
     return routeType;
   }
@@ -144,7 +143,7 @@ public class V3Run {
    * stop_id of final stop of run
    * @return finalStopId
   **/
-  @ApiModelProperty(value = "stop_id of final stop of run")
+  @Schema(description = "stop_id of final stop of run")
   public Integer getFinalStopId() {
     return finalStopId;
   }
@@ -162,7 +161,7 @@ public class V3Run {
    * Name of destination of run
    * @return destinationName
   **/
-  @ApiModelProperty(value = "Name of destination of run")
+  @Schema(description = "Name of destination of run")
   public String getDestinationName() {
     return destinationName;
   }
@@ -180,7 +179,7 @@ public class V3Run {
    * Status of metropolitan train run; returns \&quot;scheduled\&quot; for other modes
    * @return status
   **/
-  @ApiModelProperty(value = "Status of metropolitan train run; returns \"scheduled\" for other modes")
+  @Schema(description = "Status of metropolitan train run; returns \"scheduled\" for other modes")
   public String getStatus() {
     return status;
   }
@@ -198,7 +197,7 @@ public class V3Run {
    * Direction of travel identifier
    * @return directionId
   **/
-  @ApiModelProperty(value = "Direction of travel identifier")
+  @Schema(description = "Direction of travel identifier")
   public Integer getDirectionId() {
     return directionId;
   }
@@ -216,7 +215,7 @@ public class V3Run {
    * Chronological sequence of the trip/service run on the route in direction. Order ascendingly by this field to get chronological order (earliest first) of runs with the same route_id and direction_id.
    * @return runSequence
   **/
-  @ApiModelProperty(value = "Chronological sequence of the trip/service run on the route in direction. Order ascendingly by this field to get chronological order (earliest first) of runs with the same route_id and direction_id.")
+  @Schema(description = "Chronological sequence of the trip/service run on the route in direction. Order ascendingly by this field to get chronological order (earliest first) of runs with the same route_id and direction_id.")
   public Integer getRunSequence() {
     return runSequence;
   }
@@ -234,7 +233,7 @@ public class V3Run {
    * The number of remaining skipped/express stations for the run/service from a stop
    * @return expressStopCount
   **/
-  @ApiModelProperty(value = "The number of remaining skipped/express stations for the run/service from a stop")
+  @Schema(description = "The number of remaining skipped/express stations for the run/service from a stop")
   public Integer getExpressStopCount() {
     return expressStopCount;
   }
@@ -249,10 +248,10 @@ public class V3Run {
   }
 
    /**
-   * Position of the trip/service run. Available for some Bus, Nightrider and Train runs. May be null.
+   * Get vehiclePosition
    * @return vehiclePosition
   **/
-  @ApiModelProperty(value = "Position of the trip/service run. Available for some Bus, Nightrider and Train runs. May be null.")
+  @Schema(description = "")
   public V3VehiclePosition getVehiclePosition() {
     return vehiclePosition;
   }
@@ -267,10 +266,10 @@ public class V3Run {
   }
 
    /**
-   * Descriptor of the trip/service run. Only available for some runs. May be null.
+   * Get vehicleDescriptor
    * @return vehicleDescriptor
   **/
-  @ApiModelProperty(value = "Descriptor of the trip/service run. Only available for some runs. May be null.")
+  @Schema(description = "")
   public V3VehicleDescriptor getVehicleDescriptor() {
     return vehicleDescriptor;
   }
@@ -296,7 +295,7 @@ public class V3Run {
    * Geopath of the route
    * @return geopath
   **/
-  @ApiModelProperty(value = "Geopath of the route")
+  @Schema(description = "Geopath of the route")
   public List<Object> getGeopath() {
     return geopath;
   }
@@ -370,4 +369,3 @@ public class V3Run {
   }
 
 }
-

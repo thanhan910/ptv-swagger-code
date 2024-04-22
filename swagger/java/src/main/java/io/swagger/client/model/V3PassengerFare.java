@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,15 +19,15 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.math.BigDecimal;
-
 /**
  * V3PassengerFare
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3PassengerFare {
   @SerializedName("PassengerType")
   private String passengerType = null;
@@ -69,7 +68,7 @@ public class V3PassengerFare {
    * Get passengerType
    * @return passengerType
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public String getPassengerType() {
     return passengerType;
   }
@@ -87,7 +86,7 @@ public class V3PassengerFare {
    * Get fare2HourPeak
    * @return fare2HourPeak
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public BigDecimal getFare2HourPeak() {
     return fare2HourPeak;
   }
@@ -105,7 +104,7 @@ public class V3PassengerFare {
    * Get fare2HourOffPeak
    * @return fare2HourOffPeak
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public BigDecimal getFare2HourOffPeak() {
     return fare2HourOffPeak;
   }
@@ -123,7 +122,7 @@ public class V3PassengerFare {
    * Get fareDailyPeak
    * @return fareDailyPeak
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public BigDecimal getFareDailyPeak() {
     return fareDailyPeak;
   }
@@ -141,7 +140,7 @@ public class V3PassengerFare {
    * Get fareDailyOffPeak
    * @return fareDailyOffPeak
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public BigDecimal getFareDailyOffPeak() {
     return fareDailyOffPeak;
   }
@@ -159,7 +158,7 @@ public class V3PassengerFare {
    * Get pass7Days
    * @return pass7Days
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public BigDecimal getPass7Days() {
     return pass7Days;
   }
@@ -177,7 +176,7 @@ public class V3PassengerFare {
    * Get pass28To69DayPerDay
    * @return pass28To69DayPerDay
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public BigDecimal getPass28To69DayPerDay() {
     return pass28To69DayPerDay;
   }
@@ -195,7 +194,7 @@ public class V3PassengerFare {
    * Get pass70PlusDayPerDay
    * @return pass70PlusDayPerDay
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public BigDecimal getPass70PlusDayPerDay() {
     return pass70PlusDayPerDay;
   }
@@ -213,7 +212,7 @@ public class V3PassengerFare {
    * Get weekendCap
    * @return weekendCap
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public BigDecimal getWeekendCap() {
     return weekendCap;
   }
@@ -231,7 +230,7 @@ public class V3PassengerFare {
    * Get holidayCap
    * @return holidayCap
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public BigDecimal getHolidayCap() {
     return holidayCap;
   }
@@ -299,4 +298,3 @@ public class V3PassengerFare {
   }
 
 }
-

@@ -1,6 +1,6 @@
 # IO.Swagger.Api.DisruptionsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,6 @@ Method | HTTP request | Description
 [**DisruptionsGetDisruptionsByRoute**](DisruptionsApi.md#disruptionsgetdisruptionsbyroute) | **GET** /v3/disruptions/route/{route_id} | View all disruptions for a particular route
 [**DisruptionsGetDisruptionsByRouteAndStop**](DisruptionsApi.md#disruptionsgetdisruptionsbyrouteandstop) | **GET** /v3/disruptions/route/{route_id}/stop/{stop_id} | View all disruptions for a particular route and stop
 [**DisruptionsGetDisruptionsByStop**](DisruptionsApi.md#disruptionsgetdisruptionsbystop) | **GET** /v3/disruptions/stop/{stop_id} | View all disruptions for a particular stop
-
 
 <a name="disruptionsgetalldisruptions"></a>
 # **DisruptionsGetAllDisruptions**
@@ -33,8 +32,8 @@ namespace Example
         public void main()
         {
             var apiInstance = new DisruptionsApi();
-            var routeTypes = 56;  // List<int?> | Filter by route_type; values returned via RouteTypes API (optional) 
-            var disruptionModes = 56;  // List<int?> | Filter by disruption_mode; values returned via v3/disruptions/modes API (optional) 
+            var routeTypes = new List<int?>(); // List<int?> | Filter by route_type; values returned via RouteTypes API (optional) 
+            var disruptionModes = new List<int?>(); // List<int?> | Filter by disruption_mode; values returned via v3/disruptions/modes API (optional) 
             var disruptionStatus = disruptionStatus_example;  // string | Filter by status of disruption (optional) 
             var token = token_example;  // string | Please ignore (optional) 
             var devid = devid_example;  // string | Your developer id (optional) 
@@ -59,8 +58,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **routeTypes** | **List&lt;int?&gt;**| Filter by route_type; values returned via RouteTypes API | [optional] 
- **disruptionModes** | **List&lt;int?&gt;**| Filter by disruption_mode; values returned via v3/disruptions/modes API | [optional] 
+ **routeTypes** | [**List&lt;int?&gt;**](int?.md)| Filter by route_type; values returned via RouteTypes API | [optional] 
+ **disruptionModes** | [**List&lt;int?&gt;**](int?.md)| Filter by disruption_mode; values returned via v3/disruptions/modes API | [optional] 
  **disruptionStatus** | **string**| Filter by status of disruption | [optional] 
  **token** | **string**| Please ignore | [optional] 
  **devid** | **string**| Your developer id | [optional] 
@@ -80,7 +79,6 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="disruptionsgetdisruptionbyid"></a>
 # **DisruptionsGetDisruptionById**
 > V3DisruptionResponse DisruptionsGetDisruptionById (long? disruptionId, string token = null, string devid = null, string signature = null)
@@ -145,7 +143,6 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="disruptionsgetdisruptionmodes"></a>
 # **DisruptionsGetDisruptionModes**
 > V3DisruptionModesResponse DisruptionsGetDisruptionModes (string token = null, string devid = null, string signature = null)
@@ -208,7 +205,6 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="disruptionsgetdisruptionsbyroute"></a>
 # **DisruptionsGetDisruptionsByRoute**
 > V3DisruptionsResponse DisruptionsGetDisruptionsByRoute (int? routeId, string disruptionStatus = null, string token = null, string devid = null, string signature = null)
@@ -275,7 +271,6 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="disruptionsgetdisruptionsbyrouteandstop"></a>
 # **DisruptionsGetDisruptionsByRouteAndStop**
 > V3DisruptionsResponse DisruptionsGetDisruptionsByRouteAndStop (int? routeId, int? stopId, string disruptionStatus = null, string token = null, string devid = null, string signature = null)
@@ -344,7 +339,6 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="disruptionsgetdisruptionsbystop"></a>
 # **DisruptionsGetDisruptionsByStop**
 > V3DisruptionsResponse DisruptionsGetDisruptionsByStop (int? stopId, string disruptionStatus = null, string token = null, string devid = null, string signature = null)
@@ -411,4 +405,3 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

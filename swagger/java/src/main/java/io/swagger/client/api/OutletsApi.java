@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.api;
 
 import io.swagger.client.ApiCallback;
@@ -69,7 +68,7 @@ public class OutletsApi {
      */
     public com.squareup.okhttp.Call outletsGetAllOutletsCall(Integer maxResults, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/outlets";
 
@@ -115,14 +114,17 @@ public class OutletsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call outletsGetAllOutletsValidateBeforeCall(Integer maxResults, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
-
         com.squareup.okhttp.Call call = outletsGetAllOutletsCall(maxResults, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**
@@ -209,7 +211,7 @@ public class OutletsApi {
      */
     public com.squareup.okhttp.Call outletsGetOutletsByGeolocationCall(Float latitude, Float longitude, Double maxDistance, Integer maxResults, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/outlets/location/{latitude},{longitude}"
             .replaceAll("\\{" + "latitude" + "\\}", apiClient.escapeString(latitude.toString()))
@@ -259,24 +261,25 @@ public class OutletsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call outletsGetOutletsByGeolocationValidateBeforeCall(Float latitude, Float longitude, Double maxDistance, Integer maxResults, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'latitude' is set
         if (latitude == null) {
             throw new ApiException("Missing the required parameter 'latitude' when calling outletsGetOutletsByGeolocation(Async)");
         }
-        
         // verify the required parameter 'longitude' is set
         if (longitude == null) {
             throw new ApiException("Missing the required parameter 'longitude' when calling outletsGetOutletsByGeolocation(Async)");
         }
         
-
         com.squareup.okhttp.Call call = outletsGetOutletsByGeolocationCall(latitude, longitude, maxDistance, maxResults, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**

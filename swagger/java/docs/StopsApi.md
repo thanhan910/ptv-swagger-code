@@ -1,13 +1,12 @@
 # StopsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**stopsStopDetails**](StopsApi.md#stopsStopDetails) | **GET** /v3/stops/{stop_id}/route_type/{route_type} | View facilities at a specific stop (Metro and V/Line stations only)
 [**stopsStopsByGeolocation**](StopsApi.md#stopsStopsByGeolocation) | **GET** /v3/stops/location/{latitude},{longitude} | View all stops near a specific location
 [**stopsStopsForRoute**](StopsApi.md#stopsStopsForRoute) | **GET** /v3/stops/route/{route_id}/route_type/{route_type} | View all stops on a specific route
-
 
 <a name="stopsStopDetails"></a>
 # **stopsStopDetails**
@@ -154,7 +153,7 @@ Integer routeType = 56; // Integer | Number identifying transport mode; values r
 Integer directionId = 56; // Integer | An optional direction; values returned by Directions API. When this is set, stop sequence information is returned in the response.
 Boolean stopDisruptions = true; // Boolean | Indicates if stop disruption information will be returned (default = false)
 Boolean includeGeopath = true; // Boolean | Indicates if geopath data will be returned (default = false)
-OffsetDateTime geopathUtc = OffsetDateTime.now(); // OffsetDateTime | Filter geopaths by date (ISO 8601 UTC format) (default = current date)
+OffsetDateTime geopathUtc = new OffsetDateTime(); // OffsetDateTime | Filter geopaths by date (ISO 8601 UTC format) (default = current date)
 String token = "token_example"; // String | Please ignore
 String devid = "devid_example"; // String | Your developer id
 String signature = "signature_example"; // String | Authentication signature for request

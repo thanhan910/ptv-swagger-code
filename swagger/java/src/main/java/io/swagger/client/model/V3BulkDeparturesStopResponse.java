@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3BulkDeparturesStopResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3BulkDeparturesStopResponse {
   @SerializedName("stop_name")
   private String stopName = null;
@@ -56,7 +55,7 @@ public class V3BulkDeparturesStopResponse {
    * Name of stop
    * @return stopName
   **/
-  @ApiModelProperty(value = "Name of stop")
+  @Schema(description = "Name of stop")
   public String getStopName() {
     return stopName;
   }
@@ -74,7 +73,7 @@ public class V3BulkDeparturesStopResponse {
    * Stop identifier
    * @return stopId
   **/
-  @ApiModelProperty(value = "Stop identifier")
+  @Schema(description = "Stop identifier")
   public Integer getStopId() {
     return stopId;
   }
@@ -92,7 +91,7 @@ public class V3BulkDeparturesStopResponse {
    * Geographic coordinate of latitude at stop
    * @return stopLatitude
   **/
-  @ApiModelProperty(value = "Geographic coordinate of latitude at stop")
+  @Schema(description = "Geographic coordinate of latitude at stop")
   public Float getStopLatitude() {
     return stopLatitude;
   }
@@ -110,7 +109,7 @@ public class V3BulkDeparturesStopResponse {
    * Geographic coordinate of longitude at stop
    * @return stopLongitude
   **/
-  @ApiModelProperty(value = "Geographic coordinate of longitude at stop")
+  @Schema(description = "Geographic coordinate of longitude at stop")
   public Float getStopLongitude() {
     return stopLongitude;
   }
@@ -128,7 +127,7 @@ public class V3BulkDeparturesStopResponse {
    * suburb of stop
    * @return stopSuburb
   **/
-  @ApiModelProperty(value = "suburb of stop")
+  @Schema(description = "suburb of stop")
   public String getStopSuburb() {
     return stopSuburb;
   }
@@ -146,7 +145,7 @@ public class V3BulkDeparturesStopResponse {
    * Landmark in proximity of stop
    * @return stopLandmark
   **/
-  @ApiModelProperty(value = "Landmark in proximity of stop")
+  @Schema(description = "Landmark in proximity of stop")
   public String getStopLandmark() {
     return stopLandmark;
   }
@@ -206,4 +205,3 @@ public class V3BulkDeparturesStopResponse {
   }
 
 }
-

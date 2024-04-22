@@ -1,12 +1,11 @@
 # Swagger\Client\RoutesApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**routesOneOrMoreRoutes**](RoutesApi.md#routesOneOrMoreRoutes) | **GET** /v3/routes | View route names and numbers for all routes
-[**routesRouteFromId**](RoutesApi.md#routesRouteFromId) | **GET** /v3/routes/{route_id} | View route name and number for specific route ID
-
+[**routesOneOrMoreRoutes**](RoutesApi.md#routesoneormoreroutes) | **GET** /v3/routes | View route names and numbers for all routes
+[**routesRouteFromId**](RoutesApi.md#routesroutefromid) | **GET** /v3/routes/{route_id} | View route name and number for specific route ID
 
 # **routesOneOrMoreRoutes**
 > \Swagger\Client\Model\V3RouteResponse routesOneOrMoreRoutes($route_types, $route_name, $token, $devid, $signature)

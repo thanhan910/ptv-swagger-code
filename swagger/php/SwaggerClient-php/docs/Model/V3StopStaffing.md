@@ -35,6 +35,5 @@ Name | Type | Description | Notes
 **wed_pm_from** | **string** | Stop staffing hours | [optional] 
 **wed_pm_to** | **string** | Stop staffing hours | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

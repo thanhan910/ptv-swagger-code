@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3DynamoDbTimetable
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3DynamoDbTimetable {
   @SerializedName("table_name")
   private String tableName = null;
@@ -49,14 +48,15 @@ public class V3DynamoDbTimetable {
    */
   @JsonAdapter(TransportTypeEnum.Adapter.class)
   public enum TransportTypeEnum {
+    @SerializedName("0")
     NUMBER_0(0),
-    
+    @SerializedName("1")
     NUMBER_1(1),
-    
+    @SerializedName("2")
     NUMBER_2(2),
-    
+    @SerializedName("3")
     NUMBER_3(3),
-    
+    @SerializedName("4")
     NUMBER_4(4);
 
     private Integer value;
@@ -64,7 +64,6 @@ public class V3DynamoDbTimetable {
     TransportTypeEnum(Integer value) {
       this.value = value;
     }
-
     public Integer getValue() {
       return value;
     }
@@ -73,31 +72,27 @@ public class V3DynamoDbTimetable {
     public String toString() {
       return String.valueOf(value);
     }
-
-    public static TransportTypeEnum fromValue(String text) {
+    public static TransportTypeEnum fromValue(Integer input) {
       for (TransportTypeEnum b : TransportTypeEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
       return null;
     }
-
     public static class Adapter extends TypeAdapter<TransportTypeEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final TransportTypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public TransportTypeEnum read(final JsonReader jsonReader) throws IOException {
-        int value = jsonReader.nextInt();
-        return TransportTypeEnum.fromValue(String.valueOf(value));
+        Object value = jsonReader.nextInt();
+        return TransportTypeEnum.fromValue((Integer)(value));
       }
     }
-  }
-
-  @SerializedName("transport_type")
+  }  @SerializedName("transport_type")
   private TransportTypeEnum transportType = null;
 
   @SerializedName("applicable_local_date")
@@ -115,7 +110,7 @@ public class V3DynamoDbTimetable {
    * Name of corresponding table in DynamoDB.
    * @return tableName
   **/
-  @ApiModelProperty(value = "Name of corresponding table in DynamoDB.")
+  @Schema(description = "Name of corresponding table in DynamoDB.")
   public String getTableName() {
     return tableName;
   }
@@ -133,7 +128,7 @@ public class V3DynamoDbTimetable {
    * Parser verison
    * @return parserVersion
   **/
-  @ApiModelProperty(value = "Parser verison")
+  @Schema(description = "Parser verison")
   public Long getParserVersion() {
     return parserVersion;
   }
@@ -151,7 +146,7 @@ public class V3DynamoDbTimetable {
    * Diva Mapping Version used to load Parser into DynamoDB
    * @return parserMappingVersion
   **/
-  @ApiModelProperty(value = "Diva Mapping Version used to load Parser into DynamoDB")
+  @Schema(description = "Diva Mapping Version used to load Parser into DynamoDB")
   public String getParserMappingVersion() {
     return parserMappingVersion;
   }
@@ -169,7 +164,7 @@ public class V3DynamoDbTimetable {
    * PT version
    * @return ptVersion
   **/
-  @ApiModelProperty(value = "PT version")
+  @Schema(description = "PT version")
   public Long getPtVersion() {
     return ptVersion;
   }
@@ -187,7 +182,7 @@ public class V3DynamoDbTimetable {
    * Diva Mapping Version used to load PT into DynamoDB
    * @return ptMappingVersion
   **/
-  @ApiModelProperty(value = "Diva Mapping Version used to load PT into DynamoDB")
+  @Schema(description = "Diva Mapping Version used to load PT into DynamoDB")
   public String getPtMappingVersion() {
     return ptMappingVersion;
   }
@@ -205,7 +200,7 @@ public class V3DynamoDbTimetable {
    * A.k.a. Transport Mode (e.g. Train, Tram, Bus, V/Line, Nightrider)
    * @return transportType
   **/
-  @ApiModelProperty(value = "A.k.a. Transport Mode (e.g. Train, Tram, Bus, V/Line, Nightrider)")
+  @Schema(description = "A.k.a. Transport Mode (e.g. Train, Tram, Bus, V/Line, Nightrider)")
   public TransportTypeEnum getTransportType() {
     return transportType;
   }
@@ -218,7 +213,7 @@ public class V3DynamoDbTimetable {
    * Formated date string of applicable date
    * @return applicableLocalDate
   **/
-  @ApiModelProperty(value = "Formated date string of applicable date")
+  @Schema(description = "Formated date string of applicable date")
   public String getApplicableLocalDate() {
     return applicableLocalDate;
   }
@@ -232,7 +227,7 @@ public class V3DynamoDbTimetable {
    * True if the named table has been created in DynamoDB (i.e. at least one departure record has been loaded),  or false if there are no records for this date and transport type.
    * @return exists
   **/
-  @ApiModelProperty(value = "True if the named table has been created in DynamoDB (i.e. at least one departure record has been loaded),  or false if there are no records for this date and transport type.")
+  @Schema(description = "True if the named table has been created in DynamoDB (i.e. at least one departure record has been loaded),  or false if there are no records for this date and transport type.")
   public Boolean isExists() {
     return exists;
   }
@@ -296,4 +291,3 @@ public class V3DynamoDbTimetable {
   }
 
 }
-

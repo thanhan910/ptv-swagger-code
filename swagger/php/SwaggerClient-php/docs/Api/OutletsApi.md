@@ -1,12 +1,11 @@
 # Swagger\Client\OutletsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**outletsGetAllOutlets**](OutletsApi.md#outletsGetAllOutlets) | **GET** /v3/outlets | List all ticket outlets
-[**outletsGetOutletsByGeolocation**](OutletsApi.md#outletsGetOutletsByGeolocation) | **GET** /v3/outlets/location/{latitude},{longitude} | List ticket outlets near a specific location
-
+[**outletsGetAllOutlets**](OutletsApi.md#outletsgetalloutlets) | **GET** /v3/outlets | List all ticket outlets
+[**outletsGetOutletsByGeolocation**](OutletsApi.md#outletsgetoutletsbygeolocation) | **GET** /v3/outlets/location/{latitude},{longitude} | List ticket outlets near a specific location
 
 # **outletsGetAllOutlets**
 > \Swagger\Client\Model\V3OutletResponse outletsGetAllOutlets($max_results, $token, $devid, $signature)

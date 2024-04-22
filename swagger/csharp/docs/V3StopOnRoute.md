@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **StopLatitude** | **float?** | Geographic coordinate of latitude at stop | [optional] 
 **StopLongitude** | **float?** | Geographic coordinate of longitude at stop | [optional] 
 **StopSequence** | **int?** | Sequence of the stop on the route/run; return 0 when route_id or run_id not specified. Order ascendingly by this field (when non zero) to get physical order (earliest first) of stops on the route_id/run_id. | [optional] 
-**StopTicket** | [**V3StopTicket**](V3StopTicket.md) | Stop ticket information | [optional] 
+**StopTicket** | [**V3StopTicket**](V3StopTicket.md) |  | [optional] 
 **StopId** | **int?** | Stop identifier | [optional] 
 **StopName** | **string** | Name of stop | [optional] 
 **StopLandmark** | **string** | Landmark in proximity of stop | [optional] 

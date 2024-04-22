@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3Outlet
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3Outlet {
   @SerializedName("outlet_slid_spid")
   private String outletSlidSpid = null;
@@ -83,7 +82,7 @@ public class V3Outlet {
    * The SLID / SPID
    * @return outletSlidSpid
   **/
-  @ApiModelProperty(value = "The SLID / SPID")
+  @Schema(description = "The SLID / SPID")
   public String getOutletSlidSpid() {
     return outletSlidSpid;
   }
@@ -101,7 +100,7 @@ public class V3Outlet {
    * The location name of the outlet
    * @return outletName
   **/
-  @ApiModelProperty(value = "The location name of the outlet")
+  @Schema(description = "The location name of the outlet")
   public String getOutletName() {
     return outletName;
   }
@@ -119,7 +118,7 @@ public class V3Outlet {
    * The business name of the outlet
    * @return outletBusiness
   **/
-  @ApiModelProperty(value = "The business name of the outlet")
+  @Schema(description = "The business name of the outlet")
   public String getOutletBusiness() {
     return outletBusiness;
   }
@@ -137,7 +136,7 @@ public class V3Outlet {
    * Geographic coordinate of latitude at outlet
    * @return outletLatitude
   **/
-  @ApiModelProperty(value = "Geographic coordinate of latitude at outlet")
+  @Schema(description = "Geographic coordinate of latitude at outlet")
   public Float getOutletLatitude() {
     return outletLatitude;
   }
@@ -155,7 +154,7 @@ public class V3Outlet {
    * Geographic coordinate of longitude at outlet
    * @return outletLongitude
   **/
-  @ApiModelProperty(value = "Geographic coordinate of longitude at outlet")
+  @Schema(description = "Geographic coordinate of longitude at outlet")
   public Float getOutletLongitude() {
     return outletLongitude;
   }
@@ -173,7 +172,7 @@ public class V3Outlet {
    * The city/municipality the outlet is in
    * @return outletSuburb
   **/
-  @ApiModelProperty(value = "The city/municipality the outlet is in")
+  @Schema(description = "The city/municipality the outlet is in")
   public String getOutletSuburb() {
     return outletSuburb;
   }
@@ -191,7 +190,7 @@ public class V3Outlet {
    * The postcode for the outlet
    * @return outletPostcode
   **/
-  @ApiModelProperty(value = "The postcode for the outlet")
+  @Schema(description = "The postcode for the outlet")
   public Integer getOutletPostcode() {
     return outletPostcode;
   }
@@ -209,7 +208,7 @@ public class V3Outlet {
    * The business hours on Monday
    * @return outletBusinessHourMon
   **/
-  @ApiModelProperty(value = "The business hours on Monday")
+  @Schema(description = "The business hours on Monday")
   public String getOutletBusinessHourMon() {
     return outletBusinessHourMon;
   }
@@ -227,7 +226,7 @@ public class V3Outlet {
    * The business hours on Tuesday
    * @return outletBusinessHourTue
   **/
-  @ApiModelProperty(value = "The business hours on Tuesday")
+  @Schema(description = "The business hours on Tuesday")
   public String getOutletBusinessHourTue() {
     return outletBusinessHourTue;
   }
@@ -245,7 +244,7 @@ public class V3Outlet {
    * The business hours on Wednesday
    * @return outletBusinessHourWed
   **/
-  @ApiModelProperty(value = "The business hours on Wednesday")
+  @Schema(description = "The business hours on Wednesday")
   public String getOutletBusinessHourWed() {
     return outletBusinessHourWed;
   }
@@ -263,7 +262,7 @@ public class V3Outlet {
    * The business hours on Thursday
    * @return outletBusinessHourThur
   **/
-  @ApiModelProperty(value = "The business hours on Thursday")
+  @Schema(description = "The business hours on Thursday")
   public String getOutletBusinessHourThur() {
     return outletBusinessHourThur;
   }
@@ -281,7 +280,7 @@ public class V3Outlet {
    * The business hours on Friday
    * @return outletBusinessHourFri
   **/
-  @ApiModelProperty(value = "The business hours on Friday")
+  @Schema(description = "The business hours on Friday")
   public String getOutletBusinessHourFri() {
     return outletBusinessHourFri;
   }
@@ -299,7 +298,7 @@ public class V3Outlet {
    * The business hours on Saturday
    * @return outletBusinessHourSat
   **/
-  @ApiModelProperty(value = "The business hours on Saturday")
+  @Schema(description = "The business hours on Saturday")
   public String getOutletBusinessHourSat() {
     return outletBusinessHourSat;
   }
@@ -317,7 +316,7 @@ public class V3Outlet {
    * The business hours on Sunday
    * @return outletBusinessHourSun
   **/
-  @ApiModelProperty(value = "The business hours on Sunday")
+  @Schema(description = "The business hours on Sunday")
   public String getOutletBusinessHourSun() {
     return outletBusinessHourSun;
   }
@@ -332,10 +331,10 @@ public class V3Outlet {
   }
 
    /**
-   * Any additional notes for the outlet such as &#39;Buy pre-loaded myki cards only&#39;. May be null/empty.
+   * Any additional notes for the outlet such as &#x27;Buy pre-loaded myki cards only&#x27;. May be null/empty.
    * @return outletNotes
   **/
-  @ApiModelProperty(value = "Any additional notes for the outlet such as 'Buy pre-loaded myki cards only'. May be null/empty.")
+  @Schema(description = "Any additional notes for the outlet such as 'Buy pre-loaded myki cards only'. May be null/empty.")
   public String getOutletNotes() {
     return outletNotes;
   }
@@ -413,4 +412,3 @@ public class V3Outlet {
   }
 
 }
-

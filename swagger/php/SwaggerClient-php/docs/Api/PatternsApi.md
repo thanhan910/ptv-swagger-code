@@ -1,11 +1,10 @@
 # Swagger\Client\PatternsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**patternsGetPatternByRun**](PatternsApi.md#patternsGetPatternByRun) | **GET** /v3/pattern/run/{run_ref}/route_type/{route_type} | View the stopping pattern for a specific trip/service run
-
+[**patternsGetPatternByRun**](PatternsApi.md#patternsgetpatternbyrun) | **GET** /v3/pattern/run/{run_ref}/route_type/{route_type} | View the stopping pattern for a specific trip/service run
 
 # **patternsGetPatternByRun**
 > \Swagger\Client\Model\V3StoppingPattern patternsGetPatternByRun($run_ref, $route_type, $expand, $stop_id, $date_utc, $include_skipped_stops, $include_geopath, $token, $devid, $signature)

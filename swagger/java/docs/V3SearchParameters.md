@@ -1,4 +1,3 @@
-
 # V3SearchParameters
 
 ## Properties
@@ -14,7 +13,6 @@ Name | Type | Description | Notes
 **matchRouteBySuburb** | **Boolean** | Indicates whether to find routes by suburbs in the search term (default &#x3D; true) |  [optional]
 **matchStopByGtfsStopId** | **Boolean** | Indicates whether to search for stops according to a metlink stop ID (default &#x3D; false) |  [optional]
 
-
 <a name="List<RouteTypesEnum>"></a>
 ## Enum: List&lt;RouteTypesEnum&gt;
 Name | Value
@@ -24,6 +22,3 @@ _1 | &quot;1&quot;
 _2 | &quot;2&quot;
 _3 | &quot;3&quot;
 _4 | &quot;4&quot;
-
-
-

@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.api;
 
 import io.swagger.client.ApiCallback;
@@ -72,7 +71,7 @@ public class DisruptionsApi {
      */
     public com.squareup.okhttp.Call disruptionsGetAllDisruptionsCall(List<Integer> routeTypes, List<Integer> disruptionModes, String disruptionStatus, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/disruptions";
 
@@ -122,14 +121,17 @@ public class DisruptionsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call disruptionsGetAllDisruptionsValidateBeforeCall(List<Integer> routeTypes, List<Integer> disruptionModes, String disruptionStatus, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
-
         com.squareup.okhttp.Call call = disruptionsGetAllDisruptionsCall(routeTypes, disruptionModes, disruptionStatus, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**
@@ -219,7 +221,7 @@ public class DisruptionsApi {
      */
     public com.squareup.okhttp.Call disruptionsGetDisruptionByIdCall(Long disruptionId, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/disruptions/{disruption_id}"
             .replaceAll("\\{" + "disruption_id" + "\\}", apiClient.escapeString(disruptionId.toString()));
@@ -264,19 +266,21 @@ public class DisruptionsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call disruptionsGetDisruptionByIdValidateBeforeCall(Long disruptionId, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'disruptionId' is set
         if (disruptionId == null) {
             throw new ApiException("Missing the required parameter 'disruptionId' when calling disruptionsGetDisruptionById(Async)");
         }
         
-
         com.squareup.okhttp.Call call = disruptionsGetDisruptionByIdCall(disruptionId, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**
@@ -359,7 +363,7 @@ public class DisruptionsApi {
      */
     public com.squareup.okhttp.Call disruptionsGetDisruptionModesCall(String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/disruptions/modes";
 
@@ -403,14 +407,17 @@ public class DisruptionsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call disruptionsGetDisruptionModesValidateBeforeCall(String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
-
         com.squareup.okhttp.Call call = disruptionsGetDisruptionModesCall(token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**
@@ -492,7 +499,7 @@ public class DisruptionsApi {
      */
     public com.squareup.okhttp.Call disruptionsGetDisruptionsByRouteCall(Integer routeId, String disruptionStatus, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/disruptions/route/{route_id}"
             .replaceAll("\\{" + "route_id" + "\\}", apiClient.escapeString(routeId.toString()));
@@ -539,19 +546,21 @@ public class DisruptionsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call disruptionsGetDisruptionsByRouteValidateBeforeCall(Integer routeId, String disruptionStatus, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'routeId' is set
         if (routeId == null) {
             throw new ApiException("Missing the required parameter 'routeId' when calling disruptionsGetDisruptionsByRoute(Async)");
         }
         
-
         com.squareup.okhttp.Call call = disruptionsGetDisruptionsByRouteCall(routeId, disruptionStatus, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**
@@ -640,7 +649,7 @@ public class DisruptionsApi {
      */
     public com.squareup.okhttp.Call disruptionsGetDisruptionsByRouteAndStopCall(Integer routeId, Integer stopId, String disruptionStatus, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/disruptions/route/{route_id}/stop/{stop_id}"
             .replaceAll("\\{" + "route_id" + "\\}", apiClient.escapeString(routeId.toString()))
@@ -688,24 +697,25 @@ public class DisruptionsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call disruptionsGetDisruptionsByRouteAndStopValidateBeforeCall(Integer routeId, Integer stopId, String disruptionStatus, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'routeId' is set
         if (routeId == null) {
             throw new ApiException("Missing the required parameter 'routeId' when calling disruptionsGetDisruptionsByRouteAndStop(Async)");
         }
-        
         // verify the required parameter 'stopId' is set
         if (stopId == null) {
             throw new ApiException("Missing the required parameter 'stopId' when calling disruptionsGetDisruptionsByRouteAndStop(Async)");
         }
         
-
         com.squareup.okhttp.Call call = disruptionsGetDisruptionsByRouteAndStopCall(routeId, stopId, disruptionStatus, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**
@@ -796,7 +806,7 @@ public class DisruptionsApi {
      */
     public com.squareup.okhttp.Call disruptionsGetDisruptionsByStopCall(Integer stopId, String disruptionStatus, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/disruptions/stop/{stop_id}"
             .replaceAll("\\{" + "stop_id" + "\\}", apiClient.escapeString(stopId.toString()));
@@ -843,19 +853,21 @@ public class DisruptionsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call disruptionsGetDisruptionsByStopValidateBeforeCall(Integer stopId, String disruptionStatus, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'stopId' is set
         if (stopId == null) {
             throw new ApiException("Missing the required parameter 'stopId' when calling disruptionsGetDisruptionsByStop(Async)");
         }
         
-
         com.squareup.okhttp.Call call = disruptionsGetDisruptionsByStopCall(stopId, disruptionStatus, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**

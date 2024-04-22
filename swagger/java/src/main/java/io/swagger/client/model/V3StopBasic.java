@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3StopBasic
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3StopBasic {
   @SerializedName("stop_id")
   private Integer stopId = null;
@@ -44,7 +43,7 @@ public class V3StopBasic {
    * Get stopId
    * @return stopId
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public Integer getStopId() {
     return stopId;
   }
@@ -62,7 +61,7 @@ public class V3StopBasic {
    * Get stopName
    * @return stopName
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public String getStopName() {
     return stopName;
   }
@@ -114,4 +113,3 @@ public class V3StopBasic {
   }
 
 }
-

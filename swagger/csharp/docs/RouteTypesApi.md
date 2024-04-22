@@ -1,11 +1,10 @@
 # IO.Swagger.Api.RouteTypesApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**RouteTypesGetRouteTypes**](RouteTypesApi.md#routetypesgetroutetypes) | **GET** /v3/route_types | View all route types and their names
-
 
 <a name="routetypesgetroutetypes"></a>
 # **RouteTypesGetRouteTypes**
@@ -69,4 +68,3 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

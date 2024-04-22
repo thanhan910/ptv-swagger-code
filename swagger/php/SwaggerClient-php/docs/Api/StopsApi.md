@@ -1,13 +1,12 @@
 # Swagger\Client\StopsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**stopsStopDetails**](StopsApi.md#stopsStopDetails) | **GET** /v3/stops/{stop_id}/route_type/{route_type} | View facilities at a specific stop (Metro and V/Line stations only)
-[**stopsStopsByGeolocation**](StopsApi.md#stopsStopsByGeolocation) | **GET** /v3/stops/location/{latitude},{longitude} | View all stops near a specific location
-[**stopsStopsForRoute**](StopsApi.md#stopsStopsForRoute) | **GET** /v3/stops/route/{route_id}/route_type/{route_type} | View all stops on a specific route
-
+[**stopsStopDetails**](StopsApi.md#stopsstopdetails) | **GET** /v3/stops/{stop_id}/route_type/{route_type} | View facilities at a specific stop (Metro and V/Line stations only)
+[**stopsStopsByGeolocation**](StopsApi.md#stopsstopsbygeolocation) | **GET** /v3/stops/location/{latitude},{longitude} | View all stops near a specific location
+[**stopsStopsForRoute**](StopsApi.md#stopsstopsforroute) | **GET** /v3/stops/route/{route_id}/route_type/{route_type} | View all stops on a specific route
 
 # **stopsStopDetails**
 > \Swagger\Client\Model\V3StopResponse stopsStopDetails($stop_id, $route_type, $stop_location, $stop_amenities, $stop_accessibility, $stop_contact, $stop_ticket, $gtfs, $stop_staffing, $stop_disruptions, $token, $devid, $signature)

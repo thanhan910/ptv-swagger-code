@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,16 +19,15 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3Status;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * An error response
  */
-@ApiModel(description = "An error response")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+@Schema(description = "An error response")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3ErrorResponse {
   @SerializedName("message")
   private String message = null;
@@ -46,7 +44,7 @@ public class V3ErrorResponse {
    * Error message
    * @return message
   **/
-  @ApiModelProperty(value = "Error message")
+  @Schema(description = "Error message")
   public String getMessage() {
     return message;
   }
@@ -61,10 +59,10 @@ public class V3ErrorResponse {
   }
 
    /**
-   * API Status / Metadata
+   * Get status
    * @return status
   **/
-  @ApiModelProperty(value = "API Status / Metadata")
+  @Schema(description = "")
   public V3Status getStatus() {
     return status;
   }
@@ -116,4 +114,3 @@ public class V3ErrorResponse {
   }
 
 }
-

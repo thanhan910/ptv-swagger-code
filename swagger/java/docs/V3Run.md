@@ -1,4 +1,3 @@
-
 # V3Run
 
 ## Properties
@@ -14,9 +13,6 @@ Name | Type | Description | Notes
 **directionId** | **Integer** | Direction of travel identifier |  [optional]
 **runSequence** | **Integer** | Chronological sequence of the trip/service run on the route in direction. Order ascendingly by this field to get chronological order (earliest first) of runs with the same route_id and direction_id. |  [optional]
 **expressStopCount** | **Integer** | The number of remaining skipped/express stations for the run/service from a stop |  [optional]
-**vehiclePosition** | [**V3VehiclePosition**](V3VehiclePosition.md) | Position of the trip/service run. Available for some Bus, Nightrider and Train runs. May be null. |  [optional]
-**vehicleDescriptor** | [**V3VehicleDescriptor**](V3VehicleDescriptor.md) | Descriptor of the trip/service run. Only available for some runs. May be null. |  [optional]
+**vehiclePosition** | [**V3VehiclePosition**](V3VehiclePosition.md) |  |  [optional]
+**vehicleDescriptor** | [**V3VehicleDescriptor**](V3VehicleDescriptor.md) |  |  [optional]
 **geopath** | **List&lt;Object&gt;** | Geopath of the route |  [optional]
-
-
-

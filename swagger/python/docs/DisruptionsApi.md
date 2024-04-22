@@ -1,6 +1,6 @@
 # swagger_client.DisruptionsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,6 @@ Method | HTTP request | Description
 [**disruptions_get_disruptions_by_route**](DisruptionsApi.md#disruptions_get_disruptions_by_route) | **GET** /v3/disruptions/route/{route_id} | View all disruptions for a particular route
 [**disruptions_get_disruptions_by_route_and_stop**](DisruptionsApi.md#disruptions_get_disruptions_by_route_and_stop) | **GET** /v3/disruptions/route/{route_id}/stop/{stop_id} | View all disruptions for a particular route and stop
 [**disruptions_get_disruptions_by_stop**](DisruptionsApi.md#disruptions_get_disruptions_by_stop) | **GET** /v3/disruptions/stop/{stop_id} | View all disruptions for a particular stop
-
 
 # **disruptions_get_all_disruptions**
 > V3DisruptionsResponse disruptions_get_all_disruptions(route_types=route_types, disruption_modes=disruption_modes, disruption_status=disruption_status, token=token, devid=devid, signature=signature)

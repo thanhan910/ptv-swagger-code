@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,20 +19,20 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3ResultOutlet;
 import io.swagger.client.model.V3ResultRoute;
 import io.swagger.client.model.V3ResultStop;
 import io.swagger.client.model.V3Status;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * V3SearchResult
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3SearchResult {
   @SerializedName("stops")
   private List<V3ResultStop> stops = null;
@@ -64,7 +63,7 @@ public class V3SearchResult {
    * Train stations, tram stops, bus stops, regional coach stops or Night Bus stops
    * @return stops
   **/
-  @ApiModelProperty(value = "Train stations, tram stops, bus stops, regional coach stops or Night Bus stops")
+  @Schema(description = "Train stations, tram stops, bus stops, regional coach stops or Night Bus stops")
   public List<V3ResultStop> getStops() {
     return stops;
   }
@@ -90,7 +89,7 @@ public class V3SearchResult {
    * Train lines, tram routes, bus routes, regional coach routes, Night Bus routes
    * @return routes
   **/
-  @ApiModelProperty(value = "Train lines, tram routes, bus routes, regional coach routes, Night Bus routes")
+  @Schema(description = "Train lines, tram routes, bus routes, regional coach routes, Night Bus routes")
   public List<V3ResultRoute> getRoutes() {
     return routes;
   }
@@ -116,7 +115,7 @@ public class V3SearchResult {
    * myki ticket outlets
    * @return outlets
   **/
-  @ApiModelProperty(value = "myki ticket outlets")
+  @Schema(description = "myki ticket outlets")
   public List<V3ResultOutlet> getOutlets() {
     return outlets;
   }
@@ -131,10 +130,10 @@ public class V3SearchResult {
   }
 
    /**
-   * API Status / Metadata
+   * Get status
    * @return status
   **/
-  @ApiModelProperty(value = "API Status / Metadata")
+  @Schema(description = "")
   public V3Status getStatus() {
     return status;
   }
@@ -190,4 +189,3 @@ public class V3SearchResult {
   }
 
 }
-

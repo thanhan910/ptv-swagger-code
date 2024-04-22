@@ -1,4 +1,3 @@
-
 # V3Direction
 
 ## Properties
@@ -8,6 +7,3 @@ Name | Type | Description | Notes
 **directionName** | **String** | Name of direction of travel |  [optional]
 **routeId** | **Integer** | Route identifier |  [optional]
 **routeType** | **Integer** | Transport mode identifier |  [optional]
-
-
-

@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3StopGps
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3StopGps {
   @SerializedName("latitude")
   private Float latitude = null;
@@ -44,7 +43,7 @@ public class V3StopGps {
    * Geographic coordinate of latitude at stop
    * @return latitude
   **/
-  @ApiModelProperty(value = "Geographic coordinate of latitude at stop")
+  @Schema(description = "Geographic coordinate of latitude at stop")
   public Float getLatitude() {
     return latitude;
   }
@@ -62,7 +61,7 @@ public class V3StopGps {
    * Geographic coordinate of longitude at stop
    * @return longitude
   **/
-  @ApiModelProperty(value = "Geographic coordinate of longitude at stop")
+  @Schema(description = "Geographic coordinate of longitude at stop")
   public Float getLongitude() {
     return longitude;
   }
@@ -114,4 +113,3 @@ public class V3StopGps {
   }
 
 }
-

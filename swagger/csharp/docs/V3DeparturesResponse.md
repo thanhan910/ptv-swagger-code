@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Runs** | [**Dictionary&lt;string, V3Run&gt;**](V3Run.md) | Individual trips/services of a route | [optional] 
 **Directions** | [**Dictionary&lt;string, V3Direction&gt;**](V3Direction.md) | Directions of travel of route | [optional] 
 **Disruptions** | [**Dictionary&lt;string, V3Disruption&gt;**](V3Disruption.md) | Disruption information applicable to relevant routes or stops | [optional] 
-**Status** | [**V3Status**](V3Status.md) | API Status / Metadata | [optional] 
+**Status** | [**V3Status**](V3Status.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

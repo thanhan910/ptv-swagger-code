@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,18 +19,18 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3SiriSubscriptionTopic;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import org.threeten.bp.OffsetDateTime;
-
 /**
  * V3SiriProductionTimetableSubscriptionRequest
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3SiriProductionTimetableSubscriptionRequest {
   @SerializedName("start_time")
   private OffsetDateTime startTime = null;
@@ -46,12 +45,13 @@ public class V3SiriProductionTimetableSubscriptionRequest {
   private String subscriptionRef = null;
 
   /**
-   * Siri Message Format &#39;xml&#39; or &#39;json&#39;
+   * Siri Message Format &#x27;xml&#x27; or &#x27;json&#x27;
    */
   @JsonAdapter(SiriFormatEnum.Adapter.class)
   public enum SiriFormatEnum {
+    @SerializedName("0")
     NUMBER_0(0),
-    
+    @SerializedName("1")
     NUMBER_1(1);
 
     private Integer value;
@@ -59,7 +59,6 @@ public class V3SiriProductionTimetableSubscriptionRequest {
     SiriFormatEnum(Integer value) {
       this.value = value;
     }
-
     public Integer getValue() {
       return value;
     }
@@ -68,31 +67,27 @@ public class V3SiriProductionTimetableSubscriptionRequest {
     public String toString() {
       return String.valueOf(value);
     }
-
-    public static SiriFormatEnum fromValue(String text) {
+    public static SiriFormatEnum fromValue(Integer input) {
       for (SiriFormatEnum b : SiriFormatEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
       return null;
     }
-
     public static class Adapter extends TypeAdapter<SiriFormatEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final SiriFormatEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public SiriFormatEnum read(final JsonReader jsonReader) throws IOException {
-        int value = jsonReader.nextInt();
-        return SiriFormatEnum.fromValue(String.valueOf(value));
+        Object value = jsonReader.nextInt();
+        return SiriFormatEnum.fromValue((Integer)(value));
       }
     }
-  }
-
-  @SerializedName("siri_format")
+  }  @SerializedName("siri_format")
   private SiriFormatEnum siriFormat = null;
 
   @SerializedName("siri_version")
@@ -116,7 +111,7 @@ public class V3SiriProductionTimetableSubscriptionRequest {
    * Siri Start Time of the Validity Period
    * @return startTime
   **/
-  @ApiModelProperty(required = true, value = "Siri Start Time of the Validity Period")
+  @Schema(required = true, description = "Siri Start Time of the Validity Period")
   public OffsetDateTime getStartTime() {
     return startTime;
   }
@@ -134,7 +129,7 @@ public class V3SiriProductionTimetableSubscriptionRequest {
    * Siri End Time of the Validity Period
    * @return endTime
   **/
-  @ApiModelProperty(required = true, value = "Siri End Time of the Validity Period")
+  @Schema(required = true, description = "Siri End Time of the Validity Period")
   public OffsetDateTime getEndTime() {
     return endTime;
   }
@@ -152,7 +147,7 @@ public class V3SiriProductionTimetableSubscriptionRequest {
    * Siri Subscriber Ref
    * @return subscriberRef
   **/
-  @ApiModelProperty(required = true, value = "Siri Subscriber Ref")
+  @Schema(required = true, description = "Siri Subscriber Ref")
   public String getSubscriberRef() {
     return subscriberRef;
   }
@@ -170,7 +165,7 @@ public class V3SiriProductionTimetableSubscriptionRequest {
    * Siri Subscription Ref - Unique to a Subscriber Ref
    * @return subscriptionRef
   **/
-  @ApiModelProperty(required = true, value = "Siri Subscription Ref - Unique to a Subscriber Ref")
+  @Schema(required = true, description = "Siri Subscription Ref - Unique to a Subscriber Ref")
   public String getSubscriptionRef() {
     return subscriptionRef;
   }
@@ -185,10 +180,10 @@ public class V3SiriProductionTimetableSubscriptionRequest {
   }
 
    /**
-   * Siri Message Format &#39;xml&#39; or &#39;json&#39;
+   * Siri Message Format &#x27;xml&#x27; or &#x27;json&#x27;
    * @return siriFormat
   **/
-  @ApiModelProperty(required = true, value = "Siri Message Format 'xml' or 'json'")
+  @Schema(required = true, description = "Siri Message Format 'xml' or 'json'")
   public SiriFormatEnum getSiriFormat() {
     return siriFormat;
   }
@@ -203,10 +198,10 @@ public class V3SiriProductionTimetableSubscriptionRequest {
   }
 
    /**
-   * Siri Message Version &#39;1.3&#39; or &#39;2.0&#39;
+   * Siri Message Version &#x27;1.3&#x27; or &#x27;2.0&#x27;
    * @return siriVersion
   **/
-  @ApiModelProperty(required = true, value = "Siri Message Version '1.3' or '2.0'")
+  @Schema(required = true, description = "Siri Message Version '1.3' or '2.0'")
   public String getSiriVersion() {
     return siriVersion;
   }
@@ -224,7 +219,7 @@ public class V3SiriProductionTimetableSubscriptionRequest {
    * Siri Consumer Address - Baseline and Updates will be sent to this address
    * @return consumerAddress
   **/
-  @ApiModelProperty(required = true, value = "Siri Consumer Address - Baseline and Updates will be sent to this address")
+  @Schema(required = true, description = "Siri Consumer Address - Baseline and Updates will be sent to this address")
   public String getConsumerAddress() {
     return consumerAddress;
   }
@@ -242,7 +237,7 @@ public class V3SiriProductionTimetableSubscriptionRequest {
    * Siri Initial Termination Time - Expiry of the subscription
    * @return initialTerminationTime
   **/
-  @ApiModelProperty(required = true, value = "Siri Initial Termination Time - Expiry of the subscription")
+  @Schema(required = true, description = "Siri Initial Termination Time - Expiry of the subscription")
   public OffsetDateTime getInitialTerminationTime() {
     return initialTerminationTime;
   }
@@ -265,7 +260,7 @@ public class V3SiriProductionTimetableSubscriptionRequest {
    * Get topics
    * @return topics
   **/
-  @ApiModelProperty(required = true, value = "")
+  @Schema(required = true, description = "")
   public List<V3SiriSubscriptionTopic> getTopics() {
     return topics;
   }
@@ -331,4 +326,3 @@ public class V3SiriProductionTimetableSubscriptionRequest {
   }
 
 }
-

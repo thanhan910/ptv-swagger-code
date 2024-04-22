@@ -1,4 +1,3 @@
-
 # V3BulkDeparturesStopResponse
 
 ## Properties
@@ -10,6 +9,3 @@ Name | Type | Description | Notes
 **stopLongitude** | **Float** | Geographic coordinate of longitude at stop |  [optional]
 **stopSuburb** | **String** | suburb of stop |  [optional]
 **stopLandmark** | **String** | Landmark in proximity of stop |  [optional]
-
-
-

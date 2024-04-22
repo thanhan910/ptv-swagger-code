@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3Direction
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3Direction {
   @SerializedName("direction_id")
   private Integer directionId = null;
@@ -50,7 +49,7 @@ public class V3Direction {
    * Direction of travel identifier
    * @return directionId
   **/
-  @ApiModelProperty(value = "Direction of travel identifier")
+  @Schema(description = "Direction of travel identifier")
   public Integer getDirectionId() {
     return directionId;
   }
@@ -68,7 +67,7 @@ public class V3Direction {
    * Name of direction of travel
    * @return directionName
   **/
-  @ApiModelProperty(value = "Name of direction of travel")
+  @Schema(description = "Name of direction of travel")
   public String getDirectionName() {
     return directionName;
   }
@@ -86,7 +85,7 @@ public class V3Direction {
    * Route identifier
    * @return routeId
   **/
-  @ApiModelProperty(value = "Route identifier")
+  @Schema(description = "Route identifier")
   public Integer getRouteId() {
     return routeId;
   }
@@ -104,7 +103,7 @@ public class V3Direction {
    * Transport mode identifier
    * @return routeType
   **/
-  @ApiModelProperty(value = "Transport mode identifier")
+  @Schema(description = "Transport mode identifier")
   public Integer getRouteType() {
     return routeType;
   }
@@ -160,4 +159,3 @@ public class V3Direction {
   }
 
 }
-

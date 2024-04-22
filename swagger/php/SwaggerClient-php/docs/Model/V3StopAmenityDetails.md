@@ -8,6 +8,5 @@ Name | Type | Description | Notes
 **car_parking** | **string** | The number of free car parking spots at the stop | [optional] 
 **cctv** | **bool** | Indicates if there are CCTV (i.e. closed circuit television) cameras at the stop | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

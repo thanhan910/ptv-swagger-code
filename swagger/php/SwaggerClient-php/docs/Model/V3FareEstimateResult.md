@@ -9,6 +9,5 @@ Name | Type | Description | Notes
 **zone_info** | [**\Swagger\Client\Model\V3ZoneInfo**](V3ZoneInfo.md) |  | [optional] 
 **passenger_fares** | [**\Swagger\Client\Model\V3PassengerFare[]**](V3PassengerFare.md) |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

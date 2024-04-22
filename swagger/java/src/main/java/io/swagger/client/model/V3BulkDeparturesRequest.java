@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,18 +19,18 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3StopDepartureRequest;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import org.threeten.bp.OffsetDateTime;
-
 /**
  * V3BulkDeparturesRequest
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3BulkDeparturesRequest {
   @SerializedName("requests")
   private List<V3StopDepartureRequest> requests = new ArrayList<V3StopDepartureRequest>();
@@ -53,22 +52,23 @@ public class V3BulkDeparturesRequest {
    */
   @JsonAdapter(ExpandEnum.Adapter.class)
   public enum ExpandEnum {
+    @SerializedName("All")
     ALL("All"),
-    
+    @SerializedName("Stop")
     STOP("Stop"),
-    
+    @SerializedName("Route")
     ROUTE("Route"),
-    
+    @SerializedName("Run")
     RUN("Run"),
-    
+    @SerializedName("Direction")
     DIRECTION("Direction"),
-    
+    @SerializedName("Disruption")
     DISRUPTION("Disruption"),
-    
+    @SerializedName("VehicleDescriptor")
     VEHICLEDESCRIPTOR("VehicleDescriptor"),
-    
+    @SerializedName("VehiclePosition")
     VEHICLEPOSITION("VehiclePosition"),
-    
+    @SerializedName("None")
     NONE("None");
 
     private String value;
@@ -76,7 +76,6 @@ public class V3BulkDeparturesRequest {
     ExpandEnum(String value) {
       this.value = value;
     }
-
     public String getValue() {
       return value;
     }
@@ -85,31 +84,27 @@ public class V3BulkDeparturesRequest {
     public String toString() {
       return String.valueOf(value);
     }
-
-    public static ExpandEnum fromValue(String text) {
+    public static ExpandEnum fromValue(String input) {
       for (ExpandEnum b : ExpandEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
       return null;
     }
-
     public static class Adapter extends TypeAdapter<ExpandEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final ExpandEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public ExpandEnum read(final JsonReader jsonReader) throws IOException {
-        String value = jsonReader.nextString();
-        return ExpandEnum.fromValue(String.valueOf(value));
+        Object value = jsonReader.nextString();
+        return ExpandEnum.fromValue((String)(value));
       }
     }
-  }
-
-  @SerializedName("expand")
+  }  @SerializedName("expand")
   private List<ExpandEnum> expand = null;
 
   public V3BulkDeparturesRequest requests(List<V3StopDepartureRequest> requests) {
@@ -126,7 +121,7 @@ public class V3BulkDeparturesRequest {
    * Collection of departure requests
    * @return requests
   **/
-  @ApiModelProperty(required = true, value = "Collection of departure requests")
+  @Schema(required = true, description = "Collection of departure requests")
   public List<V3StopDepartureRequest> getRequests() {
     return requests;
   }
@@ -144,7 +139,7 @@ public class V3BulkDeparturesRequest {
    * Filter by the date and time of the request (ISO 8601 UTC format) (default &#x3D; current date and time)
    * @return dateUtc
   **/
-  @ApiModelProperty(value = "Filter by the date and time of the request (ISO 8601 UTC format) (default = current date and time)")
+  @Schema(description = "Filter by the date and time of the request (ISO 8601 UTC format) (default = current date and time)")
   public OffsetDateTime getDateUtc() {
     return dateUtc;
   }
@@ -162,7 +157,7 @@ public class V3BulkDeparturesRequest {
    * Indicates if filtering runs (and their departures) to those that arrive at destination before date_utc (default &#x3D; false). Requires max_results &amp;gt; 0.
    * @return lookBackwards
   **/
-  @ApiModelProperty(value = "Indicates if filtering runs (and their departures) to those that arrive at destination before date_utc (default = false). Requires max_results &gt; 0.")
+  @Schema(description = "Indicates if filtering runs (and their departures) to those that arrive at destination before date_utc (default = false). Requires max_results &gt; 0.")
   public Boolean isLookBackwards() {
     return lookBackwards;
   }
@@ -180,7 +175,7 @@ public class V3BulkDeparturesRequest {
    * Indicates if cancelled services (if they exist) are returned (default &#x3D; false) - metropolitan train only
    * @return includeCancelled
   **/
-  @ApiModelProperty(value = "Indicates if cancelled services (if they exist) are returned (default = false) - metropolitan train only")
+  @Schema(description = "Indicates if cancelled services (if they exist) are returned (default = false) - metropolitan train only")
   public Boolean isIncludeCancelled() {
     return includeCancelled;
   }
@@ -198,7 +193,7 @@ public class V3BulkDeparturesRequest {
    * Indicates if the route geopath should be returned
    * @return includeGeopath
   **/
-  @ApiModelProperty(value = "Indicates if the route geopath should be returned")
+  @Schema(description = "Indicates if the route geopath should be returned")
   public Boolean isIncludeGeopath() {
     return includeGeopath;
   }
@@ -224,7 +219,7 @@ public class V3BulkDeparturesRequest {
    * List objects to be returned in full (i.e. expanded) - options include: all, stop, route, run, direction, disruption, none
    * @return expand
   **/
-  @ApiModelProperty(value = "List objects to be returned in full (i.e. expanded) - options include: all, stop, route, run, direction, disruption, none")
+  @Schema(description = "List objects to be returned in full (i.e. expanded) - options include: all, stop, route, run, direction, disruption, none")
   public List<ExpandEnum> getExpand() {
     return expand;
   }
@@ -284,4 +279,3 @@ public class V3BulkDeparturesRequest {
   }
 
 }
-

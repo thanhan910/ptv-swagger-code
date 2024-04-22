@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3OutletParameters
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3OutletParameters {
   @SerializedName("max_results")
   private Integer maxResults = null;
@@ -41,7 +40,7 @@ public class V3OutletParameters {
    * Maximum number of results returned (default &#x3D; 30)
    * @return maxResults
   **/
-  @ApiModelProperty(value = "Maximum number of results returned (default = 30)")
+  @Schema(description = "Maximum number of results returned (default = 30)")
   public Integer getMaxResults() {
     return maxResults;
   }
@@ -91,4 +90,3 @@ public class V3OutletParameters {
   }
 
 }
-

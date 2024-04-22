@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,18 +19,18 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.client.model.V3SiriDownstreamSubscriptionTopic;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import org.threeten.bp.OffsetDateTime;
-
 /**
  * V3SiriDownstreamSubscription
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3SiriDownstreamSubscription {
   @SerializedName("subscriber_ref")
   private String subscriberRef = null;
@@ -44,8 +43,9 @@ public class V3SiriDownstreamSubscription {
    */
   @JsonAdapter(MessageTypeEnum.Adapter.class)
   public enum MessageTypeEnum {
+    @SerializedName("0")
     NUMBER_0(0),
-    
+    @SerializedName("1")
     NUMBER_1(1);
 
     private Integer value;
@@ -53,7 +53,6 @@ public class V3SiriDownstreamSubscription {
     MessageTypeEnum(Integer value) {
       this.value = value;
     }
-
     public Integer getValue() {
       return value;
     }
@@ -62,31 +61,27 @@ public class V3SiriDownstreamSubscription {
     public String toString() {
       return String.valueOf(value);
     }
-
-    public static MessageTypeEnum fromValue(String text) {
+    public static MessageTypeEnum fromValue(Integer input) {
       for (MessageTypeEnum b : MessageTypeEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
       return null;
     }
-
     public static class Adapter extends TypeAdapter<MessageTypeEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final MessageTypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public MessageTypeEnum read(final JsonReader jsonReader) throws IOException {
-        int value = jsonReader.nextInt();
-        return MessageTypeEnum.fromValue(String.valueOf(value));
+        Object value = jsonReader.nextInt();
+        return MessageTypeEnum.fromValue((Integer)(value));
       }
     }
-  }
-
-  @SerializedName("message_type")
+  }  @SerializedName("message_type")
   private MessageTypeEnum messageType = null;
 
   /**
@@ -94,8 +89,9 @@ public class V3SiriDownstreamSubscription {
    */
   @JsonAdapter(SiriFormatEnum.Adapter.class)
   public enum SiriFormatEnum {
+    @SerializedName("0")
     NUMBER_0(0),
-    
+    @SerializedName("1")
     NUMBER_1(1);
 
     private Integer value;
@@ -103,7 +99,6 @@ public class V3SiriDownstreamSubscription {
     SiriFormatEnum(Integer value) {
       this.value = value;
     }
-
     public Integer getValue() {
       return value;
     }
@@ -112,31 +107,27 @@ public class V3SiriDownstreamSubscription {
     public String toString() {
       return String.valueOf(value);
     }
-
-    public static SiriFormatEnum fromValue(String text) {
+    public static SiriFormatEnum fromValue(Integer input) {
       for (SiriFormatEnum b : SiriFormatEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
       return null;
     }
-
     public static class Adapter extends TypeAdapter<SiriFormatEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final SiriFormatEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public SiriFormatEnum read(final JsonReader jsonReader) throws IOException {
-        int value = jsonReader.nextInt();
-        return SiriFormatEnum.fromValue(String.valueOf(value));
+        Object value = jsonReader.nextInt();
+        return SiriFormatEnum.fromValue((Integer)(value));
       }
     }
-  }
-
-  @SerializedName("siri_format")
+  }  @SerializedName("siri_format")
   private SiriFormatEnum siriFormat = null;
 
   @SerializedName("siri_version")
@@ -169,7 +160,7 @@ public class V3SiriDownstreamSubscription {
    * Get subscriberRef
    * @return subscriberRef
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public String getSubscriberRef() {
     return subscriberRef;
   }
@@ -187,7 +178,7 @@ public class V3SiriDownstreamSubscription {
    * Get subscriptionRef
    * @return subscriptionRef
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public String getSubscriptionRef() {
     return subscriptionRef;
   }
@@ -205,7 +196,7 @@ public class V3SiriDownstreamSubscription {
    * Get messageType
    * @return messageType
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public MessageTypeEnum getMessageType() {
     return messageType;
   }
@@ -223,7 +214,7 @@ public class V3SiriDownstreamSubscription {
    * Get siriFormat
    * @return siriFormat
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public SiriFormatEnum getSiriFormat() {
     return siriFormat;
   }
@@ -241,7 +232,7 @@ public class V3SiriDownstreamSubscription {
    * Get siriVersion
    * @return siriVersion
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public String getSiriVersion() {
     return siriVersion;
   }
@@ -259,7 +250,7 @@ public class V3SiriDownstreamSubscription {
    * Get consumerAddress
    * @return consumerAddress
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public String getConsumerAddress() {
     return consumerAddress;
   }
@@ -277,7 +268,7 @@ public class V3SiriDownstreamSubscription {
    * Get initialTerminationTime
    * @return initialTerminationTime
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public OffsetDateTime getInitialTerminationTime() {
     return initialTerminationTime;
   }
@@ -295,7 +286,7 @@ public class V3SiriDownstreamSubscription {
    * Get validityPeriodStart
    * @return validityPeriodStart
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public OffsetDateTime getValidityPeriodStart() {
     return validityPeriodStart;
   }
@@ -313,7 +304,7 @@ public class V3SiriDownstreamSubscription {
    * Get validityPeriodEnd
    * @return validityPeriodEnd
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public OffsetDateTime getValidityPeriodEnd() {
     return validityPeriodEnd;
   }
@@ -331,7 +322,7 @@ public class V3SiriDownstreamSubscription {
    * Get previewInterval
    * @return previewInterval
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public String getPreviewInterval() {
     return previewInterval;
   }
@@ -357,7 +348,7 @@ public class V3SiriDownstreamSubscription {
    * Get topics
    * @return topics
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public List<V3SiriDownstreamSubscriptionTopic> getTopics() {
     return topics;
   }
@@ -427,4 +418,3 @@ public class V3SiriDownstreamSubscription {
   }
 
 }
-

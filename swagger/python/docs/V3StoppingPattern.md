@@ -9,8 +9,7 @@ Name | Type | Description | Notes
 **routes** | **dict(str, object)** | Train lines, tram routes, bus routes, regional coach routes, Night Bus routes | [optional] 
 **runs** | [**dict(str, V3Run)**](V3Run.md) | Individual trips/services of a route | [optional] 
 **directions** | [**dict(str, V3Direction)**](V3Direction.md) | Directions of travel of route | [optional] 
-**status** | [**V3Status**](V3Status.md) | API Status / Metadata | [optional] 
+**status** | [**V3Status**](V3Status.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

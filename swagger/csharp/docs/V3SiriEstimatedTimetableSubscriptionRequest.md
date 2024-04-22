@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 **PreviewInterval** | **string** | Siri Preview Interval | 
 **SubscriberRef** | **string** | Siri Subscriber Ref | 
 **SubscriptionRef** | **string** | Siri Subscription Ref - Unique to a Subscriber Ref | 
-**SiriFormat** | **int?** | Siri Message Format &#39;xml&#39; or &#39;json&#39; | 
-**SiriVersion** | **string** | Siri Message Version &#39;1.3&#39; or &#39;2.0&#39; | 
+**SiriFormat** | **int?** | Siri Message Format &#x27;xml&#x27; or &#x27;json&#x27; | 
+**SiriVersion** | **string** | Siri Message Version &#x27;1.3&#x27; or &#x27;2.0&#x27; | 
 **ConsumerAddress** | **string** | Siri Consumer Address - Baseline and Updates will be sent to this address | 
 **InitialTerminationTime** | **DateTime?** | Siri Initial Termination Time - Expiry of the subscription | 
 **Topics** | [**List&lt;V3SiriSubscriptionTopic&gt;**](V3SiriSubscriptionTopic.md) |  | 

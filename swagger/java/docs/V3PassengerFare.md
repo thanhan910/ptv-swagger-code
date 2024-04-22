@@ -1,4 +1,3 @@
-
 # V3PassengerFare
 
 ## Properties
@@ -14,6 +13,3 @@ Name | Type | Description | Notes
 **pass70PlusDayPerDay** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **weekendCap** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **holidayCap** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
-
-
-

@@ -9,6 +9,5 @@ Name | Type | Description | Notes
 **tracking_supplier_id** | **int** | Authority (Upstream SIRI provider) of a route and direction | [optional] 
 **route_type** | **int** |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

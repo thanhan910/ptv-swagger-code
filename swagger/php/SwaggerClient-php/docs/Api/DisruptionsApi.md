@@ -1,16 +1,15 @@
 # Swagger\Client\DisruptionsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**disruptionsGetAllDisruptions**](DisruptionsApi.md#disruptionsGetAllDisruptions) | **GET** /v3/disruptions | View all disruptions for all route types
-[**disruptionsGetDisruptionById**](DisruptionsApi.md#disruptionsGetDisruptionById) | **GET** /v3/disruptions/{disruption_id} | View a specific disruption
-[**disruptionsGetDisruptionModes**](DisruptionsApi.md#disruptionsGetDisruptionModes) | **GET** /v3/disruptions/modes | Get all disruption modes
-[**disruptionsGetDisruptionsByRoute**](DisruptionsApi.md#disruptionsGetDisruptionsByRoute) | **GET** /v3/disruptions/route/{route_id} | View all disruptions for a particular route
-[**disruptionsGetDisruptionsByRouteAndStop**](DisruptionsApi.md#disruptionsGetDisruptionsByRouteAndStop) | **GET** /v3/disruptions/route/{route_id}/stop/{stop_id} | View all disruptions for a particular route and stop
-[**disruptionsGetDisruptionsByStop**](DisruptionsApi.md#disruptionsGetDisruptionsByStop) | **GET** /v3/disruptions/stop/{stop_id} | View all disruptions for a particular stop
-
+[**disruptionsGetAllDisruptions**](DisruptionsApi.md#disruptionsgetalldisruptions) | **GET** /v3/disruptions | View all disruptions for all route types
+[**disruptionsGetDisruptionById**](DisruptionsApi.md#disruptionsgetdisruptionbyid) | **GET** /v3/disruptions/{disruption_id} | View a specific disruption
+[**disruptionsGetDisruptionModes**](DisruptionsApi.md#disruptionsgetdisruptionmodes) | **GET** /v3/disruptions/modes | Get all disruption modes
+[**disruptionsGetDisruptionsByRoute**](DisruptionsApi.md#disruptionsgetdisruptionsbyroute) | **GET** /v3/disruptions/route/{route_id} | View all disruptions for a particular route
+[**disruptionsGetDisruptionsByRouteAndStop**](DisruptionsApi.md#disruptionsgetdisruptionsbyrouteandstop) | **GET** /v3/disruptions/route/{route_id}/stop/{stop_id} | View all disruptions for a particular route and stop
+[**disruptionsGetDisruptionsByStop**](DisruptionsApi.md#disruptionsgetdisruptionsbystop) | **GET** /v3/disruptions/stop/{stop_id} | View all disruptions for a particular stop
 
 # **disruptionsGetAllDisruptions**
 > \Swagger\Client\Model\V3DisruptionsResponse disruptionsGetAllDisruptions($route_types, $disruption_modes, $disruption_status, $token, $devid, $signature)

@@ -1,11 +1,10 @@
 # IO.Swagger.Api.SearchApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**SearchSearch**](SearchApi.md#searchsearch) | **GET** /v3/search/{search_term} | View stops, routes and myki ticket outlets that match the search term
-
 
 <a name="searchsearch"></a>
 # **SearchSearch**
@@ -29,7 +28,7 @@ namespace Example
         {
             var apiInstance = new SearchApi();
             var searchTerm = searchTerm_example;  // string | Search text (note: if search text is numeric and/or less than 3 characters, the API will only return routes)
-            var routeTypes = 56;  // List<int?> | Filter by route_type; values returned via RouteTypes API (note: stops and routes are ordered by route_types specified) (optional) 
+            var routeTypes = new List<int?>(); // List<int?> | Filter by route_type; values returned via RouteTypes API (note: stops and routes are ordered by route_types specified) (optional) 
             var latitude = 3.4;  // float? | Filter by geographic coordinate of latitude (optional) 
             var longitude = 3.4;  // float? | Filter by geographic coordinate of longitude (optional) 
             var maxDistance = 3.4;  // float? | Filter by maximum distance (in metres) from location specified via latitude and longitude parameters (optional) 
@@ -62,7 +61,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **searchTerm** | **string**| Search text (note: if search text is numeric and/or less than 3 characters, the API will only return routes) | 
- **routeTypes** | **List&lt;int?&gt;**| Filter by route_type; values returned via RouteTypes API (note: stops and routes are ordered by route_types specified) | [optional] 
+ **routeTypes** | [**List&lt;int?&gt;**](int?.md)| Filter by route_type; values returned via RouteTypes API (note: stops and routes are ordered by route_types specified) | [optional] 
  **latitude** | **float?**| Filter by geographic coordinate of latitude | [optional] 
  **longitude** | **float?**| Filter by geographic coordinate of longitude | [optional] 
  **maxDistance** | **float?**| Filter by maximum distance (in metres) from location specified via latitude and longitude parameters | [optional] 
@@ -89,4 +88,3 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

@@ -1,12 +1,11 @@
 # RoutesApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**routesOneOrMoreRoutes**](RoutesApi.md#routesOneOrMoreRoutes) | **GET** /v3/routes | View route names and numbers for all routes
 [**routesRouteFromId**](RoutesApi.md#routesRouteFromId) | **GET** /v3/routes/{route_id} | View route name and number for specific route ID
-
 
 <a name="routesOneOrMoreRoutes"></a>
 # **routesOneOrMoreRoutes**
@@ -75,7 +74,7 @@ View route name and number for specific route ID
 RoutesApi apiInstance = new RoutesApi();
 Integer routeId = 56; // Integer | Identifier of route; values returned by Departures, Directions and Disruptions APIs
 Boolean includeGeopath = true; // Boolean | Indicates kif geopath data will be returned (default = false)
-OffsetDateTime geopathUtc = OffsetDateTime.now(); // OffsetDateTime | Filter geopaths by date (ISO 8601 UTC format) (default = current date)
+OffsetDateTime geopathUtc = new OffsetDateTime(); // OffsetDateTime | Filter geopaths by date (ISO 8601 UTC format) (default = current date)
 String token = "token_example"; // String | Please ignore
 String devid = "devid_example"; // String | Your developer id
 String signature = "signature_example"; // String | Authentication signature for request

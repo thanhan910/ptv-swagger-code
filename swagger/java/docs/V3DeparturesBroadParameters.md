@@ -1,4 +1,3 @@
-
 # V3DeparturesBroadParameters
 
 ## Properties
@@ -14,7 +13,6 @@ Name | Type | Description | Notes
 **expand** | [**List&lt;ExpandEnum&gt;**](#List&lt;ExpandEnum&gt;) | List of objects to be returned in full (i.e. expanded) - options include: All, Stop, Route, Run, Direction, Disruption, VehiclePosition, VehicleDescriptor or None.  Run must be expanded to receive VehiclePosition and VehicleDescriptor information. |  [optional]
 **includeGeopath** | **Boolean** | Indicates if the route geopath should be returned |  [optional]
 
-
 <a name="List<ExpandEnum>"></a>
 ## Enum: List&lt;ExpandEnum&gt;
 Name | Value
@@ -28,6 +26,3 @@ DISRUPTION | &quot;Disruption&quot;
 VEHICLEDESCRIPTOR | &quot;VehicleDescriptor&quot;
 VEHICLEPOSITION | &quot;VehiclePosition&quot;
 NONE | &quot;None&quot;
-
-
-

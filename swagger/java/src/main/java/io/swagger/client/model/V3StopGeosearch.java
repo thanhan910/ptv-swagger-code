@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,16 +19,16 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * V3StopGeosearch
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3StopGeosearch {
   @SerializedName("disruption_ids")
   private List<Long> disruptionIds = null;
@@ -81,7 +80,7 @@ public class V3StopGeosearch {
    * Disruption information identifier(s)
    * @return disruptionIds
   **/
-  @ApiModelProperty(value = "Disruption information identifier(s)")
+  @Schema(description = "Disruption information identifier(s)")
   public List<Long> getDisruptionIds() {
     return disruptionIds;
   }
@@ -99,7 +98,7 @@ public class V3StopGeosearch {
    * Distance of stop from input location (in metres); returns 0 if no location is input
    * @return stopDistance
   **/
-  @ApiModelProperty(value = "Distance of stop from input location (in metres); returns 0 if no location is input")
+  @Schema(description = "Distance of stop from input location (in metres); returns 0 if no location is input")
   public Float getStopDistance() {
     return stopDistance;
   }
@@ -117,7 +116,7 @@ public class V3StopGeosearch {
    * suburb of stop
    * @return stopSuburb
   **/
-  @ApiModelProperty(value = "suburb of stop")
+  @Schema(description = "suburb of stop")
   public String getStopSuburb() {
     return stopSuburb;
   }
@@ -135,7 +134,7 @@ public class V3StopGeosearch {
    * Name of stop
    * @return stopName
   **/
-  @ApiModelProperty(value = "Name of stop")
+  @Schema(description = "Name of stop")
   public String getStopName() {
     return stopName;
   }
@@ -153,7 +152,7 @@ public class V3StopGeosearch {
    * Stop identifier
    * @return stopId
   **/
-  @ApiModelProperty(value = "Stop identifier")
+  @Schema(description = "Stop identifier")
   public Integer getStopId() {
     return stopId;
   }
@@ -171,7 +170,7 @@ public class V3StopGeosearch {
    * Transport mode identifier
    * @return routeType
   **/
-  @ApiModelProperty(value = "Transport mode identifier")
+  @Schema(description = "Transport mode identifier")
   public Integer getRouteType() {
     return routeType;
   }
@@ -197,7 +196,7 @@ public class V3StopGeosearch {
    * List of routes travelling through the stop
    * @return routes
   **/
-  @ApiModelProperty(value = "List of routes travelling through the stop")
+  @Schema(description = "List of routes travelling through the stop")
   public List<Object> getRoutes() {
     return routes;
   }
@@ -215,7 +214,7 @@ public class V3StopGeosearch {
    * Geographic coordinate of latitude at stop
    * @return stopLatitude
   **/
-  @ApiModelProperty(value = "Geographic coordinate of latitude at stop")
+  @Schema(description = "Geographic coordinate of latitude at stop")
   public Float getStopLatitude() {
     return stopLatitude;
   }
@@ -233,7 +232,7 @@ public class V3StopGeosearch {
    * Geographic coordinate of longitude at stop
    * @return stopLongitude
   **/
-  @ApiModelProperty(value = "Geographic coordinate of longitude at stop")
+  @Schema(description = "Geographic coordinate of longitude at stop")
   public Float getStopLongitude() {
     return stopLongitude;
   }
@@ -251,7 +250,7 @@ public class V3StopGeosearch {
    * Landmark in proximity of stop
    * @return stopLandmark
   **/
-  @ApiModelProperty(value = "Landmark in proximity of stop")
+  @Schema(description = "Landmark in proximity of stop")
   public String getStopLandmark() {
     return stopLandmark;
   }
@@ -269,7 +268,7 @@ public class V3StopGeosearch {
    * Sequence of the stop on the route/run; return 0 when route_id or run_id not specified. Order ascendingly by this field (when non zero) to get physical order (earliest first) of stops on the route_id/run_id.
    * @return stopSequence
   **/
-  @ApiModelProperty(value = "Sequence of the stop on the route/run; return 0 when route_id or run_id not specified. Order ascendingly by this field (when non zero) to get physical order (earliest first) of stops on the route_id/run_id.")
+  @Schema(description = "Sequence of the stop on the route/run; return 0 when route_id or run_id not specified. Order ascendingly by this field (when non zero) to get physical order (earliest first) of stops on the route_id/run_id.")
   public Integer getStopSequence() {
     return stopSequence;
   }
@@ -339,4 +338,3 @@ public class V3StopGeosearch {
   }
 
 }
-

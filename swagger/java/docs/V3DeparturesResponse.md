@@ -1,4 +1,3 @@
-
 # V3DeparturesResponse
 
 ## Properties
@@ -10,7 +9,4 @@ Name | Type | Description | Notes
 **runs** | [**Map&lt;String, V3Run&gt;**](V3Run.md) | Individual trips/services of a route |  [optional]
 **directions** | [**Map&lt;String, V3Direction&gt;**](V3Direction.md) | Directions of travel of route |  [optional]
 **disruptions** | [**Map&lt;String, V3Disruption&gt;**](V3Disruption.md) | Disruption information applicable to relevant routes or stops |  [optional]
-**status** | [**V3Status**](V3Status.md) | API Status / Metadata |  [optional]
-
-
-
+**status** | [**V3Status**](V3Status.md) |  |  [optional]

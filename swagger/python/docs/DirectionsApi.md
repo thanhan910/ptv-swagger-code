@@ -1,13 +1,12 @@
 # swagger_client.DirectionsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**directions_for_direction**](DirectionsApi.md#directions_for_direction) | **GET** /v3/directions/{direction_id} | View all routes for a direction of travel
 [**directions_for_direction_and_type**](DirectionsApi.md#directions_for_direction_and_type) | **GET** /v3/directions/{direction_id}/route_type/{route_type} | View all routes of a particular type for a direction of travel
 [**directions_for_route**](DirectionsApi.md#directions_for_route) | **GET** /v3/directions/route/{route_id} | View directions that a route travels in
-
 
 # **directions_for_direction**
 > V3DirectionsResponse directions_for_direction(direction_id, token=token, devid=devid, signature=signature)

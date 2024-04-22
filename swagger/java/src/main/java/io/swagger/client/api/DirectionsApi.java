@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.api;
 
 import io.swagger.client.ApiCallback;
@@ -68,7 +67,7 @@ public class DirectionsApi {
      */
     public com.squareup.okhttp.Call directionsForDirectionCall(Integer directionId, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/directions/{direction_id}"
             .replaceAll("\\{" + "direction_id" + "\\}", apiClient.escapeString(directionId.toString()));
@@ -113,19 +112,21 @@ public class DirectionsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call directionsForDirectionValidateBeforeCall(Integer directionId, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'directionId' is set
         if (directionId == null) {
             throw new ApiException("Missing the required parameter 'directionId' when calling directionsForDirection(Async)");
         }
         
-
         com.squareup.okhttp.Call call = directionsForDirectionCall(directionId, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**
@@ -210,7 +211,7 @@ public class DirectionsApi {
      */
     public com.squareup.okhttp.Call directionsForDirectionAndTypeCall(Integer directionId, Integer routeType, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/directions/{direction_id}/route_type/{route_type}"
             .replaceAll("\\{" + "direction_id" + "\\}", apiClient.escapeString(directionId.toString()))
@@ -256,24 +257,25 @@ public class DirectionsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call directionsForDirectionAndTypeValidateBeforeCall(Integer directionId, Integer routeType, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'directionId' is set
         if (directionId == null) {
             throw new ApiException("Missing the required parameter 'directionId' when calling directionsForDirectionAndType(Async)");
         }
-        
         // verify the required parameter 'routeType' is set
         if (routeType == null) {
             throw new ApiException("Missing the required parameter 'routeType' when calling directionsForDirectionAndType(Async)");
         }
         
-
         com.squareup.okhttp.Call call = directionsForDirectionAndTypeCall(directionId, routeType, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**
@@ -360,7 +362,7 @@ public class DirectionsApi {
      */
     public com.squareup.okhttp.Call directionsForRouteCall(Integer routeId, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/directions/route/{route_id}"
             .replaceAll("\\{" + "route_id" + "\\}", apiClient.escapeString(routeId.toString()));
@@ -405,19 +407,21 @@ public class DirectionsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call directionsForRouteValidateBeforeCall(Integer routeId, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'routeId' is set
         if (routeId == null) {
             throw new ApiException("Missing the required parameter 'routeId' when calling directionsForRoute(Async)");
         }
         
-
         com.squareup.okhttp.Call call = directionsForRouteCall(routeId, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**

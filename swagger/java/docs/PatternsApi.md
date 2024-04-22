@@ -1,11 +1,10 @@
 # PatternsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**patternsGetPatternByRun**](PatternsApi.md#patternsGetPatternByRun) | **GET** /v3/pattern/run/{run_ref}/route_type/{route_type} | View the stopping pattern for a specific trip/service run
-
 
 <a name="patternsGetPatternByRun"></a>
 # **patternsGetPatternByRun**
@@ -25,7 +24,7 @@ String runRef = "runRef_example"; // String | The run_ref is the identifier of a
 Integer routeType = 56; // Integer | Number identifying transport mode; values returned via RouteTypes API
 List<String> expand = Arrays.asList("expand_example"); // List<String> | List of objects to be returned in full (i.e. expanded) - options include: All, Stop, Route, Run, Direction, Disruption, VehiclePosition, VehicleDescriptor and None. Default is Disruption. Run must be expanded to receive VehiclePosition and VehicleDescriptor information.
 Integer stopId = 56; // Integer | Filter by stop_id; values returned by Stops API
-OffsetDateTime dateUtc = OffsetDateTime.now(); // OffsetDateTime | Filter by the date and time of the request (ISO 8601 UTC format)
+OffsetDateTime dateUtc = new OffsetDateTime(); // OffsetDateTime | Filter by the date and time of the request (ISO 8601 UTC format)
 Boolean includeSkippedStops = true; // Boolean | Include any skipped stops in a stopping pattern. Defaults to false.
 Boolean includeGeopath = true; // Boolean | Indicates if geopath data will be returned (default = false)
 String token = "token_example"; // String | Please ignore

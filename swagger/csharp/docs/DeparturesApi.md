@@ -1,12 +1,11 @@
 # IO.Swagger.Api.DeparturesApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**DeparturesGetForStop**](DeparturesApi.md#departuresgetforstop) | **GET** /v3/departures/route_type/{route_type}/stop/{stop_id} | View departures for all routes from a stop
 [**DeparturesGetForStopAndRoute**](DeparturesApi.md#departuresgetforstopandroute) | **GET** /v3/departures/route_type/{route_type}/stop/{stop_id}/route/{route_id} | View departures for a specific route from a stop
-
 
 <a name="departuresgetforstop"></a>
 # **DeparturesGetForStop**
@@ -38,7 +37,7 @@ namespace Example
             var maxResults = 56;  // int? | Maximum number of results returned (optional) 
             var includeCancelled = true;  // bool? | Indicates if cancelled services (if they exist) are returned (default = false) - metropolitan train only (optional) 
             var lookBackwards = true;  // bool? | Indicates if filtering runs (and their departures) to those that arrive at destination before date_utc (default = false). Requires max_results &gt; 0. (optional) 
-            var expand = expand_example;  // List<string> | List of objects to be returned in full (i.e. expanded) - options include: All, Stop, Route, Run, Direction, Disruption, VehiclePosition, VehicleDescriptor or None.  Run must be expanded to receive VehiclePosition and VehicleDescriptor information. (optional) 
+            var expand = new List<string>(); // List<string> | List of objects to be returned in full (i.e. expanded) - options include: All, Stop, Route, Run, Direction, Disruption, VehiclePosition, VehicleDescriptor or None.  Run must be expanded to receive VehiclePosition and VehicleDescriptor information. (optional) 
             var includeGeopath = true;  // bool? | Indicates if the route geopath should be returned (optional) 
             var token = token_example;  // string | Please ignore (optional) 
             var devid = devid_example;  // string | Your developer id (optional) 
@@ -72,7 +71,7 @@ Name | Type | Description  | Notes
  **maxResults** | **int?**| Maximum number of results returned | [optional] 
  **includeCancelled** | **bool?**| Indicates if cancelled services (if they exist) are returned (default &#x3D; false) - metropolitan train only | [optional] 
  **lookBackwards** | **bool?**| Indicates if filtering runs (and their departures) to those that arrive at destination before date_utc (default &#x3D; false). Requires max_results &amp;gt; 0. | [optional] 
- **expand** | **List&lt;string&gt;**| List of objects to be returned in full (i.e. expanded) - options include: All, Stop, Route, Run, Direction, Disruption, VehiclePosition, VehicleDescriptor or None.  Run must be expanded to receive VehiclePosition and VehicleDescriptor information. | [optional] 
+ **expand** | [**List&lt;string&gt;**](string.md)| List of objects to be returned in full (i.e. expanded) - options include: All, Stop, Route, Run, Direction, Disruption, VehiclePosition, VehicleDescriptor or None.  Run must be expanded to receive VehiclePosition and VehicleDescriptor information. | [optional] 
  **includeGeopath** | **bool?**| Indicates if the route geopath should be returned | [optional] 
  **token** | **string**| Please ignore | [optional] 
  **devid** | **string**| Your developer id | [optional] 
@@ -92,7 +91,6 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="departuresgetforstopandroute"></a>
 # **DeparturesGetForStopAndRoute**
 > V3DeparturesResponse DeparturesGetForStopAndRoute (int? routeType, int? stopId, string routeId, int? directionId = null, bool? gtfs = null, DateTime? dateUtc = null, int? maxResults = null, bool? includeCancelled = null, bool? lookBackwards = null, List<string> expand = null, bool? includeGeopath = null, string token = null, string devid = null, string signature = null)
@@ -123,7 +121,7 @@ namespace Example
             var maxResults = 56;  // int? | Maximum number of results returned (optional) 
             var includeCancelled = true;  // bool? | Indicates if cancelled services (if they exist) are returned (default = false) - metropolitan train only (optional) 
             var lookBackwards = true;  // bool? | Indicates if filtering runs (and their departures) to those that arrive at destination before date_utc (default = false). Requires max_results &gt; 0. (optional) 
-            var expand = expand_example;  // List<string> | List of objects to be returned in full (i.e. expanded) - options include: All, Stop, Route, Run, Direction, Disruption, VehiclePosition, VehicleDescriptor or None.  Run must be expanded to receive VehiclePosition and VehicleDescriptor information. (optional) 
+            var expand = new List<string>(); // List<string> | List of objects to be returned in full (i.e. expanded) - options include: All, Stop, Route, Run, Direction, Disruption, VehiclePosition, VehicleDescriptor or None.  Run must be expanded to receive VehiclePosition and VehicleDescriptor information. (optional) 
             var includeGeopath = true;  // bool? | Indicates if the route geopath should be returned (optional) 
             var token = token_example;  // string | Please ignore (optional) 
             var devid = devid_example;  // string | Your developer id (optional) 
@@ -157,7 +155,7 @@ Name | Type | Description  | Notes
  **maxResults** | **int?**| Maximum number of results returned | [optional] 
  **includeCancelled** | **bool?**| Indicates if cancelled services (if they exist) are returned (default &#x3D; false) - metropolitan train only | [optional] 
  **lookBackwards** | **bool?**| Indicates if filtering runs (and their departures) to those that arrive at destination before date_utc (default &#x3D; false). Requires max_results &amp;gt; 0. | [optional] 
- **expand** | **List&lt;string&gt;**| List of objects to be returned in full (i.e. expanded) - options include: All, Stop, Route, Run, Direction, Disruption, VehiclePosition, VehicleDescriptor or None.  Run must be expanded to receive VehiclePosition and VehicleDescriptor information. | [optional] 
+ **expand** | [**List&lt;string&gt;**](string.md)| List of objects to be returned in full (i.e. expanded) - options include: All, Stop, Route, Run, Direction, Disruption, VehiclePosition, VehicleDescriptor or None.  Run must be expanded to receive VehiclePosition and VehicleDescriptor information. | [optional] 
  **includeGeopath** | **bool?**| Indicates if the route geopath should be returned | [optional] 
  **token** | **string**| Please ignore | [optional] 
  **devid** | **string**| Your developer id | [optional] 
@@ -177,4 +175,3 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

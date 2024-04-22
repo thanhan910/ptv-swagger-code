@@ -1,4 +1,3 @@
-
 # V3StopAccessibilityWheelchair
 
 ## Properties
@@ -15,6 +14,3 @@ Name | Type | Description | Notes
 **secondaryPath** | **Boolean** | Indicates if there is a path beyond the stop which is accessible |  [optional]
 **raisedPlatformShelther** | **Boolean** | Indicates if there is shelter near the raised platform |  [optional]
 **steepRamp** | **Boolean** | Indicates if there are ramps (&amp;gt;1:14) at the stop/platform |  [optional]
-
-
-

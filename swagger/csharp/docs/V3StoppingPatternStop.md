@@ -3,7 +3,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**StopTicket** | [**V3StopTicket**](V3StopTicket.md) | Stop ticket information | [optional] 
+**StopTicket** | [**V3StopTicket**](V3StopTicket.md) |  | [optional] 
 **StopDistance** | **float?** | Distance of stop from input location (in metres); returns 0 if no location is input | [optional] 
 **StopSuburb** | **string** | suburb of stop | [optional] 
 **StopName** | **string** | Name of stop | [optional] 

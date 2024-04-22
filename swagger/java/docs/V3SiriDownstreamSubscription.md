@@ -1,4 +1,3 @@
-
 # V3SiriDownstreamSubscription
 
 ## Properties
@@ -16,7 +15,6 @@ Name | Type | Description | Notes
 **previewInterval** | **String** |  |  [optional]
 **topics** | [**List&lt;V3SiriDownstreamSubscriptionTopic&gt;**](V3SiriDownstreamSubscriptionTopic.md) |  |  [optional]
 
-
 <a name="MessageTypeEnum"></a>
 ## Enum: MessageTypeEnum
 Name | Value
@@ -24,13 +22,9 @@ Name | Value
 NUMBER_0 | 0
 NUMBER_1 | 1
 
-
 <a name="SiriFormatEnum"></a>
 ## Enum: SiriFormatEnum
 Name | Value
 ---- | -----
 NUMBER_0 | 0
 NUMBER_1 | 1
-
-
-

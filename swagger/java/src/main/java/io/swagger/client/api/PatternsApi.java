@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.api;
 
 import io.swagger.client.ApiCallback;
@@ -75,7 +74,7 @@ public class PatternsApi {
      */
     public com.squareup.okhttp.Call patternsGetPatternByRunCall(String runRef, Integer routeType, List<String> expand, Integer stopId, OffsetDateTime dateUtc, Boolean includeSkippedStops, Boolean includeGeopath, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/pattern/run/{run_ref}/route_type/{route_type}"
             .replaceAll("\\{" + "run_ref" + "\\}", apiClient.escapeString(runRef.toString()))
@@ -131,29 +130,29 @@ public class PatternsApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call patternsGetPatternByRunValidateBeforeCall(String runRef, Integer routeType, List<String> expand, Integer stopId, OffsetDateTime dateUtc, Boolean includeSkippedStops, Boolean includeGeopath, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'runRef' is set
         if (runRef == null) {
             throw new ApiException("Missing the required parameter 'runRef' when calling patternsGetPatternByRun(Async)");
         }
-        
         // verify the required parameter 'routeType' is set
         if (routeType == null) {
             throw new ApiException("Missing the required parameter 'routeType' when calling patternsGetPatternByRun(Async)");
         }
-        
         // verify the required parameter 'expand' is set
         if (expand == null) {
             throw new ApiException("Missing the required parameter 'expand' when calling patternsGetPatternByRun(Async)");
         }
         
-
         com.squareup.okhttp.Call call = patternsGetPatternByRunCall(runRef, routeType, expand, stopId, dateUtc, includeSkippedStops, includeGeopath, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**

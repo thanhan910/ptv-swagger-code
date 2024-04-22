@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3VehicleDescriptor
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3VehicleDescriptor {
   @SerializedName("operator")
   private String operator = null;
@@ -59,7 +58,7 @@ public class V3VehicleDescriptor {
    * Operator name of the vehicle such as \&quot;Metro Trains Melbourne\&quot;, \&quot;Yarra Trams\&quot;, \&quot;Ventura Bus Line\&quot;, \&quot;CDC\&quot; or \&quot;Sita Bus Lines\&quot; . May be null/empty.  Only available for train, tram, v/line and some bus runs.
    * @return operator
   **/
-  @ApiModelProperty(value = "Operator name of the vehicle such as \"Metro Trains Melbourne\", \"Yarra Trams\", \"Ventura Bus Line\", \"CDC\" or \"Sita Bus Lines\" . May be null/empty.  Only available for train, tram, v/line and some bus runs.")
+  @Schema(description = "Operator name of the vehicle such as \"Metro Trains Melbourne\", \"Yarra Trams\", \"Ventura Bus Line\", \"CDC\" or \"Sita Bus Lines\" . May be null/empty.  Only available for train, tram, v/line and some bus runs.")
   public String getOperator() {
     return operator;
   }
@@ -77,7 +76,7 @@ public class V3VehicleDescriptor {
    * Operator identifier of the vehicle such as \&quot;26094\&quot;. May be null/empty. Only available for some tram and bus runs.
    * @return id
   **/
-  @ApiModelProperty(value = "Operator identifier of the vehicle such as \"26094\". May be null/empty. Only available for some tram and bus runs.")
+  @Schema(description = "Operator identifier of the vehicle such as \"26094\". May be null/empty. Only available for some tram and bus runs.")
   public String getId() {
     return id;
   }
@@ -95,7 +94,7 @@ public class V3VehicleDescriptor {
    * Indicator if vehicle has a low floor. May be null. Only available for some tram runs.
    * @return lowFloor
   **/
-  @ApiModelProperty(value = "Indicator if vehicle has a low floor. May be null. Only available for some tram runs.")
+  @Schema(description = "Indicator if vehicle has a low floor. May be null. Only available for some tram runs.")
   public Boolean isLowFloor() {
     return lowFloor;
   }
@@ -113,7 +112,7 @@ public class V3VehicleDescriptor {
    * Indicator if vehicle is air conditioned. May be null. Only available for some tram runs.
    * @return airConditioned
   **/
-  @ApiModelProperty(value = "Indicator if vehicle is air conditioned. May be null. Only available for some tram runs.")
+  @Schema(description = "Indicator if vehicle is air conditioned. May be null. Only available for some tram runs.")
   public Boolean isAirConditioned() {
     return airConditioned;
   }
@@ -131,7 +130,7 @@ public class V3VehicleDescriptor {
    * Vehicle description such as \&quot;6 Car Comeng\&quot;, \&quot;6 Car Xtrapolis\&quot;, \&quot;3 Car Comeng\&quot;, \&quot;6 Car Siemens\&quot;, \&quot;3 Car Siemens\&quot;. May be null/empty.  Only available for some metropolitan train runs.
    * @return description
   **/
-  @ApiModelProperty(value = "Vehicle description such as \"6 Car Comeng\", \"6 Car Xtrapolis\", \"3 Car Comeng\", \"6 Car Siemens\", \"3 Car Siemens\". May be null/empty.  Only available for some metropolitan train runs.")
+  @Schema(description = "Vehicle description such as \"6 Car Comeng\", \"6 Car Xtrapolis\", \"3 Car Comeng\", \"6 Car Siemens\", \"3 Car Siemens\". May be null/empty.  Only available for some metropolitan train runs.")
   public String getDescription() {
     return description;
   }
@@ -149,7 +148,7 @@ public class V3VehicleDescriptor {
    * Supplier of vehicle descriptor data.
    * @return supplier
   **/
-  @ApiModelProperty(value = "Supplier of vehicle descriptor data.")
+  @Schema(description = "Supplier of vehicle descriptor data.")
   public String getSupplier() {
     return supplier;
   }
@@ -167,7 +166,7 @@ public class V3VehicleDescriptor {
    * The length of the vehicle. Applies to CIS - Metro Trains
    * @return length
   **/
-  @ApiModelProperty(value = "The length of the vehicle. Applies to CIS - Metro Trains")
+  @Schema(description = "The length of the vehicle. Applies to CIS - Metro Trains")
   public String getLength() {
     return length;
   }
@@ -229,4 +228,3 @@ public class V3VehicleDescriptor {
   }
 
 }
-

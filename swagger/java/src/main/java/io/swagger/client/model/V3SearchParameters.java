@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,30 +19,31 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * V3SearchParameters
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3SearchParameters {
   /**
    * Gets or Sets routeTypes
    */
   @JsonAdapter(RouteTypesEnum.Adapter.class)
   public enum RouteTypesEnum {
+    @SerializedName("0")
     _0("0"),
-    
+    @SerializedName("1")
     _1("1"),
-    
+    @SerializedName("2")
     _2("2"),
-    
+    @SerializedName("3")
     _3("3"),
-    
+    @SerializedName("4")
     _4("4");
 
     private Integer value;
@@ -51,7 +51,6 @@ public class V3SearchParameters {
     RouteTypesEnum(Integer value) {
       this.value = value;
     }
-
     public Integer getValue() {
       return value;
     }
@@ -60,31 +59,27 @@ public class V3SearchParameters {
     public String toString() {
       return String.valueOf(value);
     }
-
-    public static RouteTypesEnum fromValue(String text) {
+    public static RouteTypesEnum fromValue(Integer input) {
       for (RouteTypesEnum b : RouteTypesEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
       return null;
     }
-
     public static class Adapter extends TypeAdapter<RouteTypesEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final RouteTypesEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public RouteTypesEnum read(final JsonReader jsonReader) throws IOException {
-        int value = jsonReader.nextInt();
-        return RouteTypesEnum.fromValue(String.valueOf(value));
+        Object value = jsonReader.nextInt();
+        return RouteTypesEnum.fromValue((Integer)(value));
       }
     }
-  }
-
-  @SerializedName("route_types")
+  }  @SerializedName("route_types")
   private List<RouteTypesEnum> routeTypes = null;
 
   @SerializedName("latitude")
@@ -128,7 +123,7 @@ public class V3SearchParameters {
    * Filter by route_type; values returned via RouteTypes API (note: stops and routes are ordered by route_types specified)
    * @return routeTypes
   **/
-  @ApiModelProperty(value = "Filter by route_type; values returned via RouteTypes API (note: stops and routes are ordered by route_types specified)")
+  @Schema(description = "Filter by route_type; values returned via RouteTypes API (note: stops and routes are ordered by route_types specified)")
   public List<RouteTypesEnum> getRouteTypes() {
     return routeTypes;
   }
@@ -146,7 +141,7 @@ public class V3SearchParameters {
    * Filter by geographic coordinate of latitude
    * @return latitude
   **/
-  @ApiModelProperty(value = "Filter by geographic coordinate of latitude")
+  @Schema(description = "Filter by geographic coordinate of latitude")
   public Float getLatitude() {
     return latitude;
   }
@@ -164,7 +159,7 @@ public class V3SearchParameters {
    * Filter by geographic coordinate of longitude
    * @return longitude
   **/
-  @ApiModelProperty(value = "Filter by geographic coordinate of longitude")
+  @Schema(description = "Filter by geographic coordinate of longitude")
   public Float getLongitude() {
     return longitude;
   }
@@ -182,7 +177,7 @@ public class V3SearchParameters {
    * Filter by maximum distance (in metres) from location specified via latitude and longitude parameters
    * @return maxDistance
   **/
-  @ApiModelProperty(value = "Filter by maximum distance (in metres) from location specified via latitude and longitude parameters")
+  @Schema(description = "Filter by maximum distance (in metres) from location specified via latitude and longitude parameters")
   public Float getMaxDistance() {
     return maxDistance;
   }
@@ -200,7 +195,7 @@ public class V3SearchParameters {
    * Placeholder for future development; currently unavailable
    * @return includeAddresses
   **/
-  @ApiModelProperty(value = "Placeholder for future development; currently unavailable")
+  @Schema(description = "Placeholder for future development; currently unavailable")
   public Boolean isIncludeAddresses() {
     return includeAddresses;
   }
@@ -218,7 +213,7 @@ public class V3SearchParameters {
    * Indicates if outlets will be returned in response (default &#x3D; true)
    * @return includeOutlets
   **/
-  @ApiModelProperty(value = "Indicates if outlets will be returned in response (default = true)")
+  @Schema(description = "Indicates if outlets will be returned in response (default = true)")
   public Boolean isIncludeOutlets() {
     return includeOutlets;
   }
@@ -236,7 +231,7 @@ public class V3SearchParameters {
    * Indicates whether to find stops by suburbs in the search term (default &#x3D; true)
    * @return matchStopBySuburb
   **/
-  @ApiModelProperty(value = "Indicates whether to find stops by suburbs in the search term (default = true)")
+  @Schema(description = "Indicates whether to find stops by suburbs in the search term (default = true)")
   public Boolean isMatchStopBySuburb() {
     return matchStopBySuburb;
   }
@@ -254,7 +249,7 @@ public class V3SearchParameters {
    * Indicates whether to find routes by suburbs in the search term (default &#x3D; true)
    * @return matchRouteBySuburb
   **/
-  @ApiModelProperty(value = "Indicates whether to find routes by suburbs in the search term (default = true)")
+  @Schema(description = "Indicates whether to find routes by suburbs in the search term (default = true)")
   public Boolean isMatchRouteBySuburb() {
     return matchRouteBySuburb;
   }
@@ -272,7 +267,7 @@ public class V3SearchParameters {
    * Indicates whether to search for stops according to a metlink stop ID (default &#x3D; false)
    * @return matchStopByGtfsStopId
   **/
-  @ApiModelProperty(value = "Indicates whether to search for stops according to a metlink stop ID (default = false)")
+  @Schema(description = "Indicates whether to search for stops according to a metlink stop ID (default = false)")
   public Boolean isMatchStopByGtfsStopId() {
     return matchStopByGtfsStopId;
   }
@@ -338,4 +333,3 @@ public class V3SearchParameters {
   }
 
 }
-

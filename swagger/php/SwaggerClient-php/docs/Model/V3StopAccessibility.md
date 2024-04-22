@@ -13,8 +13,7 @@ Name | Type | Description | Notes
 **stop_accessible** | **bool** | Indicates if the stop is accessible | [optional] 
 **tactile_ground_surface_indicator** | **bool** | Indicates if there are tactile tiles (also known as tactile ground surface indicators, or TGSIs) at the stop | [optional] 
 **waiting_room** | **bool** | Indicates if there is a general waiting area at the stop | [optional] 
-**wheelchair** | [**\Swagger\Client\Model\V3StopAccessibilityWheelchair**](V3StopAccessibilityWheelchair.md) | Facilities relating to the accessibility of the stop by wheelchair | [optional] 
+**wheelchair** | [**\Swagger\Client\Model\V3StopAccessibilityWheelchair**](V3StopAccessibilityWheelchair.md) |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

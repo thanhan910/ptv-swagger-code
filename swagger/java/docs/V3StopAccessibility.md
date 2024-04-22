@@ -1,4 +1,3 @@
-
 # V3StopAccessibility
 
 ## Properties
@@ -14,7 +13,4 @@ Name | Type | Description | Notes
 **stopAccessible** | **Boolean** | Indicates if the stop is accessible |  [optional]
 **tactileGroundSurfaceIndicator** | **Boolean** | Indicates if there are tactile tiles (also known as tactile ground surface indicators, or TGSIs) at the stop |  [optional]
 **waitingRoom** | **Boolean** | Indicates if there is a general waiting area at the stop |  [optional]
-**wheelchair** | [**V3StopAccessibilityWheelchair**](V3StopAccessibilityWheelchair.md) | Facilities relating to the accessibility of the stop by wheelchair |  [optional]
-
-
-
+**wheelchair** | [**V3StopAccessibilityWheelchair**](V3StopAccessibilityWheelchair.md) |  |  [optional]

@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.api;
 
 import io.swagger.client.ApiCallback;
@@ -79,7 +78,7 @@ public class DeparturesApi {
      */
     public com.squareup.okhttp.Call departuresGetForStopCall(Integer routeType, Integer stopId, List<Integer> platformNumbers, Integer directionId, Boolean gtfs, OffsetDateTime dateUtc, Integer maxResults, Boolean includeCancelled, Boolean lookBackwards, List<String> expand, Boolean includeGeopath, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/departures/route_type/{route_type}/stop/{stop_id}"
             .replaceAll("\\{" + "route_type" + "\\}", apiClient.escapeString(routeType.toString()))
@@ -143,24 +142,25 @@ public class DeparturesApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call departuresGetForStopValidateBeforeCall(Integer routeType, Integer stopId, List<Integer> platformNumbers, Integer directionId, Boolean gtfs, OffsetDateTime dateUtc, Integer maxResults, Boolean includeCancelled, Boolean lookBackwards, List<String> expand, Boolean includeGeopath, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'routeType' is set
         if (routeType == null) {
             throw new ApiException("Missing the required parameter 'routeType' when calling departuresGetForStop(Async)");
         }
-        
         // verify the required parameter 'stopId' is set
         if (stopId == null) {
             throw new ApiException("Missing the required parameter 'stopId' when calling departuresGetForStop(Async)");
         }
         
-
         com.squareup.okhttp.Call call = departuresGetForStopCall(routeType, stopId, platformNumbers, directionId, gtfs, dateUtc, maxResults, includeCancelled, lookBackwards, expand, includeGeopath, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**
@@ -284,7 +284,7 @@ public class DeparturesApi {
      */
     public com.squareup.okhttp.Call departuresGetForStopAndRouteCall(Integer routeType, Integer stopId, String routeId, Integer directionId, Boolean gtfs, OffsetDateTime dateUtc, Integer maxResults, Boolean includeCancelled, Boolean lookBackwards, List<String> expand, Boolean includeGeopath, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
-
+        
         // create path and map variables
         String localVarPath = "/v3/departures/route_type/{route_type}/stop/{stop_id}/route/{route_id}"
             .replaceAll("\\{" + "route_type" + "\\}", apiClient.escapeString(routeType.toString()))
@@ -347,29 +347,29 @@ public class DeparturesApi {
         String[] localVarAuthNames = new String[] {  };
         return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
-
+    
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call departuresGetForStopAndRouteValidateBeforeCall(Integer routeType, Integer stopId, String routeId, Integer directionId, Boolean gtfs, OffsetDateTime dateUtc, Integer maxResults, Boolean includeCancelled, Boolean lookBackwards, List<String> expand, Boolean includeGeopath, String token, String devid, String signature, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        
         // verify the required parameter 'routeType' is set
         if (routeType == null) {
             throw new ApiException("Missing the required parameter 'routeType' when calling departuresGetForStopAndRoute(Async)");
         }
-        
         // verify the required parameter 'stopId' is set
         if (stopId == null) {
             throw new ApiException("Missing the required parameter 'stopId' when calling departuresGetForStopAndRoute(Async)");
         }
-        
         // verify the required parameter 'routeId' is set
         if (routeId == null) {
             throw new ApiException("Missing the required parameter 'routeId' when calling departuresGetForStopAndRoute(Async)");
         }
         
-
         com.squareup.okhttp.Call call = departuresGetForStopAndRouteCall(routeType, stopId, routeId, directionId, gtfs, dateUtc, maxResults, includeCancelled, lookBackwards, expand, includeGeopath, token, devid, signature, progressListener, progressRequestListener);
         return call;
 
+        
+        
+        
+        
     }
 
     /**

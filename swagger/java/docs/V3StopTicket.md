@@ -1,4 +1,3 @@
-
 # V3StopTicket
 
 ## Properties
@@ -11,6 +10,3 @@ Name | Type | Description | Notes
 **ticketChecks** | **Boolean** |  |  [optional]
 **vlineReservation** | **Boolean** |  |  [optional]
 **ticketZones** | **List&lt;Integer&gt;** |  |  [optional]
-
-
-

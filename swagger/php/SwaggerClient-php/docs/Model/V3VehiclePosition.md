@@ -13,6 +13,5 @@ Name | Type | Description | Notes
 **datetime_utc** | [**\DateTime**](\DateTime.md) | Date and time that the vehicle position data was supplied. | [optional] 
 **expiry_time** | [**\DateTime**](\DateTime.md) | CIS - Metro Train Vehicle Location data expiry time | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

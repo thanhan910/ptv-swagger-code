@@ -1,13 +1,12 @@
 # IO.Swagger.Api.StopsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**StopsStopDetails**](StopsApi.md#stopsstopdetails) | **GET** /v3/stops/{stop_id}/route_type/{route_type} | View facilities at a specific stop (Metro and V/Line stations only)
 [**StopsStopsByGeolocation**](StopsApi.md#stopsstopsbygeolocation) | **GET** /v3/stops/location/{latitude},{longitude} | View all stops near a specific location
 [**StopsStopsForRoute**](StopsApi.md#stopsstopsforroute) | **GET** /v3/stops/route/{route_id}/route_type/{route_type} | View all stops on a specific route
-
 
 <a name="stopsstopdetails"></a>
 # **StopsStopDetails**
@@ -91,7 +90,6 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="stopsstopsbygeolocation"></a>
 # **StopsStopsByGeolocation**
 > V3StopsByDistanceResponse StopsStopsByGeolocation (float? latitude, float? longitude, List<int?> routeTypes = null, int? maxResults = null, double? maxDistance = null, bool? stopDisruptions = null, string token = null, string devid = null, string signature = null)
@@ -115,7 +113,7 @@ namespace Example
             var apiInstance = new StopsApi();
             var latitude = 3.4;  // float? | Geographic coordinate of latitude
             var longitude = 3.4;  // float? | Geographic coordinate of longitude
-            var routeTypes = 56;  // List<int?> | Filter by route_type; values returned via RouteTypes API (optional) 
+            var routeTypes = new List<int?>(); // List<int?> | Filter by route_type; values returned via RouteTypes API (optional) 
             var maxResults = 56;  // int? | Maximum number of results returned (default = 30) (optional) 
             var maxDistance = 1.2;  // double? | Filter by maximum distance (in metres) from location specified via latitude and longitude parameters (default = 300) (optional) 
             var stopDisruptions = true;  // bool? | Indicates if stop disruption information will be returned (default = false) (optional) 
@@ -144,7 +142,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **latitude** | **float?**| Geographic coordinate of latitude | 
  **longitude** | **float?**| Geographic coordinate of longitude | 
- **routeTypes** | **List&lt;int?&gt;**| Filter by route_type; values returned via RouteTypes API | [optional] 
+ **routeTypes** | [**List&lt;int?&gt;**](int?.md)| Filter by route_type; values returned via RouteTypes API | [optional] 
  **maxResults** | **int?**| Maximum number of results returned (default &#x3D; 30) | [optional] 
  **maxDistance** | **double?**| Filter by maximum distance (in metres) from location specified via latitude and longitude parameters (default &#x3D; 300) | [optional] 
  **stopDisruptions** | **bool?**| Indicates if stop disruption information will be returned (default &#x3D; false) | [optional] 
@@ -166,7 +164,6 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="stopsstopsforroute"></a>
 # **StopsStopsForRoute**
 > V3StopsOnRouteResponse StopsStopsForRoute (int? routeId, int? routeType, int? directionId = null, bool? stopDisruptions = null, bool? includeGeopath = null, DateTime? geopathUtc = null, string token = null, string devid = null, string signature = null)
@@ -241,4 +238,3 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

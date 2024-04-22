@@ -1,13 +1,12 @@
 # IO.Swagger.Api.DirectionsApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**DirectionsForDirection**](DirectionsApi.md#directionsfordirection) | **GET** /v3/directions/{direction_id} | View all routes for a direction of travel
 [**DirectionsForDirectionAndType**](DirectionsApi.md#directionsfordirectionandtype) | **GET** /v3/directions/{direction_id}/route_type/{route_type} | View all routes of a particular type for a direction of travel
 [**DirectionsForRoute**](DirectionsApi.md#directionsforroute) | **GET** /v3/directions/route/{route_id} | View directions that a route travels in
-
 
 <a name="directionsfordirection"></a>
 # **DirectionsForDirection**
@@ -73,7 +72,6 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="directionsfordirectionandtype"></a>
 # **DirectionsForDirectionAndType**
 > V3DirectionsResponse DirectionsForDirectionAndType (int? directionId, int? routeType, string token = null, string devid = null, string signature = null)
@@ -140,7 +138,6 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 <a name="directionsforroute"></a>
 # **DirectionsForRoute**
 > V3DirectionsResponse DirectionsForRoute (int? routeId, string token = null, string devid = null, string signature = null)
@@ -205,4 +202,3 @@ No authorization required
  - **Accept**: application/json, text/json, text/html
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

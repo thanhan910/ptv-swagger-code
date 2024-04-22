@@ -1,4 +1,3 @@
-
 # V3ResultRoute
 
 ## Properties
@@ -9,7 +8,4 @@ Name | Type | Description | Notes
 **routeType** | **Integer** | Transport mode identifier |  [optional]
 **routeId** | **Integer** | Route identifier |  [optional]
 **routeGtfsId** | **String** | GTFS Identifer of the route |  [optional]
-**routeServiceStatus** | [**V3RouteServiceStatus**](V3RouteServiceStatus.md) | Service status for the route (indicates disruptions) |  [optional]
-
-
-
+**routeServiceStatus** | [**V3RouteServiceStatus**](V3RouteServiceStatus.md) |  |  [optional]

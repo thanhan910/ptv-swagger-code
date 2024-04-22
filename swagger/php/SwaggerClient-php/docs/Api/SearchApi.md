@@ -1,11 +1,10 @@
 # Swagger\Client\SearchApi
 
-All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**searchSearch**](SearchApi.md#searchSearch) | **GET** /v3/search/{search_term} | View stops, routes and myki ticket outlets that match the search term
-
+[**searchSearch**](SearchApi.md#searchsearch) | **GET** /v3/search/{search_term} | View stops, routes and myki ticket outlets that match the search term
 
 # **searchSearch**
 > \Swagger\Client\Model\V3SearchResult searchSearch($search_term, $route_types, $latitude, $longitude, $max_distance, $include_addresses, $include_outlets, $match_stop_by_suburb, $match_route_by_suburb, $match_stop_by_gtfs_stop_id, $token, $devid, $signature)

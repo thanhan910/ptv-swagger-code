@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3StopStaffing
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3StopStaffing {
   @SerializedName("fri_am_from")
   private String friAmFrom = null;
@@ -131,7 +130,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return friAmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getFriAmFrom() {
     return friAmFrom;
   }
@@ -149,7 +148,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return friAmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getFriAmTo() {
     return friAmTo;
   }
@@ -167,7 +166,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return friPmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getFriPmFrom() {
     return friPmFrom;
   }
@@ -185,7 +184,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return friPmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getFriPmTo() {
     return friPmTo;
   }
@@ -203,7 +202,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return monAmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getMonAmFrom() {
     return monAmFrom;
   }
@@ -221,7 +220,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return monAmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getMonAmTo() {
     return monAmTo;
   }
@@ -239,7 +238,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return monPmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getMonPmFrom() {
     return monPmFrom;
   }
@@ -257,7 +256,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return monPmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getMonPmTo() {
     return monPmTo;
   }
@@ -275,7 +274,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return phAdditionalText
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getPhAdditionalText() {
     return phAdditionalText;
   }
@@ -293,7 +292,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return phFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getPhFrom() {
     return phFrom;
   }
@@ -311,7 +310,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return phTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getPhTo() {
     return phTo;
   }
@@ -329,7 +328,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return satAmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getSatAmFrom() {
     return satAmFrom;
   }
@@ -347,7 +346,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return satAmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getSatAmTo() {
     return satAmTo;
   }
@@ -365,7 +364,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return satPmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getSatPmFrom() {
     return satPmFrom;
   }
@@ -383,7 +382,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return satPmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getSatPmTo() {
     return satPmTo;
   }
@@ -401,7 +400,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return sunAmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getSunAmFrom() {
     return sunAmFrom;
   }
@@ -419,7 +418,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return sunAmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getSunAmTo() {
     return sunAmTo;
   }
@@ -437,7 +436,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return sunPmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getSunPmFrom() {
     return sunPmFrom;
   }
@@ -455,7 +454,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return sunPmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getSunPmTo() {
     return sunPmTo;
   }
@@ -473,7 +472,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return thuAmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getThuAmFrom() {
     return thuAmFrom;
   }
@@ -491,7 +490,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return thuAmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getThuAmTo() {
     return thuAmTo;
   }
@@ -509,7 +508,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return thuPmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getThuPmFrom() {
     return thuPmFrom;
   }
@@ -527,7 +526,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return thuPmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getThuPmTo() {
     return thuPmTo;
   }
@@ -545,7 +544,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return tueAmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getTueAmFrom() {
     return tueAmFrom;
   }
@@ -563,7 +562,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return tueAmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getTueAmTo() {
     return tueAmTo;
   }
@@ -581,7 +580,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return tuePmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getTuePmFrom() {
     return tuePmFrom;
   }
@@ -599,7 +598,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return tuePmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getTuePmTo() {
     return tuePmTo;
   }
@@ -617,7 +616,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return wedAmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getWedAmFrom() {
     return wedAmFrom;
   }
@@ -635,7 +634,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return wedAmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getWedAmTo() {
     return wedAmTo;
   }
@@ -653,7 +652,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return wedPmFrom
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getWedPmFrom() {
     return wedPmFrom;
   }
@@ -671,7 +670,7 @@ public class V3StopStaffing {
    * Stop staffing hours
    * @return wedPmTo
   **/
-  @ApiModelProperty(value = "Stop staffing hours")
+  @Schema(description = "Stop staffing hours")
   public String getWedPmTo() {
     return wedPmTo;
   }
@@ -781,4 +780,3 @@ public class V3StopStaffing {
   }
 
 }
-

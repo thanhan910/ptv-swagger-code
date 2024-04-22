@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package io.swagger.client.model;
 
 import java.util.Objects;
@@ -20,14 +19,14 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * V3StopAmenityDetails
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2024-04-22T17:01:39.159+10:00")
+
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-04-22T17:04:13.135709+10:00[Australia/Sydney]")
+
 public class V3StopAmenityDetails {
   @SerializedName("toilet")
   private Boolean toilet = null;
@@ -50,7 +49,7 @@ public class V3StopAmenityDetails {
    * Indicates if there is a public toilet at or near the stop
    * @return toilet
   **/
-  @ApiModelProperty(value = "Indicates if there is a public toilet at or near the stop")
+  @Schema(description = "Indicates if there is a public toilet at or near the stop")
   public Boolean isToilet() {
     return toilet;
   }
@@ -68,7 +67,7 @@ public class V3StopAmenityDetails {
    * Indicates if there is a taxi rank at or near the stop
    * @return taxiRank
   **/
-  @ApiModelProperty(value = "Indicates if there is a taxi rank at or near the stop")
+  @Schema(description = "Indicates if there is a taxi rank at or near the stop")
   public Boolean isTaxiRank() {
     return taxiRank;
   }
@@ -86,7 +85,7 @@ public class V3StopAmenityDetails {
    * The number of free car parking spots at the stop
    * @return carParking
   **/
-  @ApiModelProperty(value = "The number of free car parking spots at the stop")
+  @Schema(description = "The number of free car parking spots at the stop")
   public String getCarParking() {
     return carParking;
   }
@@ -104,7 +103,7 @@ public class V3StopAmenityDetails {
    * Indicates if there are CCTV (i.e. closed circuit television) cameras at the stop
    * @return cctv
   **/
-  @ApiModelProperty(value = "Indicates if there are CCTV (i.e. closed circuit television) cameras at the stop")
+  @Schema(description = "Indicates if there are CCTV (i.e. closed circuit television) cameras at the stop")
   public Boolean isCctv() {
     return cctv;
   }
@@ -160,4 +159,3 @@ public class V3StopAmenityDetails {
   }
 
 }
-

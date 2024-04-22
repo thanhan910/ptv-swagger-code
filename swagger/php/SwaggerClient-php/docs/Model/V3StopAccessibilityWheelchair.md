@@ -15,6 +15,5 @@ Name | Type | Description | Notes
 **raised_platform_shelther** | **bool** | Indicates if there is shelter near the raised platform | [optional] 
 **steep_ramp** | **bool** | Indicates if there are ramps (&amp;gt;1:14) at the stop/platform | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
