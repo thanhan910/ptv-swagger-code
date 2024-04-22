@@ -1,0 +1,14 @@
+# # V3BulkDeparturesUpdateResponse
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**departures** | [**\OpenAPI\Client\Model\V3Departure[]**](V3Departure.md) | Timetabled and real-time service departures | [optional]
+**route_type** | **int** | Transport mode identifier | [optional]
+**stop_id** | **int** | Stop identifier | [optional]
+**requested_route_direction** | [**\OpenAPI\Client\Model\V3BulkDeparturesRouteDirectionResponse**](V3BulkDeparturesRouteDirectionResponse.md) |  | [optional]
+**route_direction_status** | **int** | The status of the route direction (changed | unchanged).  If changed, requests should change the requested_route_direction for the route_direction supplied. | [optional]
+**route_direction** | [**\OpenAPI\Client\Model\V3BulkDeparturesRouteDirectionResponse**](V3BulkDeparturesRouteDirectionResponse.md) |  | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

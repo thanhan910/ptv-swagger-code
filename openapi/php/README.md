@@ -1,0 +1,260 @@
+# ptv-api-client
+
+The PTV Timetable API provides direct access to Public Transport Victoria's public transport timetable data.
+
+The API returns scheduled timetable, route and stop data for all metropolitan and regional train, tram and bus services in Victoria, including Night Network(Night Train and Night Tram data are included in metropolitan train and tram services data, respectively, whereas Night Bus is a separate route type).
+
+The API also returns real-time data for metropolitan train, tram and bus services (where this data is made available to PTV), as well as disruption information, stop facility information, and access to myki ticket outlet data.
+
+This Swagger is for Version 3 of the PTV Timetable API. By using this documentation you agree to comply with the licence and terms of service.
+
+Train timetable data is updated daily, while the remaining data is updated weekly, taking into account any planned timetable changes (for example, due to holidays or planned disruptions). The PTV timetable API is the same API used by PTV for its apps. To access the most up to date data PTV has (including real-time data) you must use the API dynamically.
+
+You can access the PTV Timetable API through a HTTP or HTTPS interface, as follows:
+
+    base URL / version number / API name / query string
+The base URL is either:
+  *  http://timetableapi.ptv.vic.gov.au
+or
+  *  https://timetableapi.ptv.vic.gov.au
+
+The Swagger JSON file is available at http://timetableapi.ptv.vic.gov.au/swagger/docs/v3
+
+Frequently asked questions are available on the PTV website at http://ptv.vic.gov.au/apifaq
+
+Links to the following information are also provided on the PTV website at http://ptv.vic.gov.au/ptv-timetable-api/
+* How to register for an API key and calculate a signature
+* PTV Timetable API V2 to V3 Migration Guide
+* PTV Timetable API Data Quality Statement
+
+All information about how to use the API is in this documentation. PTV cannot provide technical support for the API.
+
+
+For more information, please visit [http://ptv.vic.gov.au/digital](http://ptv.vic.gov.au/digital).
+
+## Installation & Usage
+
+### Requirements
+
+PHP 7.4 and later.
+Should also work with PHP 8.0.
+
+### Composer
+
+To install the bindings via [Composer](https://getcomposer.org/), add the following to `composer.json`:
+
+```json
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/thanhan910/ptv-api-client-openapi-php.git"
+    }
+  ],
+  "require": {
+    "thanhan910/ptv-api-client-openapi-php": "*@dev"
+  }
+}
+```
+
+Then run `composer install`
+
+### Manual Installation
+
+Download the files and include `autoload.php`:
+
+```php
+<?php
+require_once('/path/to/ptv-api-client/vendor/autoload.php');
+```
+
+## Getting Started
+
+Please follow the [installation procedure](#installation--usage) and then run the following:
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+
+$apiInstance = new OpenAPI\Client\Api\DeparturesApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$route_type = 56; // int | Number identifying transport mode; values returned via RouteTypes API
+$stop_id = 56; // int | Identifier of stop; values returned by Stops API
+$platform_numbers = array(56); // int[] | Filter by platform number at stop
+$direction_id = 56; // int | Filter by identifier of direction of travel; values returned by Directions API - /v3/directions/route/{route_id}
+$gtfs = True; // bool | Indicates that stop_id parameter will accept \"GTFS stop_id\" data
+$date_utc = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Filter by the date and time of the request (ISO 8601 UTC format) (default = current date and time)
+$max_results = 56; // int | Maximum number of results returned
+$include_cancelled = True; // bool | Indicates if cancelled services (if they exist) are returned (default = false) - metropolitan train only
+$look_backwards = True; // bool | Indicates if filtering runs (and their departures) to those that arrive at destination before date_utc (default = false). Requires max_results &gt; 0.
+$expand = array('expand_example'); // string[] | List of objects to be returned in full (i.e. expanded) - options include: All, Stop, Route, Run, Direction, Disruption, VehiclePosition, VehicleDescriptor or None.  Run must be expanded to receive VehiclePosition and VehicleDescriptor information.
+$include_geopath = True; // bool | Indicates if the route geopath should be returned
+$token = 'token_example'; // string | Please ignore
+$devid = 'devid_example'; // string | Your developer id
+$signature = 'signature_example'; // string | Authentication signature for request
+
+try {
+    $result = $apiInstance->departuresGetForStop($route_type, $stop_id, $platform_numbers, $direction_id, $gtfs, $date_utc, $max_results, $include_cancelled, $look_backwards, $expand, $include_geopath, $token, $devid, $signature);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DeparturesApi->departuresGetForStop: ', $e->getMessage(), PHP_EOL;
+}
+
+```
+
+## API Endpoints
+
+All URIs are relative to *https://timetableapi.ptv.vic.gov.au*
+
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+*DeparturesApi* | [**departuresGetForStop**](docs/Api/DeparturesApi.md#departuresgetforstop) | **GET** /v3/departures/route_type/{route_type}/stop/{stop_id} | View departures for all routes from a stop
+*DeparturesApi* | [**departuresGetForStopAndRoute**](docs/Api/DeparturesApi.md#departuresgetforstopandroute) | **GET** /v3/departures/route_type/{route_type}/stop/{stop_id}/route/{route_id} | View departures for a specific route from a stop
+*DirectionsApi* | [**directionsForDirection**](docs/Api/DirectionsApi.md#directionsfordirection) | **GET** /v3/directions/{direction_id} | View all routes for a direction of travel
+*DirectionsApi* | [**directionsForDirectionAndType**](docs/Api/DirectionsApi.md#directionsfordirectionandtype) | **GET** /v3/directions/{direction_id}/route_type/{route_type} | View all routes of a particular type for a direction of travel
+*DirectionsApi* | [**directionsForRoute**](docs/Api/DirectionsApi.md#directionsforroute) | **GET** /v3/directions/route/{route_id} | View directions that a route travels in
+*DisruptionsApi* | [**disruptionsGetAllDisruptions**](docs/Api/DisruptionsApi.md#disruptionsgetalldisruptions) | **GET** /v3/disruptions | View all disruptions for all route types
+*DisruptionsApi* | [**disruptionsGetDisruptionById**](docs/Api/DisruptionsApi.md#disruptionsgetdisruptionbyid) | **GET** /v3/disruptions/{disruption_id} | View a specific disruption
+*DisruptionsApi* | [**disruptionsGetDisruptionModes**](docs/Api/DisruptionsApi.md#disruptionsgetdisruptionmodes) | **GET** /v3/disruptions/modes | Get all disruption modes
+*DisruptionsApi* | [**disruptionsGetDisruptionsByRoute**](docs/Api/DisruptionsApi.md#disruptionsgetdisruptionsbyroute) | **GET** /v3/disruptions/route/{route_id} | View all disruptions for a particular route
+*DisruptionsApi* | [**disruptionsGetDisruptionsByRouteAndStop**](docs/Api/DisruptionsApi.md#disruptionsgetdisruptionsbyrouteandstop) | **GET** /v3/disruptions/route/{route_id}/stop/{stop_id} | View all disruptions for a particular route and stop
+*DisruptionsApi* | [**disruptionsGetDisruptionsByStop**](docs/Api/DisruptionsApi.md#disruptionsgetdisruptionsbystop) | **GET** /v3/disruptions/stop/{stop_id} | View all disruptions for a particular stop
+*FareEstimateApi* | [**fareEstimateGetFareEstimateByZone**](docs/Api/FareEstimateApi.md#fareestimategetfareestimatebyzone) | **GET** /v3/fare_estimate/min_zone/{minZone}/max_zone/{maxZone} | Estimate a fare by zone
+*OutletsApi* | [**outletsGetAllOutlets**](docs/Api/OutletsApi.md#outletsgetalloutlets) | **GET** /v3/outlets | List all ticket outlets
+*OutletsApi* | [**outletsGetOutletsByGeolocation**](docs/Api/OutletsApi.md#outletsgetoutletsbygeolocation) | **GET** /v3/outlets/location/{latitude},{longitude} | List ticket outlets near a specific location
+*PatternsApi* | [**patternsGetPatternByRun**](docs/Api/PatternsApi.md#patternsgetpatternbyrun) | **GET** /v3/pattern/run/{run_ref}/route_type/{route_type} | View the stopping pattern for a specific trip/service run
+*RouteTypesApi* | [**routeTypesGetRouteTypes**](docs/Api/RouteTypesApi.md#routetypesgetroutetypes) | **GET** /v3/route_types | View all route types and their names
+*RoutesApi* | [**routesOneOrMoreRoutes**](docs/Api/RoutesApi.md#routesoneormoreroutes) | **GET** /v3/routes | View route names and numbers for all routes
+*RoutesApi* | [**routesRouteFromId**](docs/Api/RoutesApi.md#routesroutefromid) | **GET** /v3/routes/{route_id} | View route name and number for specific route ID
+*RunsApi* | [**runsForRoute**](docs/Api/RunsApi.md#runsforroute) | **GET** /v3/runs/route/{route_id} | View all trip/service runs for a specific route ID
+*RunsApi* | [**runsForRouteAndRouteType**](docs/Api/RunsApi.md#runsforrouteandroutetype) | **GET** /v3/runs/route/{route_id}/route_type/{route_type} | View all trip/service runs for a specific route ID and route type
+*RunsApi* | [**runsForRun**](docs/Api/RunsApi.md#runsforrun) | **GET** /v3/runs/{run_ref} | View all trip/service runs for a specific run_ref
+*RunsApi* | [**runsForRunAndRouteType**](docs/Api/RunsApi.md#runsforrunandroutetype) | **GET** /v3/runs/{run_ref}/route_type/{route_type} | View the trip/service run for a specific run_ref and route type
+*SearchApi* | [**searchSearch**](docs/Api/SearchApi.md#searchsearch) | **GET** /v3/search/{search_term} | View stops, routes and myki ticket outlets that match the search term
+*StopsApi* | [**stopsStopDetails**](docs/Api/StopsApi.md#stopsstopdetails) | **GET** /v3/stops/{stop_id}/route_type/{route_type} | View facilities at a specific stop (Metro and V/Line stations only)
+*StopsApi* | [**stopsStopsByGeolocation**](docs/Api/StopsApi.md#stopsstopsbygeolocation) | **GET** /v3/stops/location/{latitude},{longitude} | View all stops near a specific location
+*StopsApi* | [**stopsStopsForRoute**](docs/Api/StopsApi.md#stopsstopsforroute) | **GET** /v3/stops/route/{route_id}/route_type/{route_type} | View all stops on a specific route
+
+## Models
+
+- [V3BulkDeparturesRequest](docs/Model/V3BulkDeparturesRequest.md)
+- [V3BulkDeparturesResponse](docs/Model/V3BulkDeparturesResponse.md)
+- [V3BulkDeparturesRouteDirectionResponse](docs/Model/V3BulkDeparturesRouteDirectionResponse.md)
+- [V3BulkDeparturesStopResponse](docs/Model/V3BulkDeparturesStopResponse.md)
+- [V3BulkDeparturesUpdateResponse](docs/Model/V3BulkDeparturesUpdateResponse.md)
+- [V3Departure](docs/Model/V3Departure.md)
+- [V3DeparturesBroadParameters](docs/Model/V3DeparturesBroadParameters.md)
+- [V3DeparturesResponse](docs/Model/V3DeparturesResponse.md)
+- [V3DeparturesSpecificParameters](docs/Model/V3DeparturesSpecificParameters.md)
+- [V3Direction](docs/Model/V3Direction.md)
+- [V3DirectionWithDescription](docs/Model/V3DirectionWithDescription.md)
+- [V3DirectionsResponse](docs/Model/V3DirectionsResponse.md)
+- [V3Disruption](docs/Model/V3Disruption.md)
+- [V3DisruptionDirection](docs/Model/V3DisruptionDirection.md)
+- [V3DisruptionMode](docs/Model/V3DisruptionMode.md)
+- [V3DisruptionModesResponse](docs/Model/V3DisruptionModesResponse.md)
+- [V3DisruptionResponse](docs/Model/V3DisruptionResponse.md)
+- [V3DisruptionRoute](docs/Model/V3DisruptionRoute.md)
+- [V3DisruptionStop](docs/Model/V3DisruptionStop.md)
+- [V3Disruptions](docs/Model/V3Disruptions.md)
+- [V3DisruptionsResponse](docs/Model/V3DisruptionsResponse.md)
+- [V3DynamoDbTimetable](docs/Model/V3DynamoDbTimetable.md)
+- [V3DynamoDbTimetablesReponse](docs/Model/V3DynamoDbTimetablesReponse.md)
+- [V3ErrorResponse](docs/Model/V3ErrorResponse.md)
+- [V3FareEstimateResponse](docs/Model/V3FareEstimateResponse.md)
+- [V3FareEstimateResult](docs/Model/V3FareEstimateResult.md)
+- [V3FareEstimateResultStatus](docs/Model/V3FareEstimateResultStatus.md)
+- [V3GenerateDivaMappingResponse](docs/Model/V3GenerateDivaMappingResponse.md)
+- [V3Outlet](docs/Model/V3Outlet.md)
+- [V3OutletGeolocation](docs/Model/V3OutletGeolocation.md)
+- [V3OutletGeolocationParameters](docs/Model/V3OutletGeolocationParameters.md)
+- [V3OutletGeolocationResponse](docs/Model/V3OutletGeolocationResponse.md)
+- [V3OutletParameters](docs/Model/V3OutletParameters.md)
+- [V3OutletResponse](docs/Model/V3OutletResponse.md)
+- [V3PassengerFare](docs/Model/V3PassengerFare.md)
+- [V3PatternDeparture](docs/Model/V3PatternDeparture.md)
+- [V3ResultOutlet](docs/Model/V3ResultOutlet.md)
+- [V3ResultRoute](docs/Model/V3ResultRoute.md)
+- [V3ResultStop](docs/Model/V3ResultStop.md)
+- [V3RouteDeparturesSpecificParameters](docs/Model/V3RouteDeparturesSpecificParameters.md)
+- [V3RouteResponse](docs/Model/V3RouteResponse.md)
+- [V3RouteServiceStatus](docs/Model/V3RouteServiceStatus.md)
+- [V3RouteType](docs/Model/V3RouteType.md)
+- [V3RouteTypesResponse](docs/Model/V3RouteTypesResponse.md)
+- [V3RouteWithStatus](docs/Model/V3RouteWithStatus.md)
+- [V3Run](docs/Model/V3Run.md)
+- [V3RunResponse](docs/Model/V3RunResponse.md)
+- [V3RunsResponse](docs/Model/V3RunsResponse.md)
+- [V3SearchParameters](docs/Model/V3SearchParameters.md)
+- [V3SearchResult](docs/Model/V3SearchResult.md)
+- [V3SiriDirectionRefsDictionary](docs/Model/V3SiriDirectionRefsDictionary.md)
+- [V3SiriDownstreamSubscription](docs/Model/V3SiriDownstreamSubscription.md)
+- [V3SiriDownstreamSubscriptionDeleteRequest](docs/Model/V3SiriDownstreamSubscriptionDeleteRequest.md)
+- [V3SiriDownstreamSubscriptionResponse](docs/Model/V3SiriDownstreamSubscriptionResponse.md)
+- [V3SiriDownstreamSubscriptionTopic](docs/Model/V3SiriDownstreamSubscriptionTopic.md)
+- [V3SiriEstimatedTimetableSubscriptionRequest](docs/Model/V3SiriEstimatedTimetableSubscriptionRequest.md)
+- [V3SiriLineRef](docs/Model/V3SiriLineRef.md)
+- [V3SiriLineRefDirectionRefStopPointRef](docs/Model/V3SiriLineRefDirectionRefStopPointRef.md)
+- [V3SiriLineRefDirectionRefsDictionary](docs/Model/V3SiriLineRefDirectionRefsDictionary.md)
+- [V3SiriLineRefMappingsResponse](docs/Model/V3SiriLineRefMappingsResponse.md)
+- [V3SiriLineRefsRequest](docs/Model/V3SiriLineRefsRequest.md)
+- [V3SiriProductionTimetableSubscriptionRequest](docs/Model/V3SiriProductionTimetableSubscriptionRequest.md)
+- [V3SiriReferenceDataDetail](docs/Model/V3SiriReferenceDataDetail.md)
+- [V3SiriReferenceDataMappingsResponse](docs/Model/V3SiriReferenceDataMappingsResponse.md)
+- [V3SiriReferenceDataRequest](docs/Model/V3SiriReferenceDataRequest.md)
+- [V3SiriStopsRefsDictionary](docs/Model/V3SiriStopsRefsDictionary.md)
+- [V3SiriSubscriptionTopic](docs/Model/V3SiriSubscriptionTopic.md)
+- [V3Status](docs/Model/V3Status.md)
+- [V3StopAccessibility](docs/Model/V3StopAccessibility.md)
+- [V3StopAccessibilityWheelchair](docs/Model/V3StopAccessibilityWheelchair.md)
+- [V3StopAmenityDetails](docs/Model/V3StopAmenityDetails.md)
+- [V3StopBasic](docs/Model/V3StopBasic.md)
+- [V3StopDepartureRequest](docs/Model/V3StopDepartureRequest.md)
+- [V3StopDepartureRequestRouteDirection](docs/Model/V3StopDepartureRequestRouteDirection.md)
+- [V3StopDetails](docs/Model/V3StopDetails.md)
+- [V3StopGeosearch](docs/Model/V3StopGeosearch.md)
+- [V3StopGps](docs/Model/V3StopGps.md)
+- [V3StopLocation](docs/Model/V3StopLocation.md)
+- [V3StopModel](docs/Model/V3StopModel.md)
+- [V3StopOnRoute](docs/Model/V3StopOnRoute.md)
+- [V3StopPoint](docs/Model/V3StopPoint.md)
+- [V3StopResponse](docs/Model/V3StopResponse.md)
+- [V3StopStaffing](docs/Model/V3StopStaffing.md)
+- [V3StopTicket](docs/Model/V3StopTicket.md)
+- [V3StoppingPattern](docs/Model/V3StoppingPattern.md)
+- [V3StoppingPatternStop](docs/Model/V3StoppingPatternStop.md)
+- [V3StopsByDistanceResponse](docs/Model/V3StopsByDistanceResponse.md)
+- [V3StopsOnRouteResponse](docs/Model/V3StopsOnRouteResponse.md)
+- [V3VehicleDescriptor](docs/Model/V3VehicleDescriptor.md)
+- [V3VehiclePosition](docs/Model/V3VehiclePosition.md)
+- [V3ZoneInfo](docs/Model/V3ZoneInfo.md)
+
+## Authorization
+Endpoints do not require authorization.
+
+## Tests
+
+To run the tests, use:
+
+```bash
+composer install
+vendor/bin/phpunit
+```
+
+## Author
+
+
+
+## About this package
+
+This PHP package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
+
+- API version: `v3`
+    - Generator version: `7.5.0`
+- Build package: `org.openapitools.codegen.languages.PhpClientCodegen`
