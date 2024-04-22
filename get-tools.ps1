@@ -1,0 +1,3 @@
+Invoke-WebRequest -OutFile swagger-codegen-cli-3.jar https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.54/swagger-codegen-cli-3.0.54.jar
+Invoke-WebRequest -OutFile swagger-codegen-cli-2.jar https://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/2.4.39/swagger-codegen-cli-2.4.39.jar
+Invoke-WebRequest -OutFile openapi-generator-cli.jar https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/7.5.0/openapi-generator-cli-7.5.0.jar
