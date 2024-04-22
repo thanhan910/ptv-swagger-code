@@ -1,29 +1,29 @@
 # Swagger 2
-java -jar swagger-codegen-cli-2.jar generate -i .\swagger.json -l java -o swagger-2\java --git-repo-id ptv-api-client-swagger-java --git-user-id thanhan910
-java -jar swagger-codegen-cli-2.jar generate -i .\swagger.json -l csharp -o swagger-2\csharp --git-repo-id ptv-api-client-swagger-csharp --git-user-id thanhan910
-java -jar swagger-codegen-cli-2.jar generate -i .\swagger.json -l python -o swagger-2\python --git-repo-id ptv-api-client-swagger-python --git-user-id thanhan910
-java -jar swagger-codegen-cli-2.jar generate -i .\swagger.json -l php -o swagger-2\php --git-repo-id ptv-api-client-swagger-php --git-user-id thanhan910
-java -jar swagger-codegen-cli-2.jar generate -i .\swagger.json -l typescript-fetch -o swagger-2\typescript-fetch --git-repo-id ptv-api-client-swagger-typescript-fetch --git-user-id thanhan910
+java -jar swagger-codegen-cli-2.jar generate -i .\swagger.json -l java -o swagger.2.0\swagger-2\java --git-repo-id ptv-api-client-swagger-java --git-user-id thanhan910
+java -jar swagger-codegen-cli-2.jar generate -i .\swagger.json -l csharp -o swagger.2.0\swagger-2\csharp --git-repo-id ptv-api-client-swagger-csharp --git-user-id thanhan910
+java -jar swagger-codegen-cli-2.jar generate -i .\swagger.json -l python -o swagger.2.0\swagger-2\python --git-repo-id ptv-api-client-swagger-python --git-user-id thanhan910
+java -jar swagger-codegen-cli-2.jar generate -i .\swagger.json -l php -o swagger.2.0\swagger-2\php --git-repo-id ptv-api-client-swagger-php --git-user-id thanhan910
+java -jar swagger-codegen-cli-2.jar generate -i .\swagger.json -l typescript-fetch -o swagger.2.0\swagger-2\typescript-fetch --git-repo-id ptv-api-client-swagger-typescript-fetch --git-user-id thanhan910
 # Swagger 3
-java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l java -o swagger-3\java --git-repo-id ptv-api-client-swagger-java --git-user-id thanhan910
-java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l csharp -o swagger-3\csharp --git-repo-id ptv-api-client-swagger-csharp --git-user-id thanhan910
-java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l python -o swagger-3\python --git-repo-id ptv-api-client-swagger-python --git-user-id thanhan910
-java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l php -o swagger-3\php --git-repo-id ptv-api-client-swagger-php --git-user-id thanhan910
-java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l typescript-fetch -o swagger-3\typescript-fetch --git-repo-id ptv-api-client-swagger-typescript-fetch --git-user-id thanhan910
+java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l java -o swagger.2.0\swagger-3\java --git-repo-id ptv-api-client-swagger-java --git-user-id thanhan910
+java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l csharp -o swagger.2.0\swagger-3\csharp --git-repo-id ptv-api-client-swagger-csharp --git-user-id thanhan910
+java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l python -o swagger.2.0\swagger-3\python --git-repo-id ptv-api-client-swagger-python --git-user-id thanhan910
+java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l php -o swagger.2.0\swagger-3\php --git-repo-id ptv-api-client-swagger-php --git-user-id thanhan910
+java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l typescript-fetch -o swagger.2.0\swagger-3\typescript-fetch --git-repo-id ptv-api-client-swagger-typescript-fetch --git-user-id thanhan910
 # OpenAPI
-java -jar openapi-generator-cli.jar generate -i .\swagger.json -g java -o openapi\java --git-repo-id ptv-api-client-openapi-java --git-user-id thanhan910 --package-name com.ptv.api.client
-java -jar openapi-generator-cli.jar generate -i .\swagger.json -g csharp -o openapi\csharp --git-repo-id ptv-api-client-openapi-csharp --git-user-id thanhan910 --package-name Ptv.Api.Client
-java -jar openapi-generator-cli.jar generate -i .\swagger.json -g python -o openapi\python --git-repo-id ptv-api-client-openapi-python --git-user-id thanhan910 --package-name ptv_api_client
-java -jar openapi-generator-cli.jar generate -i .\swagger.json -g php -o openapi\php --git-repo-id ptv-api-client-openapi-php --git-user-id thanhan910 --package-name ptv-api-client
-java -jar openapi-generator-cli.jar generate -i .\swagger.json -g typescript-fetch -o openapi\typescript-fetch --git-repo-id ptv-api-client-openapi-php --git-user-id thanhan910
+java -jar openapi-generator-cli.jar generate -i .\swagger.json -g java -o swagger.2.0\openapi\java --git-repo-id ptv-api-client-openapi-java --git-user-id thanhan910 --package-name com.ptv.api.client
+java -jar openapi-generator-cli.jar generate -i .\swagger.json -g csharp -o swagger.2.0\openapi\csharp --git-repo-id ptv-api-client-openapi-csharp --git-user-id thanhan910 --package-name Ptv.Api.Client
+java -jar openapi-generator-cli.jar generate -i .\swagger.json -g python -o swagger.2.0\openapi\python --git-repo-id ptv-api-client-openapi-python --git-user-id thanhan910 --package-name ptv_api_client
+java -jar openapi-generator-cli.jar generate -i .\swagger.json -g php -o swagger.2.0\openapi\php --git-repo-id ptv-api-client-openapi-php --git-user-id thanhan910 --package-name ptv-api-client
+java -jar openapi-generator-cli.jar generate -i .\swagger.json -g typescript-fetch -o swagger.2.0\openapi\typescript-fetch --git-repo-id ptv-api-client-openapi-php --git-user-id thanhan910
 
 
 # # Swagger 2 vs 3
-# java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l java -o swagger\java --git-repo-id ptv-api-client-swagger-java --git-user-id thanhan910
-# java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l csharp -o swagger\csharp --git-repo-id ptv-api-client-swagger-csharp --git-user-id thanhan910
-# java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l python -o swagger\python --git-repo-id ptv-api-client-swagger-python --git-user-id thanhan910
-# java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l php -o swagger\php --git-repo-id ptv-api-client-swagger-php --git-user-id thanhan910
-# java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l typescript-fetch -o swagger\typescript-fetch --git-repo-id ptv-api-client-swagger-typescript-fetch --git-user-id thanhan910
+# java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l java -o swagger.2.0\swagger\java --git-repo-id ptv-api-client-swagger-java --git-user-id thanhan910
+# java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l csharp -o swagger.2.0\swagger\csharp --git-repo-id ptv-api-client-swagger-csharp --git-user-id thanhan910
+# java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l python -o swagger.2.0\swagger\python --git-repo-id ptv-api-client-swagger-python --git-user-id thanhan910
+# java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l php -o swagger.2.0\swagger\php --git-repo-id ptv-api-client-swagger-php --git-user-id thanhan910
+# java -jar swagger-codegen-cli-3.jar generate -i .\swagger.json -l typescript-fetch -o swagger.2.0\swagger\typescript-fetch --git-repo-id ptv-api-client-swagger-typescript-fetch --git-user-id thanhan910
 
 
 # java -jar swagger-codegen-cli-2.jar langs
